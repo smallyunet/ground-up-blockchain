@@ -20,5 +20,5 @@
 
 书的目录结构可能杂乱无章，因为不太希望按照结构化知识的方式组织内容，一方面不好操作，有些东西不好分类，另一方面，结构化组织内容的实际效果不一定好，反而会由于一味最求全面而忽略思路和细节。世界上没有“最全“的一个状态。内容可以是主题式、时间线式或者随心所欲的。
 
-按照同样的逻辑，也很容易有 _Ground-Up Golang_、_Ground-Up Programming_ 之类。Talk is cheap, just do it first.
+按照同样的逻辑，也很容易有 *Ground-Up Golang*、*Ground-Up Programming* 之类。Talk is cheap, just do it first.
 
