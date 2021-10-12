@@ -1,9 +1,6 @@
 
-
 <!-- docs/_sidebar.md -->
 
-* [Home](/)
-* [Guide](guide.md)
-* [ffff](./fffff/)
-* [ffff22](./fffff/guide.md)
+* [前言](/)
+* [为什么你需要这本书](./为什么你需要这本书.md)
 
