@@ -7,6 +7,7 @@
 * [区块链是什么](/区块链是什么/README.md)
   * [Linked list](/区块链是什么/linked-list.md)
   * [Hash function](/区块链是什么/hash-function.md)
+  * [Serialzation](/区块链是什么/serialization.md)
   * [Consensus](/区块链是什么/consensus.md)
   * [Fork](/区块链是什么/fork.md)
   

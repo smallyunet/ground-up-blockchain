@@ -63,5 +63,5 @@ type Node struct {
 
 ### 延伸阅读：
 
-* [基于 Multi-linked list 的设想](../yan-shen-yue-du/multi-linked-list.md)
-* [Linked list 相关典型题目](../yan-shen-yue-du/linked-list-xiang-guan-dian-xing-ti-mu/)
+* [基于 Multi-linked list 的设想](/延伸阅读/基于%20Multi-linked%20list%20的设想.md)
+* [Linked list 相关典型题目](/延伸阅读/Linked%20list%20相关典型题目/README.md)

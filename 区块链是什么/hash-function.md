@@ -71,7 +71,7 @@ hashCode("abc") = 97*31^2 + 98*31 + 99 = 96354
 
 ### Cryptographic hash function (CHF)
 
-不难发现的是， hash function 比较容易根据 hash values 反推出原始的 data 是什么。我们可以写出这样的程序：
+不难发现的是， hash function 比较容易根据 hash values 反推出原始的 data 是什么。我们可以写出这样的程序，假设我们已经知道字符长度是 2，由于字符使用 ASCII 编码，范围在 0 ~ 255，因此设 x 和 y 两个变量，枚举所有符合目标 hash values 的情况：
 
 ```java
  public static String deHashCode(int code) {
@@ -118,29 +118,3 @@ md5("ab") = 187ef4436122d1cc2f40dc2b92f0eba0
 md5 的加密原理步骤很多，是一种不可逆的、单向的 hash function，无法轻易根据 hash values 得到 data。md5 的输入可以是任意大小的，1 GB 的二进制文件也可以hash 为 128 bit 的字符串。
 
 md5 之外，SHA-1 的安全性更高，BLAKE2 的计算速度更快，它们都是典型的 cryptographic hash function。
-
-### Serialization
-
-序列化是编程中很常见的一种操作，主要用于把复杂格式的数据转化成易于在不同环境中统一处理的格式，类似于定义一种接口格式，便于网络传输。
-
-<img src="/区块链是什么/assets/9.png" style="width:50%;">
-
-把数据转换为统一的过程称为 serialization，从统一格式转换为特殊格式的过程为 deserialization。JSON stringify 的过程也可以认为是一种序列化：
-
-``` javascript
-let object = {
-    field1: "abc",
-    field2: 123
-}
-
-let s = JSON.stringify(object)    
-print(s)    // {"field1":"abc","field2":123}
-```
-
-可以明确的是，JSON stringify 的结果是一个字符串，这个时候就可以和之前的 cryptographic hash function 联系起来了：
-
-```
-md5(s) = d79152b724c5f1e52e6bd4bfaf6e1532
-```
-
-只要定义过数据的 serialization 方法，我们就可以得到任意数据格式的 hash values 了。
