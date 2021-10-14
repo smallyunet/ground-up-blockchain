@@ -9,8 +9,8 @@
   * [Hash function](/区块链是什么/hash-function.md)
   * [Serialzation](/区块链是什么/serialization.md)
   * [Consensus](/区块链是什么/consensus.md)
+  * [Peer-to-peer Network](/区块链是什么/peer-to-peer-network.md)
   * [Fork](/区块链是什么/fork.md)
-  * [Peer-to-peer Network]
   
 * [区块链能干什么](#)
   * [UTXO Model](#)
