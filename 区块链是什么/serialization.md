@@ -2,7 +2,7 @@
 
 序列化是编程中很常见的一种操作，主要用于把复杂格式的数据转化成易于在不同环境中统一处理的格式，类似于定义一种接口格式，便于网络传输。
 
-<img src="/区块链是什么/assets/9.png" style="width:50%;">
+![50](/assets/9.png)
 
 把数据转换为统一的过程称为 serialization，从统一格式转换为特殊格式的过程为 deserialization。JSON stringify 的过程也可以认为是一种序列化：
 
@@ -30,13 +30,13 @@ md5(str) = d79152b724c5f1e52e6bd4bfaf6e1532
 
 Linked list 之间的关联关系常用变量的引用地址表示，但指针不是惟一的方式，数据结构的含义也可以扩展到更大的范围。我们完全可以用节点数据的 hash values 作为关联：
 
-<img src="/区块链是什么/assets/10.png" style="width:50%;">
+![50](/assets/10.png)
 
 `98` 是 `b` 的 hash values，表明值为 `a` 的节点，下一个节点的 hash values 为 `98`，也就是值为 `b` 的节点。
 
 我们也可有使用反向的 linked-list：
 
-<img src="/区块链是什么/assets/11.png" style="width:50%;">
+![50](/assets/11.png)
 
 `a` 的 hash values 是 97，表明值为 `b` 的节点，上一个节点的 hash values 为 `97`。
 

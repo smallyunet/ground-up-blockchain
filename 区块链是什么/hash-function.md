@@ -4,7 +4,7 @@
 
 Hash function 用于处理数据和其 hash values 的映射关系，hash values 是数据类似唯一标识的东西，可以用内存比较小的形式标识数据。hash function 有各种各样的实现，可以认为是一个黑盒子，进去的是 data，出来的是 hash values。
 
-<img src="/区块链是什么/assets/7.png" style="width:50%;">
+![50](/assets/7.png)
 
 比如，我们可以把字符的 ASCII 码作为字符的 hash values：
 
@@ -106,7 +106,7 @@ d,
 
 cryptographic 是 hash function 的修饰词，即使用了加密算法的 hash function。
 
-<img src="/区块链是什么/assets/8.png" style="width:50%;">
+![50](/assets/8.png)
 
 md5 是使用非常广泛也接近过时的一种 cryptographic hash function，可以把任意长度的 data 计算输出为 128 bit 的 hash values。
 

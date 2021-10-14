@@ -1,32 +1,36 @@
 
 <!-- docs/_sidebar.md -->
 
-* [前言](/README.md)
-* [为什么你需要这本书](/为什么你需要这本书.md)
+- [前言](/README.md)
+- [为什么你需要这本书](/为什么你需要这本书.md)
 
-* [区块链是什么](/区块链是什么/README.md)
-  * [Linked list](/区块链是什么/linked-list.md)
-  * [Hash function](/区块链是什么/hash-function.md)
-  * [Serialzation](/区块链是什么/serialization.md)
-  * [Consensus](/区块链是什么/consensus.md)
-  * [Peer-to-peer Network](/区块链是什么/peer-to-peer-network.md)
-  * [Fork](/区块链是什么/fork.md)
+- [区块链是什么](/区块链是什么/README.md)
+  - [Linked list](/区块链是什么/linked-list.md)
+  - [Hash function](/区块链是什么/hash-function.md)
+  - [Serialzation](/区块链是什么/serialization.md)
+  - [Peer-to-peer Network](/区块链是什么/peer-to-peer-network.md)
+  - [Consensus](/区块链是什么/consensus.md)
+  - [Fork](/区块链是什么/fork.md)
   
-* [区块链能干什么](#)
-  * [UTXO Model](#)
-  * [Account / Balance Model](#)
-  * [DAPP](#)
-  * [NFT](#)
+- [区块链能干什么]
+  - [UTXO Model]
+  - [Account / Balance Model]
+  - [DAPP]
+  - [NFT]
   
-* [区块链的指标](#)
-  * [Scaling solution](#)
-* 
-* [元宇宙](/元宇宙.md)
+- [区块链的指标]
+  - [Scaling solution]
   
-* [延伸阅读](/延伸阅读/README.md)
-  * [基于 Multi-linked list 的设想](/延伸阅读/基于%20Multi-linked%20list%20的设想.md)
-  * [Linked list 相关典型题目](/延伸阅读/Linked%20list%20相关典型题目/README.md)
-    * [翻转链表](/延伸阅读/Linked%20list%20相关典型题目/翻转链表.md)
-    * [判断链表是否有环](/延伸阅读/Linked%20list%20相关典型题目/判断链表是否有环.md)
-
+- [区块链的未来](/区块链的未来/README.md)
+  - [元宇宙](/区块链的未来/元宇宙.md)
+  
+- [延伸阅读](/延伸阅读/README.md)
+  - [基于 Multi-linked list 的设想](/延伸阅读/基于%20Multi-linked%20list%20的设想.md)
+  - [Linked list 相关典型问题](/延伸阅读/Linked%20list%20相关典型问题/README.md)
+    - [翻转链表](/延伸阅读/Linked%20list%20相关典型问题/翻转链表.md)
+    - [判断链表是否有环](/延伸阅读/Linked%20list%20相关典型问题/判断链表是否有环.md)
+    - [链表如果有环，找到环的起点]
+    - [判断两个链表是否相交](/延伸阅读/Linked%20list%20相关典型问题/判断两个链表是否相交.md)
+    - [两个链表如果相交，找到第一个交点]
+    - [合并两个有序链表]
 
