@@ -50,7 +50,7 @@ type Node struct {
 
 node1 = Node{ Value: "a" }
 node1_str = JSON.stringify(node1)   // { "Value": "a" }
-node1_hash = md5(node1_str)          // 9ad06e8a44d0daf821f110794fb012c7
+node1_hash = md5(node1_str)         // 9ad06e8a44d0daf821f110794fb012c7
 
 node1.Next = node1_hash
 ```
@@ -67,11 +67,11 @@ type Node struct {
 
 node1 = Node{ Value: "a" }
 node1_str = JSON.stringify(node1)   // { "Value": "a" }
-node1_hash = md5(node1_str)          // 9ad06e8a44d0daf821f110794fb012c7
+node1_hash = md5(node1_str)         // 9ad06e8a44d0daf821f110794fb012c7
 
 node2 = Node{ Value: "b" }
 node2_str = JSON.stringify(node2)   // { "Value": "b" }
-node2_hash = md5(node2_str)          // 7e332b78dbaac93a818a6ab639f5a71b
+node2_hash = md5(node2_str)         // 7e332b78dbaac93a818a6ab639f5a71b
 
 node2.Prev = node1_hash
 ```
