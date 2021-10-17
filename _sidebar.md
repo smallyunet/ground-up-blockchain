@@ -5,9 +5,9 @@
 - [为什么你需要这本书](/为什么你需要这本书.md)
 
 - [区块链是什么](/区块链是什么/README.md)
-  - [Linked list](/区块链是什么/linked-list.md)
-  - [Hash function](/区块链是什么/hash-function.md)
-  - [Serialzation](/区块链是什么/serialization.md)
+  - [Linked list](/区块链是什么/Linked%20list.md)
+  - [Hash function](/区块链是什么/Hash%20function.md)
+  - [Serialzation](/区块链是什么/Serialization.md)
   - [Peer-to-peer Network]
   - [Consensus]
   - [Fork]
