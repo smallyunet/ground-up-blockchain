@@ -22,10 +22,10 @@
   - [Scaling solution]
   
 - [区块链的未来](/区块链的未来/README.md)
+  - [基于 Multi-linked list 的区块链](/区块链的未来/基于%20Multi-linked%20list%20的区块链.md)
   - [元宇宙]
   
 - [延伸阅读](/延伸阅读/README.md)
-  - [基于 Multi-linked list 的设想]
   - [Linked list 相关典型问题](/延伸阅读/Linked%20list%20相关典型问题/README.md)
     - [翻转链表](/延伸阅读/Linked%20list%20相关典型问题/翻转链表.md)
     - [判断链表是否有环](/延伸阅读/Linked%20list%20相关典型问题/判断链表是否有环.md)
