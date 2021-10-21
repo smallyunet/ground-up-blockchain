@@ -8,21 +8,23 @@
   - [Linked list](/区块链是什么/Linked%20list.md)
   - [Hash function](/区块链是什么/Hash%20function.md)
   - [Serialzation](/区块链是什么/Serialization.md)
-  - [Peer-to-peer Network]
+  - [Peer-to-peer network]
   - [Consensus]
   - [Fork]
   
 - [区块链能干什么]
-  - [UTXO Model]
+  - [Unspend transaction output]
   - [Account / Balance Model]
-  - [DAPP]
-  - [NFT]
+  - [Decentralized application]
+  - [Decentralized identifiers]
   
 - [区块链的指标]
   - [Scaling solution]
+    - [State channels]
   
 - [区块链的未来](/区块链的未来/README.md)
   - [基于 Multi-linked list 的区块链](/区块链的未来/基于%20Multi-linked%20list%20的区块链.md)
+  - [基于 Directed acyclic graph 的区块链]
   - [元宇宙]
   
 - [延伸阅读](/延伸阅读/README.md)
