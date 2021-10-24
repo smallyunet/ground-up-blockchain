@@ -26,6 +26,9 @@
 - [区块链的未来](/区块链的未来/README.md)
   - [基于 Multi-linked list 的区块链](/区块链的未来/基于%20Multi-linked%20list%20的区块链.md)
   - [基于 Directed acyclic graph 的区块链]
+
+- [个别概念](./个别概念/README.md)
+  - [链改](./个别概念/链改.md)
   - [元宇宙]
   
 - [延伸阅读](/延伸阅读/README.md)
