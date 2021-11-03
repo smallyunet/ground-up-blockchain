@@ -76,4 +76,4 @@ node2_hash = md5(node2_str)         // 7e332b78dbaac93a818a6ab639f5a71b
 node2.Prev = node1_hash
 ```
 
-这种反向的 linked-list 就是区块链的基础数据结构。
+这种反向的 linked-list 就是区块链的基础数据结构。 
