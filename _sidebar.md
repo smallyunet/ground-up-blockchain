@@ -19,6 +19,13 @@
   - [Decentralized identifiers]
   - [Non-fungible token]
   
+- [区块链的过去]
+  - [加密算法]
+  - [共识算法]
+  - [比特币]
+  - [以太坊]
+  - [波卡链]
+
 - [区块链的指标]
   - [Scaling solution]
     - [State channels]
@@ -27,8 +34,8 @@
   - [基于 Multi-linked list 的区块链](/区块链的未来/基于%20Multi-linked%20list%20的区块链.md)
   - [基于 Directed acyclic graph 的区块链]
 
-- [个别概念](/个人概念/README.md)
-  - [链改](/个人概念/链改.md)
+- [个别概念](/个别概念/README.md)
+  - [链改](/个别概念/链改.md)
   - [元宇宙]
   
 - [延伸阅读](/延伸阅读/README.md)
