@@ -1,0 +1,11 @@
+img {
+  display: block;
+}
+img[alt="50"] {
+  width: 50%;
+}
+@media only screen and (max-width: 500px) {
+  img[alt="50"] {
+    width: 100%;
+  }
+}

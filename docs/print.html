@@ -1,0 +1,697 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Ground-Up Blockchain</title>
+        <meta name="robots" content="noindex" />
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="./style/custom.css">
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> 前言</a></li><li class="chapter-item expanded "><a href="为什么你需要这本书.html"><strong aria-hidden="true">2.</strong> 为什么你需要这本书</a></li><li class="chapter-item expanded "><a href="区块链是什么/index.html"><strong aria-hidden="true">3.</strong> 区块链是什么</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="区块链是什么/Linked list.html"><strong aria-hidden="true">3.1.</strong> Linked list</a></li><li class="chapter-item expanded "><a href="区块链是什么/Hash function.html"><strong aria-hidden="true">3.2.</strong> Hash function</a></li><li class="chapter-item expanded "><a href="区块链是什么/Serialization.html"><strong aria-hidden="true">3.3.</strong> Serialzation</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.4.</strong> Peer-to-peer network</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.5.</strong> Consensus</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.6.</strong> Fork</div></li></ol></li><li class="chapter-item expanded "><a href="区块链能干什么/index.html"><strong aria-hidden="true">4.</strong> 区块链能干什么</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.</strong> Unspend transaction output</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.2.</strong> Account / Balance Model</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.3.</strong> Decentralized application</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.4.</strong> Decentralized identifiers</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.5.</strong> Non-fungible token</div></li><li class="chapter-item expanded "><a href="区块链能干什么/个别概念/index.html"><strong aria-hidden="true">4.6.</strong> 个别概念</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="区块链能干什么/个别概念/链改.html"><strong aria-hidden="true">4.6.1.</strong> 链改</a></li><li class="chapter-item expanded "><a href="区块链能干什么/个别概念/元宇宙.html"><strong aria-hidden="true">4.6.2.</strong> 元宇宙</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="区块链的过去/index.html"><strong aria-hidden="true">5.</strong> 区块链的过去</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">5.1.</strong> 加密算法</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.2.</strong> 共识算法</div></li><li class="chapter-item expanded "><a href="区块链的过去/比特币/index.html"><strong aria-hidden="true">5.3.</strong> 比特币</a></li><li class="chapter-item expanded "><a href="区块链的过去/以太坊/index.html"><strong aria-hidden="true">5.4.</strong> 以太坊</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.5.</strong> 波卡链</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> 区块链的指标</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">6.1.</strong> Scaling solution</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">6.1.1.</strong> State channels</div></li></ol></li></ol></li><li class="chapter-item expanded "><a href="区块链的未来/index.html"><strong aria-hidden="true">7.</strong> 区块链的未来</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="区块链的未来/基于 Multi-linked list 的区块链.html"><strong aria-hidden="true">7.1.</strong> 基于 Multi-linked list 的区块链</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.2.</strong> 基于 Directed acyclic graph 的区块链</div></li></ol></li><li class="chapter-item expanded "><a href="延伸阅读/index.html"><strong aria-hidden="true">8.</strong> 延伸阅读</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="延伸阅读/Linked list 相关典型问题/index.html"><strong aria-hidden="true">8.1.</strong> Linked list 相关典型问题</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="延伸阅读/Linked list 相关典型问题/翻转链表.html"><strong aria-hidden="true">8.1.1.</strong> 翻转链表</a></li><li class="chapter-item expanded "><a href="延伸阅读/Linked list 相关典型问题/判断链表是否有环.html"><strong aria-hidden="true">8.1.2.</strong> 判断链表是否有环</a></li><li class="chapter-item expanded "><a href="延伸阅读/Linked list 相关典型问题/链表如果有环，找到环的起点.html"><strong aria-hidden="true">8.1.3.</strong> 链表如果有环，找到环的起点</a></li><li class="chapter-item expanded "><a href="延伸阅读/Linked list 相关典型问题/判断两个链表是否相交.html"><strong aria-hidden="true">8.1.4.</strong> 判断两个链表是否相交</a></li><li class="chapter-item expanded "><a href="延伸阅读/Linked list 相关典型问题/两个链表如果相交，找到第一个交点.html"><strong aria-hidden="true">8.1.5.</strong> 两个链表如果相交，找到第一个交点</a></li><li class="chapter-item expanded "><a href="延伸阅读/Linked list 相关典型问题/合并两个有序链表.html"><strong aria-hidden="true">8.1.6.</strong> 合并两个有序链表</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Ground-Up Blockchain</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="前言"><a class="header" href="#前言">前言</a></h1>
+<p>以前有过一个设想，假如一个普通程序员，愿意花费 5 年的时间专心学习和研究某一个技术框架，比如 <a href="https://spring.io/projects/spring-boot">Spring Boot</a>，5 年的时间足够了解这个框架的多数细节了，那么他在 5 年之后，可以凭借对 Spring Boot 足够深入的了解，写一本《Spring Boot 从入门到精通》之类的书没有问题吧。写出一本书可以带来什么？至少可以增加一些被认可的依据。“写书“的难度大吗？看看现在中文的技术类书籍，哪个不是电子垃圾？然而事实上，大多数 5 年以上工作经验的程序员都做不到“写书“这件事。即使写的难看，毕竟也是有，聊胜于无啊！为什么没有人写？</p>
+<p>有多少书写着写着就变成了技术手册？大而全没有重点，有用的没用的全写进去。也许是本着对观众负责的态度，“我写的内容不一定有见地，至少全啊！“这样的逻辑类似于，消费者在买东西的时候，“这个功能我可以不用，但不能没有！“</p>
+<p>我也想制造一些电子垃圾了，就像各种无聊的技术博客文章的集合。现在是 2021 年的国庆节假期，正好有时间可以思考一下这件事情。</p>
+<p>书的内容会和 Blog 冲突吗？如果有有意思、值得写的东西，应该优先发到 Blog 上。好像也是，不过 Blog 上的内容更多是描述个人经历、表达态度和观点，一直都无法专注尤其是低质量的技术内容。Blog 的内容往往需要字斟句酌，可能最终看到的只有 100 个字，但实际上也许想了 1000 个字，思考好几天，然后去掉不合适的措辞、精简内容、明确清晰观点，剩下了少数简练但有用的内容。</p>
+<p>书的内容会更随意一点，为了节省时间，也尽量避免对内容的反复修正。总得有一些新的事情做，这些事情总需要一个开始，你不能等所有材料都准备好了才下锅。如果以后有一天，我有足够写出有价值书的能力，可能就不想写了。</p>
+<p>书名借鉴了 <em>Ground-up Computer Science</em>，我暂时没有更好的主意了。内容会聚焦在 Blockchain 上，这个应该没什么问题，这个方向的水很深，有足够的内容可以写。也不需要太多担心机会成本的问题，其他领域并没有更好的选择，</p>
+<p>在用语上，可能会直接用一些简单的单词。因为经常出现的情况是，在阅读其他资料的时候看到了某个词并且留下了印象，然后就直接拿来用了，不希望刻意在头脑里翻译一下。比如，这本书的内容没有 magic，就是一些普通的技术大杂烩。</p>
+<p>这件事情的周期可能会有点长，预计 1 ~ 2 年左右。希望在 2023 年年底之前，这本书的内容可以初步让自己满意，可以归档 0.9 版本。差的 0.1 用来勘误。</p>
+<p>书里具体的内容以思路为主，我们从小就知道“画一条线 10000 美元“的故事，画一条线价值 1 美元，知道线画在哪儿 9999 美元。故事也许不是真的，但故事广为流传，侧面说明故事中的逻辑至少有道理。把代码写出来，远不如知道为什么要写，解决了什么问题，有没有更好的解决办法。</p>
+<p>书的目录结构可能杂乱无章，因为不太希望按照结构化知识的方式组织内容，一方面不好操作，有些东西不好分类，另一方面，结构化组织内容的实际效果不一定好，反而会由于一味最求全面而忽略思路和细节。世界上没有“最全“的一个状态。内容可以是主题式、时间线式或者随心所欲的。</p>
+<p>按照同样的逻辑，也很容易有 <em>Ground-Up Golang</em>、<em>Ground-Up Programming</em> 之类。Talk is cheap, just do it first.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="为什么你需要这本书"><a class="header" href="#为什么你需要这本书">为什么你需要这本书</a></h1>
+<p>如果你没有时间搜索和查找一些技术资料，或者没有兴趣花费大量时间去了解区块链的技术细节，但稍微好奇区块链里面到底有些什么，希望以最容易理解的方式知道区块链的全部，我会替你收集信息并且把可信至少有逻辑有道理的结论写在这里。</p>
+<p>如果一些内容是正确的，可以省去你的精力，直接相信这些内容。如果在经过自己的思考后，发现一些内容是错误的，你可以明白我进入了哪些误区，然后轻而易举地避开这些错误，得到更加正确的结论。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="区块链是什么"><a class="header" href="#区块链是什么">区块链是什么</a></h1>
+<p>区块链是什么？你可以放心地确信，目前整个世界上还没有准确的定义。区块链这个词来源于哪儿？是谁创造的？没有人知道。起源于比特币吗？比特币并没有提出 Blockchain 这个词。</p>
+<p>这一章节从基础的数据结构开始，把区块链最核心的技术形态描述出来。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="linked-list"><a class="header" href="#linked-list">Linked list</a></h1>
+<h3 id="singly-linked-list"><a class="header" href="#singly-linked-list">Singly-linked list</a></h3>
+<p><img src="%E5%8C%BA%E5%9D%97%E9%93%BE%E6%98%AF%E4%BB%80%E4%B9%88/./assets/1.png" alt="50" /></p>
+<p>Singly-linked list 是一种线性的数据结构， 每个节点都包含一个指向下个节点的 field，用于显式表示节点之间的关联关系，一般在程序中会用对象的引用地址来填充这个字段。当然直接使用节点的值也可以，只是为了在数据类型上有明显的区分。</p>
+<pre><code class="language-go">type Node struct {
+	Value int
+	Next  *Node
+}
+
+func main() {
+	node1 := Node{Value: 1}
+	fmt.Printf(&quot;%p\n&quot;, &amp;node1) // 0x14000104210
+
+	node2 := Node{Value: 2}
+	fmt.Printf(&quot;%p\n&quot;, &amp;node2) // 0x14000104220
+
+	node1.Next = &amp;node2
+	fmt.Println(node1) // {1 0x14000104220}
+	fmt.Println(node2) // {2 &lt;nil&gt;}
+}
+</code></pre>
+<p>node1 的内存地址为 <code>0x14000104210</code> ，node2 的内存地址为 <code>0x14000104220</code> ，然后将 node2 的内存地址赋值给 node1 的 next 变量，这个时候只要访问 node1，就可以通过 next 得到 node2 的内容了。以此类推，即使有很多很多 node，只需要知道起始位置 node1 的内容，就可以访问到整个 Linked list 的所有节点了。</p>
+<h3 id="doubly-linked-list"><a class="header" href="#doubly-linked-list">Doubly-linked list</a></h3>
+<p><img src="%E5%8C%BA%E5%9D%97%E9%93%BE%E6%98%AF%E4%BB%80%E4%B9%88/./assets/2.png" alt="50" /></p>
+<p>Doubly-linked list 在 Singly-lined list 的基础上，多了一个字段，用于保存指向上一个节点的信息。在这样的数据结构下，获得一个节点的内容时，不但可以知道下一个节点的位置，还可以知道上一个节点的位置。</p>
+<pre><code class="language-go">type Node struct {
+	Value int
+	Next  *Node
+	Prev  *Node
+}
+</code></pre>
+<h3 id="doubly-linked-list---singly-linked-list"><a class="header" href="#doubly-linked-list---singly-linked-list">(Doubly-linked list) - (Singly-linked list)</a></h3>
+<p>Singly-linked list 时保留了下一个节点的信息，Doubly-linked list 上一个和下一个节点的信息都保留了，那么有没有一种数据结构，是只保留上一个节点的信息呢？比如这样：</p>
+<pre><code class="language-go">type Node struct {
+	Value int
+	Prev  *Node
+}
+</code></pre>
+<p>为什么会需要以保留上一个节点信息的形式，构造 Linked list 呢？因为存在这样一种场景：在创建当前节点的时候，下一个节点的内容和引用地址还不确定或者不存在。</p>
+<p>当下一个节点内容确定后，还要更改上一个节点的内容吗？Demo 代码改起来是容易的，如果是在一个海量数据的数据库中呢？update 的成本是很高的；如果是在一个分布式系统中呢？网络交互、数据一致性的成本也很高。</p>
+<p><img src="%E5%8C%BA%E5%9D%97%E9%93%BE%E6%98%AF%E4%BB%80%E4%B9%88/./assets/3.png" alt="50" /></p>
+<p>也许这样的数据结构并不差劲，它既没有牺牲 Linked list 的特性，又可以在不改动之前节点数据的基础上，使列表不断延长。只不过访问顺序和 Singly-lined list 是相反的，需要按照从最后一个节点向前的顺序才能遍历所有节点，就像是 Singly-linked list 倒过来了。其实倒过来的 Singly-linked list 也是 Singly-linked list。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="hash-function"><a class="header" href="#hash-function">Hash function</a></h1>
+<h3 id="hash-function-1"><a class="header" href="#hash-function-1">Hash function</a></h3>
+<p>Hash function 用于处理数据和其 hash values 的映射关系，hash values 是数据类似唯一标识的东西，可以用内存比较小的形式标识数据。hash function 有各种各样的实现，可以认为是一个黑盒子，进去的是 data，出来的是 hash values。</p>
+<p><img src="%E5%8C%BA%E5%9D%97%E9%93%BE%E6%98%AF%E4%BB%80%E4%B9%88/./assets/7.png" alt="50" /></p>
+<p>比如，我们可以把字符的 ASCII 码作为字符的 hash values：</p>
+<pre><code>HASH(&quot;a&quot;) = 97
+HASH(&quot;b&quot;) = 98
+HASH(&quot;c&quot;) = 99
+HASH(&quot;d&quot;) = 100
+</code></pre>
+<p>对于 2 个字符的 data，就把两个字符的 ASCII 相加，作为 hash values：</p>
+<pre><code>HASH(&quot;ab&quot;) = 97 + 98 = 195
+HASH(&quot;cd&quot;) = 99 + 100 = 199
+</code></pre>
+<p>但是这样很容易发现存在问题，<code>HASH(&quot;ad&quot;) == HASH(&quot;bc&quot;) == 197</code>。对于 3 个、4 个甚至更多字符的情形，hash values 重复的可能性更大。</p>
+<p>hash values 是允许重复的，但如果存在大量重复，hash function 也就失去了它的作用和使用场景：如果全部都一样，无法区分，还用 hash values 干嘛？</p>
+<p>不幸的是，目前最好的 hash function 也无法避免 hash values 重复的问题，只能尽可能减少 hash values 重复的概率，比如用类似数据库分库分表的方式，给每个字符足够的余量。</p>
+<p>我们可以重新设计一下我们的 hash function，在只有 1 个字符的时候，仍然使用 ASCII 作为输出。在有 2 个字符的时候，让 第 1 个字符乘以一个基数，再加上第 2 个字符。由于第 1 个字符在乘以基数后会足够大，无论第 2 个字符是什么，在其基础上加上第 2 个字符的 ASCII 码，应该不会重复。</p>
+<pre><code>HASH(&quot;ab&quot;) = 97 * 1000 + 98 = 97098
+HASH(&quot;cd&quot;) = 99 * 1000 + 100 = 99100
+HASH(&quot;ad&quot;) = 97 * 1000 + 100 = 97100
+HASH(&quot;cd&quot;) = 98 * 1000 + 99 = 98099
+</code></pre>
+<p>这样至少解决了 2 个字符 hash values 重复的问题。</p>
+<p>推广到更一般的场景，在面对可能很多字符的情况下，基数使用质数以避免累加造成的重复，为了保证基数足够大，使用质数的不同次方分别作为每个字符的基数，公式为：</p>
+<pre><code>hashCodes = char1 * base^(l-1) + char2 * base^(l-2) + ...
+</code></pre>
+<p><code>hashCodes</code> 是输出的 hash values，<code>char1</code> 是第 1 个字符，<code>char2</code> 是第 2个字符，<code>base</code> 是基数，<code>l</code> 指字符串的长度。对于 3 个字符长度的字符串，第 1 个字符的基数就是质数的 2 次方，第 2 个字符的基数是质数的 1 次方，第 3 个字符是 0 次方，以此类推。</p>
+<p>如果质数选择为 31，hash function 的实现为：</p>
+<pre><code class="language-java">public static int hashCode(byte[] value) {
+    int h = 0;
+    for(int i = 0; i &lt; value.length; ++i) {
+        h = 31 * h + value[i];
+    }
+    return h;
+}
+</code></pre>
+<p>也许具体的代码不是完全符合直觉，但你可以相信，和上面描述的公式是一致的。</p>
+<pre><code>hashCode(&quot;a&quot;) = 97
+hashCode(&quot;ab&quot;) = 97 * 31 + 98 = 3105
+hashCode(&quot;abc&quot;) = 97*31^2 + 98*31 + 99 = 96354
+</code></pre>
+<p>这就是 JDK (Java Development Kit) 中 hashCode 的实现方式。</p>
+<h3 id="cryptographic-hash-function-chf"><a class="header" href="#cryptographic-hash-function-chf">Cryptographic hash function (CHF)</a></h3>
+<p>不难发现的是， hash function 比较容易根据 hash values 反推出原始的 data 是什么。我们可以写出这样的程序，假设我们已经知道字符长度是 2，由于字符使用 ASCII 编码，范围在 0 ~ 255，因此设 x 和 y 两个变量，枚举所有符合目标 hash values 的情况：</p>
+<pre><code class="language-java"> public static String deHashCode(int code) {
+    for (int x = 0; x &lt;= 255; x++) {
+        int y = code - 31 * x;
+        if (y &lt; 0 || y &gt; 255) {
+            continue;
+        }
+        System.out.println(((char) x)+&quot;,&quot;+((char) y));
+    }
+    return &quot;&quot;;
+}
+</code></pre>
+<p>比如当 <code>hashCode = 3105</code>，得到的输出是：</p>
+<pre><code>\,ý
+],Þ
+^,¿
+_, 
+`,
+a,b
+b,C
+c,$
+d,
+</code></pre>
+<p>原始数据 <code>ab</code> 就出现在了为数不多不多的可能性中。</p>
+<p>那么有没有办法减少 hash values 推出原始 data 的方法？在 Public-key cryptography 中 <code>%</code> 可是起到了很大的作用。hash function 也可以与一些加密算法的原理结合。</p>
+<p>cryptographic 是 hash function 的修饰词，即使用了加密算法的 hash function。</p>
+<p><img src="%E5%8C%BA%E5%9D%97%E9%93%BE%E6%98%AF%E4%BB%80%E4%B9%88/./assets/8.png" alt="50" /></p>
+<p>md5 是使用非常广泛也接近过时的一种 cryptographic hash function，可以把任意长度的 data 计算输出为 128 bit 的 hash values。</p>
+<pre><code>md5(&quot;a&quot;) = 0cc175b9c0f1b6a831c399e269772661
+md5(&quot;ab&quot;) = 187ef4436122d1cc2f40dc2b92f0eba0
+</code></pre>
+<p>md5 的加密原理步骤很多，是一种不可逆的、单向的 hash function，无法轻易根据 hash values 得到 data。md5 的输入可以是任意大小的，1 GB 的二进制文件也可以hash 为 128 bit 的字符串。</p>
+<p>md5 之外，SHA-1 的安全性更高，BLAKE2 的计算速度更快，它们都是典型的 cryptographic hash function。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="serialization"><a class="header" href="#serialization">Serialization</a></h1>
+<p>序列化是编程中很常见的一种操作，主要用于把复杂格式的数据转化成易于在不同环境中统一处理的格式，类似于定义一种接口格式，便于网络传输。</p>
+<p><img src="%E5%8C%BA%E5%9D%97%E9%93%BE%E6%98%AF%E4%BB%80%E4%B9%88/./assets/9.png" alt="50" /></p>
+<p>把数据转换为统一的过程称为 serialization，从统一格式转换为特殊格式的过程为 deserialization。JSON stringify 的过程也可以认为是一种序列化：</p>
+<pre><code class="language-javascript">let object = {
+    field1: &quot;abc&quot;,
+    field2: 123
+}
+
+let str = JSON.stringify(object)    
+print(str)    // {&quot;field1&quot;:&quot;abc&quot;,&quot;field2&quot;:123}
+</code></pre>
+<h3 id="serialization--chf"><a class="header" href="#serialization--chf">Serialization + CHF</a></h3>
+<p>可以明确的是，JSON stringify 的结果是一个字符串，这个时候就可以和之前的 cryptographic hash function 结合起来用了：</p>
+<pre><code>md5(str) = d79152b724c5f1e52e6bd4bfaf6e1532
+</code></pre>
+<p>只要定义过数据的 serialization 方法，我们就可以得到任意数据格式的 hash values。</p>
+<h3 id="serialization--chf--linked-list"><a class="header" href="#serialization--chf--linked-list">Serialization + CHF + Linked List</a></h3>
+<p>Linked list 之间的关联关系常用变量的引用地址表示，但指针不是惟一的方式，数据结构的含义也可以扩展到更大的范围。我们完全可以用节点数据的 hash values 作为关联：</p>
+<p><img src="%E5%8C%BA%E5%9D%97%E9%93%BE%E6%98%AF%E4%BB%80%E4%B9%88/./assets/10.png" alt="50" /></p>
+<p><code>98</code> 是 <code>b</code> 的 hash values，表明值为 <code>a</code> 的节点，下一个节点的 hash values 为 <code>98</code>，也就是值为 <code>b</code> 的节点。</p>
+<p>我们也可有使用反向的 linked-list：</p>
+<p><img src="%E5%8C%BA%E5%9D%97%E9%93%BE%E6%98%AF%E4%BB%80%E4%B9%88/./assets/11.png" alt="50" /></p>
+<p><code>a</code> 的 hash values 是 97，表明值为 <code>b</code> 的节点，上一个节点的 hash values 为 <code>97</code>。</p>
+<p>当然，这里的值可以是更复杂的数据结构，只要定义好 serialization 格式，也可以应用到更复杂的 hash function 上，比如这样正向的 linked-list：</p>
+<pre><code class="language-go javascript">type Node struct {
+	Value int
+	Next  string
+}
+
+node1 = Node{ Value: &quot;a&quot; }
+node1_str = JSON.stringify(node1)   // { &quot;Value&quot;: &quot;a&quot; }
+node1_hash = md5(node1_str)         // 9ad06e8a44d0daf821f110794fb012c7
+
+node1.Next = node1_hash
+</code></pre>
+<p>这就构建好了一个节点，以此类推。</p>
+<p>另一种也许更好或者更适用于某种特定场景的形式是，将其改为反向的 linked-list：</p>
+<pre><code class="language-go javascript">type Node struct {
+    Prev string
+	Value int
+}
+
+node1 = Node{ Value: &quot;a&quot; }
+node1_str = JSON.stringify(node1)   // { &quot;Value&quot;: &quot;a&quot; }
+node1_hash = md5(node1_str)         // 9ad06e8a44d0daf821f110794fb012c7
+
+node2 = Node{ Value: &quot;b&quot; }
+node2_str = JSON.stringify(node2)   // { &quot;Value&quot;: &quot;b&quot; }
+node2_hash = md5(node2_str)         // 7e332b78dbaac93a818a6ab639f5a71b
+
+node2.Prev = node1_hash
+</code></pre>
+<p>这种反向的 linked-list 就是区块链的基础数据结构。 </p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="区块链能干什么"><a class="header" href="#区块链能干什么">区块链能干什么</a></h1>
+<p>区块链能干什么？这一章节详细列举目前区块链的应用场景。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="个别概念"><a class="header" href="#个别概念">个别概念</a></h1>
+<p>跟区块链沾点边但更可能是在借区块链名义有其他目的的概念。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="链改"><a class="header" href="#链改">链改</a></h1>
+<p>有一个节日叫 “1024 区块链中国日”，有一条和其联系紧密的区块链叫 “原子链”，有一种挺大的背景叫 “中国通信工业协会区块链专业委员会”。</p>
+<p>“链改” 就是一个为 “用区块链做传统业务” 发明的好听的听起来前卫的词。响应一些地区政策要求，区块链能且只能做这样的事情。</p>
+<p>直播里提到一句有趣的话，太阳从东方升起，在西方落下。意思是，区块链从西方诞生，将在东方落地。其实大家都明白，他们也知道，目前的区块链技术创新全部来自国外。</p>
+<p>原子链 CEO 被问到一个问题，目前原子链每天的区块高度是多少？原子链 CEO 的反应挺搞笑，先是好几句客套话说这个问题有深度、问得专业，然后说，他们目前是基于以太坊 ERC-20 质押了一些 token，他们的商城就是运行在以太坊上的。这样做的原因是，底层技术不难但是需要很多钱去开发，而且处于快速的变化中，他们想等有用户以后，再把网上开源的公链项目拿过来用。（合着就把区块链作为营销手段了呗，要什么技术？能挣钱就行。）</p>
+<p>原子链 CEO 提到的另一个有趣的内容是，感觉也是值得借鉴的一个思路，说他们链上的 token 不卖，只送，和淘宝天猫上的积分是一个性质的。这倒是很好的避开了政策问题，（他们是做电商平台的，借用区块链的名对标京东之类）。</p>
+<p>“链改” 这个词有一本书，书的作者很直白地说，我们只有响应政策，才能发财。很直接地说出了 “发财” 这个老土的词。</p>
+<p>当被问到目前的区块链适不适合做分布式储存的时候，上面的所谓专家说了一些空谈的大话，什么目前正在数字化转型，一定会有大量数据需要储存，现在的抖音快手什么的光是热数据就有很大的数据量。这些和区块链沾边吗？能看出来，他们貌似懂区块链，但不懂技术。直播也是一场售书会，也提到书的内容主要是经济方面的。</p>
+<p>盲目猜测书里的内容会是这样的逻辑：“我们以前的情况是 A，如果变成了 B，世界就会更美好。区块链就能实现从 A 到 B 的转变。”问题在于，区块链真的能吗？</p>
+<p>然后……直播网络质量很差，没啥太多要点。直播的发起主体叫 “央链直播”，很好地撞了 “央” 字做宣传，那个域名真是亮眼了。</p>
+<p>能看到的是，全国各地都有如火如荼搞区块链的企业和活动，重形式轻技术，大概是这样。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="元宇宙"><a class="header" href="#元宇宙">元宇宙</a></h1>
+<p>元宇宙光听名字就是个老土的概念 🤪。叫成 Metaverse 能稍微好一点？好像也没有。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="区块链的过去"><a class="header" href="#区块链的过去">区块链的过去</a></h1>
+<p>以史为镜，可以知兴替。这一章节会讲述一些标志性区块链项目的技术特性，以及组成区块链的技术更详细的分类和内容。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="一种点对点的电子现金系统"><a class="header" href="#一种点对点的电子现金系统">一种点对点的电子现金系统</a></h1>
+<p><strong>摘要</strong>：一种纯粹的点对点的电子现金，应该实现从一方到另一方的直接交易，而不需要经过第三方的金融机构。数字签名能够在一定程度上解决这个问题，但是仍然需要可信的第三方进行交易的转发。我们设想一种能够解决“双次交易”问题的点对点网络，这种网络基于链式数据结构的工作量证明，每一笔交易都用它自己的哈希值作为唯一标识，并且数据内容无法修改。如果想要修改，就要攻破整个基于工作量证明的网络。最长的一条链不仅代表它有最可靠的内容的证明，还代表它拥有最强大的 CPU 算力。没有最强 CPU 的节点，是没有能力攻击网络的，它的攻击内容会被最强 CPU 的节点忽略。这种网络本身只需要最简单的架构，允许节点发送和广播消息，可以随时加入、退出、重新加入网络，并且接收工作量证明最强大的拥有最长链的节点的数据。</p>
+<p>Reference：<a href="https://bitcoin.org/bitcoin.pdf">Bitcoin: A Peer-to-Peer Electronic Cash System</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="下一代智能合约和去中心化应用平台"><a class="header" href="#下一代智能合约和去中心化应用平台">下一代智能合约和去中心化应用平台</a></h1>
+<p>过去的几个月，很多类似比特币的区块链进入了不同的领域，区块链的机制允许全世界的人维护一个公共的、数据状态实时同步的数据库。很多应用都是用在区块链上的数字资源表示自定义的货币或者金融财产，比如用区块链上的数据跟踪用户是否是汽车的合法拥有者，或者更多像去中心化交易所、金融衍生品、点对点赌博游戏、数字身份和信用系统的应用等。在所有应用中，最有野心的可能就是“去中心化的自治组织”的概念，分散的实体在区块链上进行一些自动的操作，不需要中心化的控制，不依赖任何法律定义的章程，可以在区块链上自动执行可以自主管理的合同。</p>
+<p>然而，今天的大多数应用实现起来都很困难，比如区块链的脚本系统，或者号称是下一代加密货币协议的一些项目，在实现复杂的计算和去中心化治理的时候都收到很多限制。这个项目的目标就是要带来一些创新，可以创建一种完整的、图灵完备的、加密的、复杂的智能合约，并且允许合约在节点上自动执行，合约的内容将记录在区块链上。用户不会受限于某种特定类型的交易，用户可以把以太坊作为加密金融的乐高，通过使用以太坊协议支持的脚本语言，很简单就可以实现用户想要实现的任何特性。自定义货币、金融资产、数字身份系统等任何特性都将变得非常简单，不同于已有项目是，以太坊甚至支持自定义交易的结构，这是开发者以前难以想象到的重要特点。我们相信这种设计是“加密货币 2.0”坚实的一步，我们希望以太坊可以像 1999 年 Web 2.0 的出现一样，成为加密货币历史上的一个重要里程碑。</p>
+<p>Reference：<a href="https://github.com/ethereum/wiki/blob/old-before-deleting-all-files-go-to-wiki-wiki-instead/old-whitepaper-for-historical-reference.md#a-next-generation-smart-contract-and-decentralized-application-platform">A Next-Generation Smart Contract and Decentralized Application Platform</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="区块链的未来"><a class="header" href="#区块链的未来">区块链的未来</a></h1>
+<p>区块链未来会向什么趋势发展？同样没有人知道。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="基于-multi-linked-list-的区块链"><a class="header" href="#基于-multi-linked-list-的区块链">基于 Multi-linked list 的区块链</a></h1>
+<p>区块链有没有可能不再是线性的结构，而是有多条链路的、图式的数据结构呢，比如从 singly-linked list 进化到 multi-linked list。假设是 mul ti-linekd list 的形式，会给区块链带来什么样的变化，或者说，可行吗？</p>
+<p>首先是正向的 multi-linked list，像是这样：</p>
+<p><img src="%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E6%9C%AA%E6%9D%A5/./assets/1.png" alt="50" /></p>
+<p>然后是适用于区块链的、反向的 multi-linked list，像这样：</p>
+<p><img src="%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E6%9C%AA%E6%9D%A5/./assets/2.png" alt="50" /></p>
+<p>对于 multi-lineked list，一种是固定数量的情况，比如每个节点的后续节点一定是 2 个，或者是不固定数量的 multi-linked list，每个节点可以指向任意多个子节点，它们的区别不大。</p>
+<p>还有一个分歧是要不要保留块高度的概念，块高度是用来表示块顺序的索引，在多个节点之间同步数据的时候起到很重要的作用，在 multi-linked list 中，如果按照树结构层数来定义块高度，会是这样：</p>
+<p><img src="%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E6%9C%AA%E6%9D%A5/./assets/3.png" alt="50" /></p>
+<p>或者可以按照块写入的顺序定义，也就是初始的标号意味着块高度：</p>
+<p><img src="%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E6%9C%AA%E6%9D%A5/./assets/2.png" alt="50" /></p>
+<p>对于区块链来说，很重要的是确认数据的完整性，当只有一个子节点的时候，其他节点很容易同步一个块的数据，并且根据 hash values 校验块的有效性。对于 multi-linked list 的情形，这个校验块数据的步骤会复杂一些，但也并非无法处理，只要把原先校验一个块的操作，多几次循环，多校验几次就可以了。</p>
+<p>正向和反向 multi-linked list 最大的区别是，一种是向外发散的，会随着层级的增大，每一层容纳的节点数不断增大，指数级增长。另一种是收敛的，每一层的节点数会不断减少，最终只剩下一个。也就是正着的树和倒着的树的区别。</p>
+<p><img src="%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E6%9C%AA%E6%9D%A5/./assets/6.png" alt="50" /></p>
+<p>区块链中有一个创始块的概念，如果是正向的 multi-linked list，创世块还是一个保持不变，但是子节点逐渐膨胀以后，会越来越不可控。对于保留块高度的情况，其实除了程序处理多几个步骤，并没有无法实现的理由。对于不保留块高度或者说用索引值代替块高度的情况，块仍然可以一个一个地出，也没有在技术上实现不了的理由，但其实还是链式结构的处理方式。单纯数据结构从 linked list 转为 multi-linked list，似乎没有明确的理由，因为无法想象到，这样做可以带来什么样的好处。</p>
+<p><img src="%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E6%9C%AA%E6%9D%A5/./assets/7.png" alt="50" /></p>
+<p>如果是反向的 multi-linked list，一个很大的问题是创世块怎么办，反向的树结构子节点会越来越少，最后只剩一个，难不成创世块规定足够大数量的节点数，然后后期逐步趋于1？这非常不合理，相当于给程序设置了一个停机条件，到达一定块高度后就无法在增加内容了，显然是不可取的做法。</p>
+<p>由于树结构的发散或者收敛，multi-linked list 的设想是有问题的。那么这样呢，使用平行的 multi-linked list，可行吗？</p>
+<p><img src="%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E6%9C%AA%E6%9D%A5/./assets/4.png" alt="50" /></p>
+<p>因为必须有多个输入和输出，并且输入和输出的数量必须一样，所以使用这样带有重复指向的方式。</p>
+<p>同样地，在技术上可行，问题在于，有什么好处呢？这样的数据结构带来了什么？除了程序复杂程度的增加，还有什么？</p>
+<p>好像还真有，这样的数据结构，允许同时出两个块。两个节点只要使用相同的父节点，即使没有先后，同一时刻产生了内容，也可以将块累加到链后面，作为子节点。</p>
+<p>不过这样又回带来很多问题，比如怎么防止 double-spending ？同一个账户交易分别出现在了两个块里，以哪个为准？分布式系统的数据同步，一定是多点变单点的过程，并行处理的程序也会有一个资源竞争的问题，同时出两个块后还是需要某种机制单点处理数据，同时出块就没有意义了，并不能加快整个系统的数据处理速度。</p>
+<p>而且，其实平行的 multi-linked list，可以认为是这样：</p>
+<p><img src="%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E6%9C%AA%E6%9D%A5/./assets/5.png" alt="50" /></p>
+<p>这样来看，平行的 multi-linked list 就更没有意义了。</p>
+<p>总的来说，区块链有可能基于 multi-linked list 的数据结构吗？似乎没有必要。singly-linked list 是简单的数据结构，但又确实是很适合于区块链的数据结构。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="延伸阅读"><a class="header" href="#延伸阅读">延伸阅读</a></h1>
+<p>对基础内容的展开说明。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="linked-list-相关典型问题"><a class="header" href="#linked-list-相关典型问题">Linked list 相关典型问题</a></h1>
+<p>区块链本身就是线性的数据结构，“链”字更是难免让人把区块链和链表联系起来。要深刻理解区块链，了解链表的相关机制应该是不可错过的基础。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="翻转链表"><a class="header" href="#翻转链表">翻转链表</a></h1>
+<h3 id="问题"><a class="header" href="#问题">问题</a></h3>
+<p>对于一个这样的链表：</p>
+<p><img src="%E5%BB%B6%E4%BC%B8%E9%98%85%E8%AF%BB/Linked%20list%20%E7%9B%B8%E5%85%B3%E5%85%B8%E5%9E%8B%E9%97%AE%E9%A2%98/./assets/4.png" alt="50" /></p>
+<p>希望经过函数处理后，变成这样：</p>
+<p><img src="%E5%BB%B6%E4%BC%B8%E9%98%85%E8%AF%BB/Linked%20list%20%E7%9B%B8%E5%85%B3%E5%85%B8%E5%9E%8B%E9%97%AE%E9%A2%98/./assets/5.png" alt="50" /></p>
+<h3 id="链表结构定义"><a class="header" href="#链表结构定义">链表结构定义</a></h3>
+<p>节点的定义为：</p>
+<pre><code class="language-go">type Node struct {
+	Value int
+	Next  *Node
+}
+</code></pre>
+<p>构造链表方法为：</p>
+<pre><code class="language-go">func createLinkedList(n int) *Node {
+	head := &amp;Node{Value: 0}
+	node := head
+	for i := 0; i &lt; n; i++ {
+		if i &lt; n {
+			node.Next = &amp;Node{Value: i + 1}
+		}
+		node = node.Next
+	}
+	return head
+}
+</code></pre>
+<p>函数会返回一个链表的指针。使用指针而不是结构体类型是因为，Go 语言的某些关于变量的设计，无法使用 <code>Node{} == nil</code> 的形式判断变量是否为空，因为理论上 <code>Node{}</code> 不是 <code>nil</code>。这就造成了如果使用<code>Node{}</code>作为链表头部的变量类型，在遍历的时候找不到一个合理的结束时机，只能使用类似 <code>Node{}.Next == nil</code> 这样的形式，还会遗漏掉最后一个节点。</p>
+<h3 id="迭代翻转链表"><a class="header" href="#迭代翻转链表">迭代翻转链表</a></h3>
+<p>这里不能使用直接改变节点值的方式，比如遍历一次后把链表节点的值按照顺序储存到数组中，然后再遍历一次，一次修改链表节点的值。这个违背了数据结构的意义。可以使用递归完成翻转链表的操作。</p>
+<p><img src="%E5%BB%B6%E4%BC%B8%E9%98%85%E8%AF%BB/Linked%20list%20%E7%9B%B8%E5%85%B3%E5%85%B8%E5%9E%8B%E9%97%AE%E9%A2%98/./assets/6.png" alt="50" /></p>
+<p>比如第一个节点，使用 <code>temp</code> 变量储存翻转前的下一个节点的位置，然后把 <code>head.Next</code> 指向翻转后应该有的节点位置，第一个节点的下一个节点是<code>空节点</code>，第二个节点的下一个节点是<code>节点 1</code>。完成 <code>head.Next </code>的指向后，<code>head</code> 要指向 <code>temp</code> 也就是原来的下一个节点用以完成遍历。这时还需要要用一个 <code>curr</code> 变量来储存<code>head</code> 跳转前的位置，方便下一次 <code>head.Next</code> 指向上一个节点的位置。这应该是一个简单的过程。</p>
+<pre><code class="language-go">func reverseLinkedList(head *Node) *Node {
+	curr := new(Node)
+	for head != nil {
+		temp := head.Next
+		head.Next = curr
+		curr = head
+		head = temp
+	}
+	return curr
+}
+</code></pre>
+<ul>
+<li>时间复杂度：O(n)</li>
+<li>空间复杂度：O(1)</li>
+</ul>
+<h3 id="执行"><a class="header" href="#执行">执行</a></h3>
+<p>执行程序后结果和预期一致：</p>
+<pre><code class="language-go">func main() {
+	head := createLinkedList(4)
+	head = reverseLinkedList(head)
+	for head != nil {
+		fmt.Println(head.Value)
+		head = head.Next
+	}
+}
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="判断链表是否有环"><a class="header" href="#判断链表是否有环">判断链表是否有环</a></h1>
+<h3 id="问题-1"><a class="header" href="#问题-1">问题</a></h3>
+<p>链表有环是指链表中“最后”的一个节点，它的下一个节点指向了链表中位于它之前的节点。</p>
+<p><img src="%E5%BB%B6%E4%BC%B8%E9%98%85%E8%AF%BB/Linked%20list%20%E7%9B%B8%E5%85%B3%E5%85%B8%E5%9E%8B%E9%97%AE%E9%A2%98/./assets/9.png" alt="50" /></p>
+<p>当程序遍历这个链表，会发现进入了死循环，永远找不到出口了。怎么判断一个链表，是否存在这样的环呢？</p>
+<h3 id="分析"><a class="header" href="#分析">分析</a></h3>
+<p>常用的解决思路是双指针。设想一个在赛道上的场景，两个人 A 和 B 处于同样的起点，但是他们跑步的速度并不相同，A 的速度 v<sub>1</sub>=1，B 的速度 v<sub>2</sub>=2，也就是 B 比 A 快。在这样的情况下，只要他们不停，B 一定会超过 A 一圈然后再次追上 A，这是一种生活中的常识。</p>
+<p><img src="%E5%BB%B6%E4%BC%B8%E9%98%85%E8%AF%BB/Linked%20list%20%E7%9B%B8%E5%85%B3%E5%85%B8%E5%9E%8B%E9%97%AE%E9%A2%98/./assets/7.png" alt="50" /></p>
+<p>在一个圈里，一快一慢的两个点一定会再次相遇，而且他们经过的路程是可以计算的，路程 s<sub>1</sub> 和 s<sub>2</sub> 应该满足这样的关系：</p>
+<pre><code>s2 - s1 = nR
+</code></pre>
+<p>R 是圆圈的周长，n 是正整数，他们位于出发点时 n=0，第一次相遇的时候 B 比 A 多跑了一圈，多出了 1 倍周长的路程，n=1。</p>
+<p>和链表的情景相比较，赛道的场景还少了开始的一段距离，在进入赛道之前，A 和 B 会先从赛道外的小路进入赛道，然后再开始绕圈跑步。他们的起点在赛道外，为了便于计算，他们的速度从始至终不发生变化，那么当他们进入赛道之后，就已经不是同样的起点了。</p>
+<p><img src="%E5%BB%B6%E4%BC%B8%E9%98%85%E8%AF%BB/Linked%20list%20%E7%9B%B8%E5%85%B3%E5%85%B8%E5%9E%8B%E9%97%AE%E9%A2%98/./assets/8.png" alt="50" /></p>
+<p>在这种情况下，他们经过的路程 s<sub>1</sub> 和 s<sub>2</sub> 还有规律可循吗？设圆形赛道外的直道距离为 d，相比上面的关系式，他们在圆圈内的路径依然满足 n 倍的周长 R，只不过现在的表达式不同了：</p>
+<pre><code>(s2 - d) - (s1 - d) = nR
+	s2 - d - s1 + d = nR
+			s2 - s1 = nR
+</code></pre>
+<p>结果表达式在相互抵消路径 d 之后，和之前的一样。</p>
+<p>A 的路程 s<sub>1</sub>=v<sub>1</sub>t，B的路程 s<sub>2</sub>=v<sub>2</sub>t，时间 t 是一样的，速度 v<sub>1</sub> 和 v<sub>2</sub> 是已知的 1 和 2，有：</p>
+<pre><code>	s2 - s1 = nR
+  v2t - v1t = nR
+	 2t - t = nR
+		  t = nR
+</code></pre>
+<p>取 n = 1，<code>t = R</code>。</p>
+<h3 id="解决"><a class="header" href="#解决">解决</a></h3>
+<p>回到链表的问题，其实我们只要用快慢指针就可以判断链表是否有环了，并不需要知道他们具体相遇的点在哪儿，不过计算路径关系的公式可以辅助我们验证结果的正确性。</p>
+<p>回到这个链表，用两个指针 A 和 B 从节点 1 分别以速度 1 和 2 出发：</p>
+<p><img src="%E5%BB%B6%E4%BC%B8%E9%98%85%E8%AF%BB/Linked%20list%20%E7%9B%B8%E5%85%B3%E5%85%B8%E5%9E%8B%E9%97%AE%E9%A2%98/./assets/9.png" alt="50" /></p>
+<p>他们的位置关系将会是：</p>
+<table><thead><tr><th>时间 t</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th></tr></thead><tbody>
+<tr><td>A 的位置</td><td>节点 1</td><td>节点 2</td><td>节点 3</td><td>节点 4</td><td><strong>节点 5</strong></td></tr>
+<tr><td>B 的位置</td><td>节点 1</td><td>节点 3</td><td>节点 5</td><td>节点 3</td><td><strong>节点 5</strong></td></tr>
+</tbody></table>
+<p>在第 4 个时间点的时候，A 和 B 相遇了，环的周长正好等于 4，满足 <code>t = R</code> 的关系。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="链表如果有环找到环的起点"><a class="header" href="#链表如果有环找到环的起点">链表如果有环，找到环的起点</a></h1>
+<h3 id="问题-2"><a class="header" href="#问题-2">问题</a></h3>
+<p>这个问题是上一个问题的延伸，在判断链表已经有环的基础上，找到环的起点。比如这样的一个链表，环的起点是节点 3。</p>
+<p><img src="%E5%BB%B6%E4%BC%B8%E9%98%85%E8%AF%BB/Linked%20list%20%E7%9B%B8%E5%85%B3%E5%85%B8%E5%9E%8B%E9%97%AE%E9%A2%98/./assets/20.png" alt="50" /></p>
+<h3 id="分析-1"><a class="header" href="#分析-1">分析</a></h3>
+<p>（1）</p>
+<p>在判断链表是否有环的问题中，我们得到了一个至关重要的结论：</p>
+<pre><code>t = R
+</code></pre>
+<p>两个快慢指针将会在等于环长度的时间点相遇。对于上图的链表，快慢指针的位置关系是这样：</p>
+<table><thead><tr><th>时间 t</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th></tr></thead><tbody>
+<tr><td>A 的位置</td><td>节点 1</td><td>节点 2</td><td>节点 3</td><td>节点 4</td><td>节点 5</td><td>节点 6</td><td><strong>节点 7</strong></td></tr>
+<tr><td>B 的位置</td><td>节点 1</td><td>节点 3</td><td>节点 5</td><td>节点 7</td><td>节点 3</td><td>节点 5</td><td><strong>节点 7</strong></td></tr>
+</tbody></table>
+<p>我们可以观察到，环的长度是 6，快慢指针也会在第 6 秒相遇，他们交点位置是节点 7:</p>
+<p><img src="%E5%BB%B6%E4%BC%B8%E9%98%85%E8%AF%BB/Linked%20list%20%E7%9B%B8%E5%85%B3%E5%85%B8%E5%9E%8B%E9%97%AE%E9%A2%98/./assets/21.png" alt="50" /></p>
+<p>（2）</p>
+<p>根据上面提到的之前的结论，按照慢指针 v<sub>1</sub> = 1 的速度，它经过的路程和时间是一样的，也就是说，从出发点到两指针相遇的路径长度，根据 <code>t = R</code>，此刻的时间是 t，正好是环的长度 R：</p>
+<p><img src="%E5%BB%B6%E4%BC%B8%E9%98%85%E8%AF%BB/Linked%20list%20%E7%9B%B8%E5%85%B3%E5%85%B8%E5%9E%8B%E9%97%AE%E9%A2%98/./assets/22.png" alt="50" /></p>
+<p>（3）</p>
+<p>做一个假设，慢指针保持着这个长度为 R 的走过的路径，向前移动一步，会变成这样：</p>
+<p><img src="%E5%BB%B6%E4%BC%B8%E9%98%85%E8%AF%BB/Linked%20list%20%E7%9B%B8%E5%85%B3%E5%85%B8%E5%9E%8B%E9%97%AE%E9%A2%98/./assets/23.png" alt="50" /></p>
+<p>再走一步，变成了这样：</p>
+<p><img src="%E5%BB%B6%E4%BC%B8%E9%98%85%E8%AF%BB/Linked%20list%20%E7%9B%B8%E5%85%B3%E5%85%B8%E5%9E%8B%E9%97%AE%E9%A2%98/./assets/24.png" alt="50" /></p>
+<p>（4）</p>
+<p>到这里似乎还不知道我们要干什么。现在对路径设一个变量，从 <code>出发点</code> 到 <code>环的起点</code> 之间的距离设为 l<sub>1</sub>，整个链表的长度设为 l，环的长度仍然为 R。</p>
+<p><img src="%E5%BB%B6%E4%BC%B8%E9%98%85%E8%AF%BB/Linked%20list%20%E7%9B%B8%E5%85%B3%E5%85%B8%E5%9E%8B%E9%97%AE%E9%A2%98/./assets/25.png" alt="50" /></p>
+<p>这 3 个变量将满足这样的关系：</p>
+<pre><code>l - l1 = R
+</code></pre>
+<p>这是太显而易见的事情。</p>
+<p>（5）</p>
+<p>记得我们一开始的结论吗？从 <code>出发点</code> 到 <code>快慢指针的交点</code> 之间的距离，等于环的长度 R：</p>
+<p><img src="%E5%BB%B6%E4%BC%B8%E9%98%85%E8%AF%BB/Linked%20list%20%E7%9B%B8%E5%85%B3%E5%85%B8%E5%9E%8B%E9%97%AE%E9%A2%98/./assets/22.png" alt="50" /></p>
+<p>变量 l 和 l<sub>1</sub> 保持不变，图就成了这样：</p>
+<p><img src="%E5%BB%B6%E4%BC%B8%E9%98%85%E8%AF%BB/Linked%20list%20%E7%9B%B8%E5%85%B3%E5%85%B8%E5%9E%8B%E9%97%AE%E9%A2%98/./assets/26.png" alt="50" /></p>
+<p>此时的 l 仍然等于 <code>l1 + R</code>，不同的是，<code>l1</code> 和 <code>R</code> 重合了。</p>
+<p>（6）</p>
+<pre><code>l - l1 = R
+</code></pre>
+<p>重合之后，等式关系还成立吗？当然成立，因为整个链表没有变，变量的大小没有变。但好像又觉得哪里奇怪。</p>
+<p>现在新设一个变量，设从 <code>快慢指针的交点</code> 到 <code>环的起点</code> 的距离为 l<sub>2</sub>：</p>
+<p><img src="%E5%BB%B6%E4%BC%B8%E9%98%85%E8%AF%BB/Linked%20list%20%E7%9B%B8%E5%85%B3%E5%85%B8%E5%9E%8B%E9%97%AE%E9%A2%98/./assets/27.png" alt="50" /></p>
+<p>此时：</p>
+<pre><code>l - l2 = R
+</code></pre>
+<p>（7）</p>
+<p>经过这样一些比较，发现 <code>l1 == l2</code>，也就是从 <code>出发点</code> 到 <code>环的起点</code> 的距离，等于 <code>快慢指针的交点</code> 到 <code>环的起点</code> 的距离。</p>
+<h3 id="解决-1"><a class="header" href="#解决-1">解决</a></h3>
+<pre><code>出发点 -&gt; 环的起点 == 快慢指针的交点 -&gt; 环的起点
+</code></pre>
+<p>这是一个很重要的结论，因为我们此时的快慢指针就在 <code>快慢指针的交点</code> 上，在节点 7 的位置。</p>
+<p>如果这个时候在新增一个指针 p<sub>3</sub>，在快慢指针相交的时刻，从整个链表的 <code>出发点</code> 1 出发（速度为 1），那么 p<sub>3</sub> 和慢指针一定会相交，因为 p<sub>3</sub> 到 <code>环的起点</code> 的距离等于慢指针到 <code>环的起点</code> 的距离。p<sub>3</sub> 遇到慢指针的位置，就是环的起点。</p>
+<p><img src="%E5%BB%B6%E4%BC%B8%E9%98%85%E8%AF%BB/Linked%20list%20%E7%9B%B8%E5%85%B3%E5%85%B8%E5%9E%8B%E9%97%AE%E9%A2%98/./assets/28.png" alt="50" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="判断两个链表是否相交"><a class="header" href="#判断两个链表是否相交">判断两个链表是否相交</a></h1>
+<h3 id="问题-3"><a class="header" href="#问题-3">问题</a></h3>
+<p>存在两个链表，分别在某一个节点指向了同一个节点作为下个节点：</p>
+<p><img src="%E5%BB%B6%E4%BC%B8%E9%98%85%E8%AF%BB/Linked%20list%20%E7%9B%B8%E5%85%B3%E5%85%B8%E5%9E%8B%E9%97%AE%E9%A2%98/./assets/10.png" alt="50" /></p>
+<p>这里有两个链表：</p>
+<pre><code>1 -&gt; 2 -&gt; 3 -&gt; 4
+     5 -&gt; 3 -&gt; 4
+</code></pre>
+<p>怎么判断两个链表是否相交？</p>
+<h3 id="分析-2"><a class="header" href="#分析-2">分析</a></h3>
+<p>一种简单的做法是，分别遍历每条链表到最后一个节点，判断最后一个节点是否相同。如果两个链表在中间节点相交，则最后一个节点一定相同。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="两个链表如果相交找到第一个交点"><a class="header" href="#两个链表如果相交找到第一个交点">两个链表如果相交，找到第一个交点</a></h1>
+<h3 id="问题-4"><a class="header" href="#问题-4">问题</a></h3>
+<p>对于这样两个链表：</p>
+<p><img src="%E5%BB%B6%E4%BC%B8%E9%98%85%E8%AF%BB/Linked%20list%20%E7%9B%B8%E5%85%B3%E5%85%B8%E5%9E%8B%E9%97%AE%E9%A2%98/./assets/31.png" alt="50" /></p>
+<p><img src="%E5%BB%B6%E4%BC%B8%E9%98%85%E8%AF%BB/Linked%20list%20%E7%9B%B8%E5%85%B3%E5%85%B8%E5%9E%8B%E9%97%AE%E9%A2%98/./assets/32.png" alt="50" /></p>
+<p>如何找到第一个交点 3 ？</p>
+<h3 id="分析-3"><a class="header" href="#分析-3">分析</a></h3>
+<p>一种简单的解决思路是，把这个链表的尾节点和任意一个链表的头节点连起来：</p>
+<p><img src="%E5%BB%B6%E4%BC%B8%E9%98%85%E8%AF%BB/Linked%20list%20%E7%9B%B8%E5%85%B3%E5%85%B8%E5%9E%8B%E9%97%AE%E9%A2%98/./assets/33.png" alt="50" /></p>
+<p>可以是链表 1 的尾节点到链表 2 的头节点，或者链表 2 的尾节点到链表 2 的头节点，总之连起来以后，问题就转变成了，找到链表环的起点。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="合并两个有序链表"><a class="header" href="#合并两个有序链表">合并两个有序链表</a></h1>
+<h3 id="问题-5"><a class="header" href="#问题-5">问题</a></h3>
+<p><img src="%E5%BB%B6%E4%BC%B8%E9%98%85%E8%AF%BB/Linked%20list%20%E7%9B%B8%E5%85%B3%E5%85%B8%E5%9E%8B%E9%97%AE%E9%A2%98/./assets/11.png" alt="50" /></p>
+<p>给出两个有序链表，将两个链表合并为一个有序链表。</p>
+<h3 id="分析-4"><a class="header" href="#分析-4">分析</a></h3>
+<p>思路暴力简单，同时迭代两个链表，按照顺序依次合并就可以了。控制好边界条件。</p>
+<p><img src="%E5%BB%B6%E4%BC%B8%E9%98%85%E8%AF%BB/Linked%20list%20%E7%9B%B8%E5%85%B3%E5%85%B8%E5%9E%8B%E9%97%AE%E9%A2%98/./assets/12.png" alt="50" /></p>
+<p><img src="%E5%BB%B6%E4%BC%B8%E9%98%85%E8%AF%BB/Linked%20list%20%E7%9B%B8%E5%85%B3%E5%85%B8%E5%9E%8B%E9%97%AE%E9%A2%98/./assets/13.png" alt="50" /></p>
+<h3 id="代码"><a class="header" href="#代码">代码</a></h3>
+<p>node 结构定义：</p>
+<pre><code class="language-go">type Node struct {
+	Value int
+	Next  *Node
+}
+</code></pre>
+<p>构建两条链表：</p>
+<pre><code class="language-go">func main() {
+	root1 := &amp;Node{
+		Value: 1,
+	}
+	root1.Next = &amp;Node{
+		Value: 1,
+	}
+	root1.Next.Next = &amp;Node{
+		Value: 3,
+	}
+	root1.Next.Next.Next = &amp;Node{
+		Value: 5,
+	}
+
+	root2 := &amp;Node{
+		Value: 1,
+	}
+	root2.Next = &amp;Node{
+		Value: 2,
+	}
+	root2.Next.Next = &amp;Node{
+		Value: 4,
+	}
+
+	root := merge(root1, root2)
+	for root != nil {
+		fmt.Println(root.Value)
+		root = root.Next
+	}
+}
+</code></pre>
+<p>合并链表：</p>
+<pre><code class="language-go">func merge(root1 *Node, root2 *Node) *Node {
+	var root *Node
+	var temp *Node
+	if root1.Value &lt;= root2.Value {
+		root = root1
+		temp = root2
+	} else {
+		root = root2
+		temp = root1
+	}
+	p1 := root
+	p2 := p1.Next
+	for {
+		if p2 == nil || temp == nil {
+			break
+		}
+		if p2.Value &lt;= temp.Value {
+			p1.Next = p2
+			p1 = p1.Next
+			p2 = p2.Next
+		} else {
+			p1.Next = temp
+			p1 = p1.Next
+			temp = temp.Next
+		}
+	}
+	return root
+}
+</code></pre>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        <!-- Google Analytics Tag -->
+        <script type="text/javascript">
+            var localAddrs = ["localhost", "127.0.0.1", ""];
+
+            // make sure we don't activate google analytics if the developer is
+            // inspecting the book locally...
+            if (localAddrs.indexOf(document.location.hostname) === -1) {
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'G-TV14T76LST', 'auto');
+                ga('send', 'pageview');
+            }
+        </script>
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+    </body>
+</html>

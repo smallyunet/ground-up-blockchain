@@ -1,0 +1,14 @@
+[book]
+authors = ["smallyunet"]
+language = "zh"
+multilingual = false
+src = "src"
+title = "Ground-Up Blockchain"
+
+[build]
+build-dir = "docs"
+
+[output.html]
+cname = "gub.smallyu.net"
+additional-css = ["./style/custom.css"]
+google-analytics = "G-TV14T76LST"
