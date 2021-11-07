@@ -22,15 +22,19 @@
     - [元宇宙](./区块链能干什么/个别概念/元宇宙.md)
   
 - [区块链的过去](./区块链的过去/README.md)
-  - [比特币](./区块链的过去/比特币/README.md)
-  - [以太坊](./区块链的过去/以太坊/README.md)
-  - [波卡链]()
-  - [共识算法]()
-  - [加密算法]()
+  - [Bitcoin](./区块链的过去/Bitcoin/README.md)
+  - [Ethereum](./区块链的过去/Ethereum/README.md)
+  - [Polkadot](./区块链的过去/Polkadot/README.md)
+  - [Consensus Algorithm]()
+  - [Cryptographic Algorithm]()
 
-- [区块链的指标]()
-  - [Scaling solution]()
-    - [State channels]()
+- [区块链的指标](./区块链的指标/README.md)
+  - [交易性能]()
+    - [Scaling solution]()
+      - [State channels]()
+  - [智能合约能力]()
+  - [数据库操作能力]()
+  - [水平扩容]()
   
 - [区块链的未来](./区块链的未来/README.md)
   - [基于 Multi-linked list 的区块链](./区块链的未来/基于%20Multi-linked%20list%20的区块链.md)
@@ -44,3 +48,5 @@
     - [判断两个链表是否相交](./延伸阅读/Linked%20list%20相关典型问题/判断两个链表是否相交.md)
     - [链表如果相交，找到交点](./延伸阅读/Linked%20list%20相关典型问题/链表如果相交，找到交点.md)
     - [合并两个有序链表](./延伸阅读/Linked%20list%20相关典型问题/合并两个有序链表.md)
+
+- [后记](./后记.md)
