@@ -12,18 +12,21 @@
   - [Consensus]
   - [Fork]
   
-- [区块链能干什么]
+- [区块链能干什么](/区块链能干什么/README.md)
   - [Unspend transaction output]
   - [Account / Balance Model]
   - [Decentralized application]
   - [Decentralized identifiers]
   - [Non-fungible token]
+  - [个别概念](/区块链能干什么/个别概念/README.md)
+    - [链改](/区块链能干什么/个别概念/链改.md)
+    - [元宇宙](/区块链能干什么/个别概念/元宇宙.md)
   
-- [区块链的过去]
+- [区块链的过去](/区块链的过去/README.md)
   - [加密算法]
   - [共识算法]
   - [比特币](/区块链的过去/比特币/README.md)
-  - [以太坊]
+  - [以太坊](/区块链的过去/以太坊/README.md)
   - [波卡链]
 
 - [区块链的指标]
@@ -33,10 +36,6 @@
 - [区块链的未来](/区块链的未来/README.md)
   - [基于 Multi-linked list 的区块链](/区块链的未来/基于%20Multi-linked%20list%20的区块链.md)
   - [基于 Directed acyclic graph 的区块链]
-
-- [个别概念](/个别概念/README.md)
-  - [链改](/个别概念/链改.md)
-  - [元宇宙](/个别概念/元宇宙.md)
   
 - [延伸阅读](/延伸阅读/README.md)
   - [Linked list 相关典型问题](/延伸阅读/Linked%20list%20相关典型问题/README.md)
