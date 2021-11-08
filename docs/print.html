@@ -344,6 +344,7 @@ node2.Prev = node1_hash
 <p>能看到的是，全国各地都有如火如荼搞区块链的企业和活动，重形式轻技术，大概是这样。</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="元宇宙"><a class="header" href="#元宇宙">元宇宙</a></h1>
 <p>元宇宙光听名字就是个老土的概念 🤪。叫成 Metaverse 能稍微好一点？好像也没有。</p>
+<p>但就是这么一个土鳖的概念，最近大火，越来越火。</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="区块链的过去"><a class="header" href="#区块链的过去">区块链的过去</a></h1>
 <p>以史为镜，可以知兴替。这一章节会讲述一些标志性区块链项目的技术特性，以及组成区块链的技术更详细的分类和内容。</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="一种点对点的电子现金系统"><a class="header" href="#一种点对点的电子现金系统">一种点对点的电子现金系统</a></h1>
@@ -353,7 +354,11 @@ node2.Prev = node1_hash
 <p>过去的几个月，很多类似比特币的区块链进入了不同的领域，区块链的机制允许全世界的人维护一个公共的、数据状态实时同步的数据库。很多应用都是用在区块链上的数字资源表示自定义的货币或者金融财产，比如用区块链上的数据跟踪用户是否是汽车的合法拥有者，或者更多像去中心化交易所、金融衍生品、点对点赌博游戏、数字身份和信用系统的应用等。在所有应用中，最有野心的可能就是“去中心化的自治组织”的概念，分散的实体在区块链上进行一些自动的操作，不需要中心化的控制，不依赖任何法律定义的章程，可以在区块链上自动执行可以自主管理的合同。</p>
 <p>然而，今天的大多数应用实现起来都很困难，比如区块链的脚本系统，或者号称是下一代加密货币协议的一些项目，在实现复杂的计算和去中心化治理的时候都收到很多限制。这个项目的目标就是要带来一些创新，可以创建一种完整的、图灵完备的、加密的、复杂的智能合约，并且允许合约在节点上自动执行，合约的内容将记录在区块链上。用户不会受限于某种特定类型的交易，用户可以把以太坊作为加密金融的乐高，通过使用以太坊协议支持的脚本语言，很简单就可以实现用户想要实现的任何特性。自定义货币、金融资产、数字身份系统等任何特性都将变得非常简单，不同于已有项目是，以太坊甚至支持自定义交易的结构，这是开发者以前难以想象到的重要特点。我们相信这种设计是“加密货币 2.0”坚实的一步，我们希望以太坊可以像 1999 年 Web 2.0 的出现一样，成为加密货币历史上的一个重要里程碑。</p>
 <p>Reference：<a href="https://github.com/ethereum/wiki/blob/old-before-deleting-all-files-go-to-wiki-wiki-instead/old-whitepaper-for-historical-reference.md#a-next-generation-smart-contract-and-decentralized-application-platform">A Next-Generation Smart Contract and Decentralized Application Platform</a></p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="波卡链一种多链结构的框架"><a class="header" href="#波卡链一种多链结构的框架">波卡链：一种多链结构的框架</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="波卡链一种异构多链框架"><a class="header" href="#波卡链一种异构多链框架">波卡链：一种异构多链框架</a></h1>
+<p>简介：当今的区块链架构有很多问题，像扩展性、扩容能力，而且不止于此。我们相信，共识的两个重要组成部分是规范性和可验证性。这篇论文介绍了一种异构多链的框架结构，从根本上将两者区分开。</p>
+<p>在保证这两个组成部分的最小实现的前提下，这种架构提供了强大的扩展能力。采用分而治之的方式，公共节点可以在核心系统上无需信任就可以进行通信。</p>
+<p>这种异构系统最大限度的做到无需信任、完全去中心化，将允许各种公开或者私有的网络能够轻易相互通信。</p>
+<p>这个框架可以很好地兼容已经存在的区块链。我们相信这将成为区块链在全球范围商业化实用化的重要基础组件。</p>
 <p>Reference: <a href="https://polkadot.network/PolkaDotPaper.pdf">POLKADOT: VISION FOR A HETEROGENEOUS MULTI-CHAIN FRAMEWORK</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="区块链的指标"><a class="header" href="#区块链的指标">区块链的指标</a></h1>
 <p>区块链有一些常用于相互比较的能力指标，这一章节对各种指标的含义及最新技术进展进行描述。</p>
@@ -655,20 +660,6 @@ node2.Prev = node1_hash
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         <!-- Google Analytics Tag -->
         <script type="text/javascript">
             var localAddrs = ["localhost", "127.0.0.1", ""];

@@ -135,7 +135,11 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="波卡链一种多链结构的框架"><a class="header" href="#波卡链一种多链结构的框架">波卡链：一种多链结构的框架</a></h1>
+                        <h1 id="波卡链一种异构多链框架"><a class="header" href="#波卡链一种异构多链框架">波卡链：一种异构多链框架</a></h1>
+<p>简介：当今的区块链架构有很多问题，像扩展性、扩容能力，而且不止于此。我们相信，共识的两个重要组成部分是规范性和可验证性。这篇论文介绍了一种异构多链的框架结构，从根本上将两者区分开。</p>
+<p>在保证这两个组成部分的最小实现的前提下，这种架构提供了强大的扩展能力。采用分而治之的方式，公共节点可以在核心系统上无需信任就可以进行通信。</p>
+<p>这种异构系统最大限度的做到无需信任、完全去中心化，将允许各种公开或者私有的网络能够轻易相互通信。</p>
+<p>这个框架可以很好地兼容已经存在的区块链。我们相信这将成为区块链在全球范围商业化实用化的重要基础组件。</p>
 <p>Reference: <a href="https://polkadot.network/PolkaDotPaper.pdf">POLKADOT: VISION FOR A HETEROGENEOUS MULTI-CHAIN FRAMEWORK</a></p>
 
                     </main>
@@ -164,20 +168,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         <!-- Google Analytics Tag -->
         <script type="text/javascript">
             var localAddrs = ["localhost", "127.0.0.1", ""];
