@@ -7,6 +7,7 @@ title = "Ground-Up Blockchain"
 
 [build]
 build-dir = "docs"
+create-missing = false
 
 [output.html]
 cname = "gub.smallyu.net"
