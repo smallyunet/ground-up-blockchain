@@ -38,6 +38,7 @@
     - [Proof of Replication]()
     - [Proof of data possession]()
     - [Byzantine fault tolerance]()
+    - [Casper the Friendly Ghost]()
   - [Cryptographic Algorithm]()
 
 - [区块链的指标](./区块链的指标/README.md)
