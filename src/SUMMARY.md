@@ -7,7 +7,7 @@
   - [Linked list](<./区块链是什么/Linked list.md>)
   - [Hash function](<./区块链是什么/Hash function.md>)
   - [Serialzation](<./区块链是什么/Serialization.md>)
-  - [Peer-to-peer network]()
+  - [Peer-to-peer network](<./区块链是什么/Peer-to-peer network.md>)
   - [Consensus]()
   - [Fork]()
   
@@ -43,18 +43,21 @@
 
 - [区块链的指标](<./区块链的指标/README.md>)
   - [交易性能]()
-    - [Shard chains]()
-    - [Sidechains]()
-    - [Plasma]()
+ 
     - [Scaling solution]()
       - [Zero knowledgement rollups]()
         - [dYdX]()
+        - [zkSync]()
       - [Optimistic rollups](<./区块链的指标/交易性能/Scaling solution/Optimistic rollups/README.md>)
         - [Optimistic](<./区块链的指标/交易性能/Scaling solution/Optimistic rollups/Optimistic.md>)
+        - [Arbitrum](<./区块链的指标/交易性能/Scaling solution/Optimistic rollups/Arbitrum.md>)
       - [State channels](<./区块链的指标/交易性能/Scaling solution/State channels/README.md>)
         - [Lightning Network](<./区块链的指标/交易性能/Scaling solution/State channels/Lightning Network.md>)
         - [Raiden Network](<./区块链的指标/交易性能/Scaling solution/State channels/Raiden Network.md>)
         - [Virtual channels](<./区块链的指标/交易性能/Scaling solution/State channels/Virtual channels.md>)
+      - [Sidechain](<./区块链的指标/交易性能/Scaling solution/Sidechain.md>)
+      - [Plasma](<./区块链的指标/交易性能/Scaling solution/Plasma.md>)
+      - [对 L2 方案的调查总结](<./区块链的指标/交易性能/Scaling solution/对 L2 方案的调查总结.md>)
   - [智能合约能力]()
   - [数据库操作能力]()
   - [水平扩容]()
@@ -72,6 +75,7 @@
     - [链表如果相交，找到交点](<./延伸阅读/Linked list 相关典型问题/链表如果相交，找到交点.md>)
     - [合并两个有序链表](<./延伸阅读/Linked list 相关典型问题/合并两个有序链表.md>)
   - [Zero-knowledge proof 是什么](<./延伸阅读/Zero-knowledge proof 是什么/README.md>)
+  - [Directed acyclic graph 是什么]()
 
 
 - [后记](<./后记.md>)
