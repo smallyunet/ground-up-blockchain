@@ -239,20 +239,6 @@ md5(&quot;ab&quot;) = 187ef4436122d1cc2f40dc2b92f0eba0
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         <!-- Google Analytics Tag -->
         <script type="text/javascript">
             var localAddrs = ["localhost", "127.0.0.1", ""];
