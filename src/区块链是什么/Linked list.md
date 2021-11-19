@@ -1,6 +1,6 @@
 # Linked list
 
-### Singly-linked list
+## Singly-linked list
 
 ![50](./assets/1.png)
 
@@ -27,7 +27,7 @@ func main() {
 
 node1 的内存地址为 `0x14000104210` ，node2 的内存地址为 `0x14000104220` ，然后将 node2 的内存地址赋值给 node1 的 next 变量，这个时候只要访问 node1，就可以通过 next 得到 node2 的内容了。以此类推，即使有很多很多 node，只需要知道起始位置 node1 的内容，就可以访问到整个 Linked list 的所有节点了。
 
-### Doubly-linked list
+## Doubly-linked list
 
 ![50](./assets/2.png)
 
@@ -41,7 +41,7 @@ type Node struct {
 }
 ```
 
-### (Doubly-linked list) - (Singly-linked list)
+## (Doubly-linked list) - (Singly-linked list)
 
 Singly-linked list 时保留了下一个节点的信息，Doubly-linked list 上一个和下一个节点的信息都保留了，那么有没有一种数据结构，是只保留上一个节点的信息呢？比如这样：
 

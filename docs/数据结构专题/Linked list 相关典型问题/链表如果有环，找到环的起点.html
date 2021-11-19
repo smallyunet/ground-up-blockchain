@@ -1,0 +1,261 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>链表如果有环，找到环的起点 - Ground-Up Blockchain</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../.././style/custom.css">
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../index.html"><strong aria-hidden="true">1.</strong> 前言</a></li><li class="chapter-item expanded "><a href="../../为什么你需要这本书.html"><strong aria-hidden="true">2.</strong> 为什么你需要这本书</a></li><li class="chapter-item expanded "><a href="../../区块链是什么/index.html"><strong aria-hidden="true">3.</strong> 区块链是什么</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../区块链是什么/Linked list.html"><strong aria-hidden="true">3.1.</strong> Linked list</a></li><li class="chapter-item expanded "><a href="../../区块链是什么/Hash function.html"><strong aria-hidden="true">3.2.</strong> Hash function</a></li><li class="chapter-item expanded "><a href="../../区块链是什么/Serialization.html"><strong aria-hidden="true">3.3.</strong> Serialzation</a></li><li class="chapter-item expanded "><a href="../../区块链是什么/Peer-to-peer network.html"><strong aria-hidden="true">3.4.</strong> Peer-to-peer network</a></li><li class="chapter-item expanded "><a href="../../区块链是什么/Consensus.html"><strong aria-hidden="true">3.5.</strong> Consensus</a></li><li class="chapter-item expanded "><a href="../../区块链是什么/Fork.html"><strong aria-hidden="true">3.6.</strong> Fork</a></li></ol></li><li class="chapter-item expanded "><a href="../../区块链能干什么/index.html"><strong aria-hidden="true">4.</strong> 区块链能干什么</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.</strong> Unspend transaction output</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.2.</strong> Account / Balance Model</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.3.</strong> Decentralized application</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.4.</strong> Decentralized identifiers</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.5.</strong> Non-fungible token</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.6.</strong> InterPlanetary File System</div></li></ol></li><li class="chapter-item expanded "><a href="../../区块链的过去/index.html"><strong aria-hidden="true">5.</strong> 区块链的过去</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../区块链的过去/Bitcoin.html"><strong aria-hidden="true">5.1.</strong> Bitcoin</a></li><li class="chapter-item expanded "><a href="../../区块链的过去/Ethereum.html"><strong aria-hidden="true">5.2.</strong> Ethereum</a></li><li class="chapter-item expanded "><a href="../../区块链的过去/Polkadot.html"><strong aria-hidden="true">5.3.</strong> Polkadot</a></li></ol></li><li class="chapter-item expanded "><a href="../../区块链的指标/index.html"><strong aria-hidden="true">6.</strong> 区块链的指标</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">6.1.</strong> 交易性能</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.2.</strong> 智能合约能力</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.3.</strong> 数据库操作能力</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.4.</strong> 水平扩容</div></li></ol></li><li class="chapter-item expanded "><a href="../../区块链的未来/index.html"><strong aria-hidden="true">7.</strong> 区块链的未来</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../区块链的未来/基于 Multi-linked list 的区块链.html"><strong aria-hidden="true">7.1.</strong> 基于 Multi-linked list 的区块链</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.2.</strong> 基于 Directed acyclic graph 的区块链</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> 数据结构专题</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../数据结构专题/Linked list 相关典型问题/index.html"><strong aria-hidden="true">8.1.</strong> Linked list 相关典型问题</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../数据结构专题/Linked list 相关典型问题/翻转链表.html"><strong aria-hidden="true">8.1.1.</strong> 翻转链表</a></li><li class="chapter-item expanded "><a href="../../数据结构专题/Linked list 相关典型问题/判断链表是否有环.html"><strong aria-hidden="true">8.1.2.</strong> 判断链表是否有环</a></li><li class="chapter-item expanded "><a href="../../数据结构专题/Linked list 相关典型问题/链表如果有环，找到环的起点.html" class="active"><strong aria-hidden="true">8.1.3.</strong> 链表如果有环，找到环的起点</a></li><li class="chapter-item expanded "><a href="../../数据结构专题/Linked list 相关典型问题/判断两个链表是否相交.html"><strong aria-hidden="true">8.1.4.</strong> 判断两个链表是否相交</a></li><li class="chapter-item expanded "><a href="../../数据结构专题/Linked list 相关典型问题/链表如果相交，找到交点.html"><strong aria-hidden="true">8.1.5.</strong> 链表如果相交，找到交点</a></li><li class="chapter-item expanded "><a href="../../数据结构专题/Linked list 相关典型问题/合并两个有序链表.html"><strong aria-hidden="true">8.1.6.</strong> 合并两个有序链表</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.2.</strong> Directed acyclic graph 是什么</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.</strong> 共识算法专题</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../共识算法专题/Proof of work.html"><strong aria-hidden="true">9.1.</strong> Proof of work</a></li><li class="chapter-item expanded "><a href="../../共识算法专题/Proof of stake.html"><strong aria-hidden="true">9.2.</strong> Proof of stake</a></li><li class="chapter-item expanded "><a href="../../共识算法专题/Proof of authority.html"><strong aria-hidden="true">9.3.</strong> Proof of authority</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.4.</strong> Proof of space</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.5.</strong> Proof of History</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.6.</strong> Proof of Elapsed Time</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.7.</strong> Proof of Replication</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.8.</strong> Proof of data possession</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.9.</strong> Byzantine fault tolerance</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.10.</strong> Casper the Friendly Ghost</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">10.</strong> 加密算法专题</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../加密算法专题/Zero-knowledge proof 是什么/index.html"><strong aria-hidden="true">10.1.</strong> Zero-knowledge proof 是什么</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">11.</strong> Layer 2 专题</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">11.1.</strong> Zero knowledgement rollups</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../Layer 2 专题/Zero knowledgement rollups/dYdX.html"><strong aria-hidden="true">11.1.1.</strong> dYdX</a></li><li class="chapter-item expanded "><a href="../../Layer 2 专题/Zero knowledgement rollups/zkSync.html"><strong aria-hidden="true">11.1.2.</strong> zkSync</a></li><li class="chapter-item expanded "><a href="../../Layer 2 专题/Zero knowledgement rollups/Zk-Rollups 是怎么工作的.html"><strong aria-hidden="true">11.1.3.</strong> Zk-Rollups 是怎么工作的</a></li></ol></li><li class="chapter-item expanded "><a href="../../Layer 2 专题/Optimistic rollups/index.html"><strong aria-hidden="true">11.2.</strong> Optimistic rollups</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../Layer 2 专题/Optimistic rollups/Optimistic.html"><strong aria-hidden="true">11.2.1.</strong> Optimistic</a></li><li class="chapter-item expanded "><a href="../../Layer 2 专题/Optimistic rollups/Arbitrum.html"><strong aria-hidden="true">11.2.2.</strong> Arbitrum</a></li></ol></li><li class="chapter-item expanded "><a href="../../Layer 2 专题/State channels/index.html"><strong aria-hidden="true">11.3.</strong> State channels</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../Layer 2 专题/State channels/Lightning Network.html"><strong aria-hidden="true">11.3.1.</strong> Lightning Network</a></li><li class="chapter-item expanded "><a href="../../Layer 2 专题/State channels/Raiden Network.html"><strong aria-hidden="true">11.3.2.</strong> Raiden Network</a></li><li class="chapter-item expanded "><a href="../../Layer 2 专题/State channels/Virtual channels.html"><strong aria-hidden="true">11.3.3.</strong> Virtual channels</a></li><li class="chapter-item expanded "><a href="../../Layer 2 专题/State channels/Nitro Protocol.html"><strong aria-hidden="true">11.3.4.</strong> Nitro Protocol</a></li></ol></li><li class="chapter-item expanded "><a href="../../Layer 2 专题/Sidechain.html"><strong aria-hidden="true">11.4.</strong> Sidechain</a></li><li class="chapter-item expanded "><a href="../../Layer 2 专题/Plasma.html"><strong aria-hidden="true">11.5.</strong> Plasma</a></li><li class="chapter-item expanded "><a href="../../Layer 2 专题/对 L2 方案的调查总结.html"><strong aria-hidden="true">11.6.</strong> 对 L2 方案的调查总结</a></li></ol></li><li class="chapter-item expanded "><a href="../../新概念/index.html"><strong aria-hidden="true">12.</strong> 新概念</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../新概念/链改.html"><strong aria-hidden="true">12.1.</strong> 链改</a></li><li class="chapter-item expanded "><a href="../../新概念/元宇宙.html"><strong aria-hidden="true">12.2.</strong> 元宇宙</a></li></ol></li><li class="chapter-item expanded "><a href="../../后记.html"><strong aria-hidden="true">13.</strong> 后记</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Ground-Up Blockchain</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="链表如果有环找到环的起点"><a class="header" href="#链表如果有环找到环的起点">链表如果有环，找到环的起点</a></h1>
+<h3 id="问题"><a class="header" href="#问题">问题</a></h3>
+<p>这个问题是上一个问题的延伸，在判断链表已经有环的基础上，找到环的起点。比如这样的一个链表，环的起点是节点 3。</p>
+<p><img src="./assets/20.png" alt="50" /></p>
+<h3 id="分析"><a class="header" href="#分析">分析</a></h3>
+<p>（1）</p>
+<p>在判断链表是否有环的问题中，我们得到了一个至关重要的结论：</p>
+<pre><code>t = R
+</code></pre>
+<p>两个快慢指针将会在等于环长度的时间点相遇。对于上图的链表，快慢指针的位置关系是这样：</p>
+<table><thead><tr><th>时间 t</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th></tr></thead><tbody>
+<tr><td>A 的位置</td><td>节点 1</td><td>节点 2</td><td>节点 3</td><td>节点 4</td><td>节点 5</td><td>节点 6</td><td><strong>节点 7</strong></td></tr>
+<tr><td>B 的位置</td><td>节点 1</td><td>节点 3</td><td>节点 5</td><td>节点 7</td><td>节点 3</td><td>节点 5</td><td><strong>节点 7</strong></td></tr>
+</tbody></table>
+<p>我们可以观察到，环的长度是 6，快慢指针也会在第 6 秒相遇，他们交点位置是节点 7:</p>
+<p><img src="./assets/21.png" alt="50" /></p>
+<p>（2）</p>
+<p>根据上面提到的之前的结论，按照慢指针 v<sub>1</sub> = 1 的速度，它经过的路程和时间是一样的，也就是说，从出发点到两指针相遇的路径长度，根据 <code>t = R</code>，此刻的时间是 t，正好是环的长度 R：</p>
+<p><img src="./assets/22.png" alt="50" /></p>
+<p>（3）</p>
+<p>做一个假设，慢指针保持着这个长度为 R 的走过的路径，向前移动一步，会变成这样：</p>
+<p><img src="./assets/23.png" alt="50" /></p>
+<p>再走一步，变成了这样：</p>
+<p><img src="./assets/24.png" alt="50" /></p>
+<p>（4）</p>
+<p>到这里似乎还不知道我们要干什么。现在对路径设一个变量，从 <code>出发点</code> 到 <code>环的起点</code> 之间的距离设为 l<sub>1</sub>，整个链表的长度设为 l，环的长度仍然为 R。</p>
+<p><img src="./assets/25.png" alt="50" /></p>
+<p>这 3 个变量将满足这样的关系：</p>
+<pre><code>l - l1 = R
+</code></pre>
+<p>这是太显而易见的事情。</p>
+<p>（5）</p>
+<p>记得我们一开始的结论吗？从 <code>出发点</code> 到 <code>快慢指针的交点</code> 之间的距离，等于环的长度 R：</p>
+<p><img src="./assets/22.png" alt="50" /></p>
+<p>变量 l 和 l<sub>1</sub> 保持不变，图就成了这样：</p>
+<p><img src="./assets/26.png" alt="50" /></p>
+<p>此时的 l 仍然等于 <code>l1 + R</code>，不同的是，<code>l1</code> 和 <code>R</code> 重合了。</p>
+<p>（6）</p>
+<pre><code>l - l1 = R
+</code></pre>
+<p>重合之后，等式关系还成立吗？当然成立，因为整个链表没有变，变量的大小没有变。但好像又觉得哪里奇怪。</p>
+<p>现在新设一个变量，设从 <code>快慢指针的交点</code> 到 <code>环的起点</code> 的距离为 l<sub>2</sub>：</p>
+<p><img src="./assets/27.png" alt="50" /></p>
+<p>此时：</p>
+<pre><code>l - l2 = R
+</code></pre>
+<p>（7）</p>
+<p>经过这样一些比较，发现 <code>l1 == l2</code>，也就是从 <code>出发点</code> 到 <code>环的起点</code> 的距离，等于 <code>快慢指针的交点</code> 到 <code>环的起点</code> 的距离。</p>
+<h3 id="解决"><a class="header" href="#解决">解决</a></h3>
+<pre><code>出发点 -&gt; 环的起点 == 快慢指针的交点 -&gt; 环的起点
+</code></pre>
+<p>这是一个很重要的结论，因为我们此时的快慢指针就在 <code>快慢指针的交点</code> 上，在节点 7 的位置。</p>
+<p>如果这个时候在新增一个指针 p<sub>3</sub>，在快慢指针相交的时刻，从整个链表的 <code>出发点</code> 1 出发（速度为 1），那么 p<sub>3</sub> 和慢指针一定会相交，因为 p<sub>3</sub> 到 <code>环的起点</code> 的距离等于慢指针到 <code>环的起点</code> 的距离。p<sub>3</sub> 遇到慢指针的位置，就是环的起点。</p>
+<p><img src="./assets/28.png" alt="50" /></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../数据结构专题/Linked list 相关典型问题/判断链表是否有环.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../../数据结构专题/Linked list 相关典型问题/判断两个链表是否相交.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../数据结构专题/Linked list 相关典型问题/判断链表是否有环.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../../数据结构专题/Linked list 相关典型问题/判断两个链表是否相交.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        <!-- Google Analytics Tag -->
+        <script type="text/javascript">
+            var localAddrs = ["localhost", "127.0.0.1", ""];
+
+            // make sure we don't activate google analytics if the developer is
+            // inspecting the book locally...
+            if (localAddrs.indexOf(document.location.hostname) === -1) {
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'G-TV14T76LST', 'auto');
+                ga('send', 'pageview');
+            }
+        </script>
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

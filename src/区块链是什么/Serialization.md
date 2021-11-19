@@ -16,7 +16,7 @@ let str = JSON.stringify(object)
 print(str)    // {"field1":"abc","field2":123}
 ```
 
-### Serialization + CHF
+## Serialization + CHF
 
 可以明确的是，JSON stringify 的结果是一个字符串，这个时候就可以和之前的 cryptographic hash function 结合起来用了：
 
@@ -26,7 +26,7 @@ md5(str) = d79152b724c5f1e52e6bd4bfaf6e1532
 
 只要定义过数据的 serialization 方法，我们就可以得到任意数据格式的 hash values。
 
-### Serialization + CHF + Linked List
+## Serialization + CHF + Linked List
 
 Linked list 之间的关联关系常用变量的引用地址表示，但指针不是惟一的方式，数据结构的含义也可以扩展到更大的范围。我们完全可以用节点数据的 hash values 作为关联：
 

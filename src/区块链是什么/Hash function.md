@@ -1,6 +1,6 @@
 # Hash function
 
-### Hash function
+## Hash function
 
 Hash function 用于处理数据和其 hash values 的映射关系，hash values 是数据类似唯一标识的东西，可以用内存比较小的形式标识数据。hash function 有各种各样的实现，可以认为是一个黑盒子，进去的是 data，出来的是 hash values。
 
@@ -69,7 +69,7 @@ hashCode("abc") = 97*31^2 + 98*31 + 99 = 96354
 
 这就是 JDK (Java Development Kit) 中 hashCode 的实现方式。
 
-### Cryptographic hash function (CHF)
+## Cryptographic hash function (CHF)
 
 不难发现的是， hash function 比较容易根据 hash values 反推出原始的 data 是什么。我们可以写出这样的程序，假设我们已经知道字符长度是 2，由于字符使用 ASCII 编码，范围在 0 ~ 255，因此设 x 和 y 两个变量，枚举所有符合目标 hash values 的情况：
 
