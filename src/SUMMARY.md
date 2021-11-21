@@ -51,6 +51,8 @@
   - [Casper the Friendly Ghost]()
 
 - [加密算法专题]()
+  - [对称加密]()
+  - [非对称加密]()
   - [Zero-knowledge proof 是什么](<./加密算法专题/Zero-knowledge proof 是什么/README.md>)
 
 - [智能合约专题]()
