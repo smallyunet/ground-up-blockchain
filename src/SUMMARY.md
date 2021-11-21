@@ -36,7 +36,7 @@
     - [判断两个链表是否相交](<./数据结构专题/Linked list 相关典型问题/判断两个链表是否相交.md>)
     - [链表如果相交，找到交点](<./数据结构专题/Linked list 相关典型问题/链表如果相交，找到交点.md>)
     - [合并两个有序链表](<./数据结构专题/Linked list 相关典型问题/合并两个有序链表.md>)
-  - [Directed acyclic graph 是什么]()
+  - [Directed acyclic graph 是什么](<./数据结构专题/Directed acyclic graph 是什么.md>)
 
 - [共识算法专题]()
   - [Proof of work](<./共识算法专题/Proof of work.md>)
