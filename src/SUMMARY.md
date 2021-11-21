@@ -12,7 +12,7 @@
   - [Fork](<./区块链是什么/Fork.md>)
   
 - [区块链能干什么](<./区块链能干什么/README.md>)
-  - [Unspend transaction output]()
+  - [Unspend transaction output](<./区块链能干什么/Unspend transaction output.md>)
   - [Account / Balance Model]()
   - [Decentralized application]()
   - [Decentralized identifiers]()
@@ -23,12 +23,6 @@
   - [Bitcoin](<./区块链的过去/Bitcoin.md>)
   - [Ethereum](<./区块链的过去/Ethereum.md>)
   - [Polkadot](<./区块链的过去/Polkadot.md>)
-
-- [区块链的指标](<./区块链的指标/README.md>)
-  - [交易性能]()
-  - [智能合约能力]()
-  - [数据库操作能力]()
-  - [水平扩容]()
   
 - [区块链的未来](<./区块链的未来/README.md>)
   - [基于 Multi-linked list 的区块链](<./区块链的未来/基于 Multi-linked list 的区块链.md>)
@@ -58,6 +52,8 @@
 
 - [加密算法专题]()
   - [Zero-knowledge proof 是什么](<./加密算法专题/Zero-knowledge proof 是什么/README.md>)
+
+- [智能合约专题]()
 
 - [Layer 2 专题]()
   - [Zero knowledgement rollups]()
