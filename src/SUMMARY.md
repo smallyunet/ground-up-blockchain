@@ -53,7 +53,8 @@
 - [加密算法专题]()
   - [对称加密]()
   - [非对称加密]()
-  - [Zero-knowledge proof 是什么](<./加密算法专题/Zero-knowledge proof 是什么/README.md>)
+  - [Zero-knowledge proof](<./加密算法专题/Zero-knowledge proof/README.md>)
+    - [零知识证明技术揭秘](<./加密算法专题/Zero-knowledge proof/Demystifying Zero Knowledge Proofs.md>)
 
 - [智能合约专题]()
 
