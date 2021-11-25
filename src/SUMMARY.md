@@ -78,7 +78,6 @@
   - [对 L2 方案的调查总结](<./Layer 2 专题/对 L2 方案的调查总结.md>)
 
 - [Liquifi 专题]()
-  - [Liquidity Protocol](<./Liquifi 专题/Liquidity Protoco.md>)
 
 - [新概念](<./新概念/README.md>)
   - [链改](<./新概念/链改.md>)
