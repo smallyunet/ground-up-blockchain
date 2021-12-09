@@ -17,11 +17,11 @@
   - [Unspend transaction output](<./区块链能干什么/Unspend transaction output.md>)
   - [Account / Balance Model]()
   - [Decentralized application]()
-  - [Decentralized identifiers]()
+  - [Decentralized identifiers](<./区块链能干什么/Decentralized identifiers.md>)
   - [Non-fungible token]()
   - [InterPlanetary File System]()
-  - [Liquifi]()
-  - [SocialF]()
+  - [SocialFi]()
+  - [Cross-Chain DeFi]()
   - [Blockchain oracle](<./区块链能干什么/Blockchain oracle.md>)
   
 - [区块链的过去](<./区块链的过去/README.md>)
@@ -85,6 +85,8 @@
   - [对 L2 方案的调查总结](<./Layer 2 专题/对 L2 方案的调查总结.md>)
 
 - [Liquifi 专题]()
+ - [Liquifi Protocol](<./Liquifi 专题/Liquifi Protocol.md>)
+ - [tbDex](<./Liquifi 专题/tbDEX.md>)
 
 - [概念](<./概念/README.md>)
   - [链改](<./概念/链改.md>)
