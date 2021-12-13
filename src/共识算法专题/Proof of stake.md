@@ -1,4 +1,4 @@
-# 
+# Proof of stake
 
 
 
