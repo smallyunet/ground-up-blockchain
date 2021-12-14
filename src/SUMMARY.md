@@ -20,8 +20,6 @@
   - [Decentralized identifiers](<./区块链能干什么/Decentralized identifiers.md>)
   - [Non-fungible token]()
   - [InterPlanetary File System]()
-  - [SocialFi]()
-  - [Cross-Chain DeFi]()
   - [Blockchain oracle](<./区块链能干什么/Blockchain oracle.md>)
   
 - [区块链的过去](<./区块链的过去/README.md>)
@@ -43,7 +41,7 @@
     - [合并两个有序链表](<./数据结构专题/Linked list 相关典型问题/合并两个有序链表.md>)
   - [Directed acyclic graph 是什么](<./数据结构专题/Directed acyclic graph 是什么.md>)
 
-- [共识算法专题]()
+- [共识算法专题](<./共识算法专题/README.md>)
   - [Proof of work](<./共识算法专题/Proof of work.md>)
   - [Proof of stake](<./共识算法专题/Proof of stake.md>)
   - [Proof of authority](<./共识算法专题/Proof of authority.md>)
@@ -62,10 +60,7 @@
     - [零知识证明技术揭秘](<./加密算法专题/Zero-knowledge proof/Demystifying Zero Knowledge Proofs.md>)
 
 - [智能合约专题]()
-  - [Ethereum Vitrual Machine]()
-  - [Based Golang]()
-  - [Based Java]()
-  - [Based WebAssemly]()
+  - [Ethereum Vitrual Machine](<./智能合约专题/Ethereum Vitrual Machine.md>)
 
 - [Layer 2 专题]()
   - [Zero knowledgement rollups]()
@@ -85,11 +80,13 @@
   - [对 L2 方案的调查总结](<./Layer 2 专题/对 L2 方案的调查总结.md>)
 
 - [Liquifi 专题]()
- - [Liquifi Protocol](<./Liquifi 专题/Liquifi Protocol.md>)
- - [tbDex](<./Liquifi 专题/tbDEX.md>)
+  - [Liquifi Protocol](<./Liquifi 专题/Liquifi Protocol.md>)
+  - [tbDex](<./Liquifi 专题/tbDEX.md>)
 
-- [概念](<./概念/README.md>)
-  - [链改](<./概念/链改.md>)
-  - [元宇宙](<./概念/元宇宙.md>)
+- [一些概念](<./一些概念/README.md>)
+  - [链改](<./一些概念/链改.md>)
+  - [元宇宙](<./一些概念/元宇宙.md>)
+  - [SocialFi](<./一些概念/SocialFi.md>)
+  - [Cross-Chain DeFi](<./一些概念/Cross-Chain DeFi.md>)
 
 - [后记](<./后记.md>)
