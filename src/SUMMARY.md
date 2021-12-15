@@ -15,8 +15,8 @@
   
 - [区块链能干什么](<./区块链能干什么/README.md>)
   - [Unspend transaction output](<./区块链能干什么/Unspend transaction output.md>)
-  - [Account / Balance Model]()
-  - [Decentralized application]()
+  - [Account/Balance Model]()
+  - [Decentralized application](<./区块链能干什么/Decentralized application.md>)
   - [Decentralized identifiers](<./区块链能干什么/Decentralized identifiers.md>)
   - [Non-fungible token]()
   - [InterPlanetary File System]()
