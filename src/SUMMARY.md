@@ -52,6 +52,7 @@
   - [Proof of data possession]()
   - [Byzantine fault tolerance]()
   - [Casper the Friendly Ghost]()
+  - [Proof of Burn](<./共识算法专题/Proof of Burn.md>)
 
 - [加密算法专题]()
   - [对称加密]()

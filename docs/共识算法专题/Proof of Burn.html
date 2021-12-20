@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Proof of Burn - Ground-Up Blockchain</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href=".././style/custom.css">
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> 封面图</a></li><li class="chapter-item expanded "><a href="../前言.html"><strong aria-hidden="true">2.</strong> 前言</a></li><li class="chapter-item expanded "><a href="../为什么你需要这本书.html"><strong aria-hidden="true">3.</strong> 为什么你需要这本书</a></li><li class="chapter-item expanded "><a href="../区块链是什么/index.html"><strong aria-hidden="true">4.</strong> 区块链是什么</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../区块链是什么/Linked list.html"><strong aria-hidden="true">4.1.</strong> Linked list</a></li><li class="chapter-item expanded "><a href="../区块链是什么/Hash function.html"><strong aria-hidden="true">4.2.</strong> Hash function</a></li><li class="chapter-item expanded "><a href="../区块链是什么/Serialization.html"><strong aria-hidden="true">4.3.</strong> Serialzation</a></li><li class="chapter-item expanded "><a href="../区块链是什么/Peer-to-peer network.html"><strong aria-hidden="true">4.4.</strong> Peer-to-peer network</a></li><li class="chapter-item expanded "><a href="../区块链是什么/Consensus.html"><strong aria-hidden="true">4.5.</strong> Consensus</a></li><li class="chapter-item expanded "><a href="../区块链是什么/Fork.html"><strong aria-hidden="true">4.6.</strong> Fork</a></li></ol></li><li class="chapter-item expanded "><a href="../区块链能干什么/index.html"><strong aria-hidden="true">5.</strong> 区块链能干什么</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../区块链能干什么/Unspend transaction output.html"><strong aria-hidden="true">5.1.</strong> Unspend transaction output</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.2.</strong> Account/Balance Model</div></li><li class="chapter-item expanded "><a href="../区块链能干什么/Decentralized application.html"><strong aria-hidden="true">5.3.</strong> Decentralized application</a></li><li class="chapter-item expanded "><a href="../区块链能干什么/Decentralized identifiers.html"><strong aria-hidden="true">5.4.</strong> Decentralized identifiers</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.5.</strong> Non-fungible token</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.6.</strong> InterPlanetary File System</div></li><li class="chapter-item expanded "><a href="../区块链能干什么/Blockchain oracle.html"><strong aria-hidden="true">5.7.</strong> Blockchain oracle</a></li></ol></li><li class="chapter-item expanded "><a href="../区块链的过去/index.html"><strong aria-hidden="true">6.</strong> 区块链的过去</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../区块链的过去/Bitcoin.html"><strong aria-hidden="true">6.1.</strong> Bitcoin</a></li><li class="chapter-item expanded "><a href="../区块链的过去/Ethereum.html"><strong aria-hidden="true">6.2.</strong> Ethereum</a></li><li class="chapter-item expanded "><a href="../区块链的过去/Polkadot.html"><strong aria-hidden="true">6.3.</strong> Polkadot</a></li></ol></li><li class="chapter-item expanded "><a href="../区块链的未来/index.html"><strong aria-hidden="true">7.</strong> 区块链的未来</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../区块链的未来/基于 Multi-linked list 的区块链.html"><strong aria-hidden="true">7.1.</strong> 基于 Multi-linked list 的区块链</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.2.</strong> 基于 Directed acyclic graph 的区块链</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> 数据结构专题</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../数据结构专题/Linked list 相关典型问题/index.html"><strong aria-hidden="true">8.1.</strong> Linked list 相关典型问题</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../数据结构专题/Linked list 相关典型问题/翻转链表.html"><strong aria-hidden="true">8.1.1.</strong> 翻转链表</a></li><li class="chapter-item expanded "><a href="../数据结构专题/Linked list 相关典型问题/判断链表是否有环.html"><strong aria-hidden="true">8.1.2.</strong> 判断链表是否有环</a></li><li class="chapter-item expanded "><a href="../数据结构专题/Linked list 相关典型问题/链表如果有环，找到环的起点.html"><strong aria-hidden="true">8.1.3.</strong> 链表如果有环，找到环的起点</a></li><li class="chapter-item expanded "><a href="../数据结构专题/Linked list 相关典型问题/判断两个链表是否相交.html"><strong aria-hidden="true">8.1.4.</strong> 判断两个链表是否相交</a></li><li class="chapter-item expanded "><a href="../数据结构专题/Linked list 相关典型问题/链表如果相交，找到交点.html"><strong aria-hidden="true">8.1.5.</strong> 链表如果相交，找到交点</a></li><li class="chapter-item expanded "><a href="../数据结构专题/Linked list 相关典型问题/合并两个有序链表.html"><strong aria-hidden="true">8.1.6.</strong> 合并两个有序链表</a></li></ol></li><li class="chapter-item expanded "><a href="../数据结构专题/Directed acyclic graph 是什么.html"><strong aria-hidden="true">8.2.</strong> Directed acyclic graph 是什么</a></li></ol></li><li class="chapter-item expanded "><a href="../共识算法专题/index.html"><strong aria-hidden="true">9.</strong> 共识算法专题</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../共识算法专题/Proof of work.html"><strong aria-hidden="true">9.1.</strong> Proof of work</a></li><li class="chapter-item expanded "><a href="../共识算法专题/Proof of stake.html"><strong aria-hidden="true">9.2.</strong> Proof of stake</a></li><li class="chapter-item expanded "><a href="../共识算法专题/Proof of authority.html"><strong aria-hidden="true">9.3.</strong> Proof of authority</a></li><li class="chapter-item expanded "><a href="../共识算法专题/Proof of space.html"><strong aria-hidden="true">9.4.</strong> Proof of space</a></li><li class="chapter-item expanded "><a href="../共识算法专题/Proof of History.html"><strong aria-hidden="true">9.5.</strong> Proof of History</a></li><li class="chapter-item expanded "><a href="../共识算法专题/Proof of Elapsed Time.html"><strong aria-hidden="true">9.6.</strong> Proof of Elapsed Time</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.7.</strong> Proof of Replication</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.8.</strong> Proof of data possession</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.9.</strong> Byzantine fault tolerance</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.10.</strong> Casper the Friendly Ghost</div></li><li class="chapter-item expanded "><a href="../共识算法专题/Proof of Burn.html" class="active"><strong aria-hidden="true">9.11.</strong> Proof of Burn</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">10.</strong> 加密算法专题</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">10.1.</strong> 对称加密</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">10.2.</strong> 非对称加密</div></li><li class="chapter-item expanded "><a href="../加密算法专题/Zero-knowledge proof/index.html"><strong aria-hidden="true">10.3.</strong> Zero-knowledge proof</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../加密算法专题/Zero-knowledge proof/Demystifying Zero Knowledge Proofs.html"><strong aria-hidden="true">10.3.1.</strong> 零知识证明技术揭秘</a></li></ol></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">11.</strong> 智能合约专题</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../智能合约专题/Ethereum Vitrual Machine.html"><strong aria-hidden="true">11.1.</strong> Ethereum Vitrual Machine</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">12.</strong> Layer 2 专题</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">12.1.</strong> Zero knowledgement rollups</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Layer 2 专题/Zero knowledgement rollups/dYdX.html"><strong aria-hidden="true">12.1.1.</strong> dYdX</a></li><li class="chapter-item expanded "><a href="../Layer 2 专题/Zero knowledgement rollups/zkSync.html"><strong aria-hidden="true">12.1.2.</strong> zkSync</a></li><li class="chapter-item expanded "><a href="../Layer 2 专题/Zero knowledgement rollups/Zk-Rollups 是怎么工作的.html"><strong aria-hidden="true">12.1.3.</strong> Zk-Rollups 是怎么工作的</a></li></ol></li><li class="chapter-item expanded "><a href="../Layer 2 专题/Optimistic rollups/index.html"><strong aria-hidden="true">12.2.</strong> Optimistic rollups</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Layer 2 专题/Optimistic rollups/Optimistic.html"><strong aria-hidden="true">12.2.1.</strong> Optimistic</a></li><li class="chapter-item expanded "><a href="../Layer 2 专题/Optimistic rollups/Arbitrum.html"><strong aria-hidden="true">12.2.2.</strong> Arbitrum</a></li></ol></li><li class="chapter-item expanded "><a href="../Layer 2 专题/State channels/index.html"><strong aria-hidden="true">12.3.</strong> State channels</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Layer 2 专题/State channels/Lightning Network.html"><strong aria-hidden="true">12.3.1.</strong> Lightning Network</a></li><li class="chapter-item expanded "><a href="../Layer 2 专题/State channels/Raiden Network.html"><strong aria-hidden="true">12.3.2.</strong> Raiden Network</a></li><li class="chapter-item expanded "><a href="../Layer 2 专题/State channels/Virtual channels.html"><strong aria-hidden="true">12.3.3.</strong> Virtual channels</a></li><li class="chapter-item expanded "><a href="../Layer 2 专题/State channels/Nitro Protocol.html"><strong aria-hidden="true">12.3.4.</strong> Nitro Protocol</a></li></ol></li><li class="chapter-item expanded "><a href="../Layer 2 专题/Sidechain.html"><strong aria-hidden="true">12.4.</strong> Sidechain</a></li><li class="chapter-item expanded "><a href="../Layer 2 专题/Plasma.html"><strong aria-hidden="true">12.5.</strong> Plasma</a></li><li class="chapter-item expanded "><a href="../Layer 2 专题/对 L2 方案的调查总结.html"><strong aria-hidden="true">12.6.</strong> 对 L2 方案的调查总结</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">13.</strong> Liquifi 专题</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Liquifi 专题/Liquifi Protocol.html"><strong aria-hidden="true">13.1.</strong> Liquifi Protocol</a></li><li class="chapter-item expanded "><a href="../Liquifi 专题/tbDEX.html"><strong aria-hidden="true">13.2.</strong> tbDex</a></li></ol></li><li class="chapter-item expanded "><a href="../一些概念/index.html"><strong aria-hidden="true">14.</strong> 一些概念</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../一些概念/链改.html"><strong aria-hidden="true">14.1.</strong> 链改</a></li><li class="chapter-item expanded "><a href="../一些概念/元宇宙.html"><strong aria-hidden="true">14.2.</strong> 元宇宙</a></li><li class="chapter-item expanded "><a href="../一些概念/SocialFi.html"><strong aria-hidden="true">14.3.</strong> SocialFi</a></li><li class="chapter-item expanded "><a href="../一些概念/Cross-Chain DeFi.html"><strong aria-hidden="true">14.4.</strong> Cross-Chain DeFi</a></li></ol></li><li class="chapter-item expanded "><a href="../后记.html"><strong aria-hidden="true">15.</strong> 后记</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Ground-Up Blockchain</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="proof-of-burn"><a class="header" href="#proof-of-burn">Proof of Burn</a></h1>
+<p>Reference: <a href="https://en.bitcoin.it/wiki/Proof_of_burn">Proof of Burn</a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../共识算法专题/Proof of Elapsed Time.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../加密算法专题/Zero-knowledge proof/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../共识算法专题/Proof of Elapsed Time.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../加密算法专题/Zero-knowledge proof/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Google Analytics Tag -->
+        <script type="text/javascript">
+            var localAddrs = ["localhost", "127.0.0.1", ""];
+
+            // make sure we don't activate google analytics if the developer is
+            // inspecting the book locally...
+            if (localAddrs.indexOf(document.location.hostname) === -1) {
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'G-TV14T76LST', 'auto');
+                ga('send', 'pageview');
+            }
+        </script>
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>
