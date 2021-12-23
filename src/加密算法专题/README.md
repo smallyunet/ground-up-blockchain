@@ -1,4 +1,7 @@
-#
+# 加密算法
 
 
-Reference: [The Joy of Cryptography](https://joyofcryptography.com)
+References: 
+- [The Joy of Cryptography](https://joyofcryptography.com)
+- [Intuitive Advanced Cryptography](https://github.com/cryptosubtlety/intuitive-advanced-cryptography/blob/master/advancedcrypto.pdf)
+

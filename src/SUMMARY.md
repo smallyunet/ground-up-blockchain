@@ -19,7 +19,7 @@
   - [Decentralized application](<./区块链能干什么/Decentralized application.md>)
   - [Decentralized identifiers](<./区块链能干什么/Decentralized identifiers.md>)
   - [Non-fungible token](<./区块链能干什么/Non-fungible token.md>)
-  - [InterPlanetary File System]()
+  - [InterPlanetary File System](<./区块链能干什么/InterPlanetary File System.md>)
   - [Blockchain oracle](<./区块链能干什么/Blockchain oracle.md>)
   
 - [区块链的过去](<./区块链的过去/README.md>)
@@ -70,15 +70,15 @@
   - [Sidechain](<./Layer 2 专题/Sidechain.md>)
   - [Plasma](<./Layer 2 专题/Plasma.md>)
 
-- [Liquifi 专题]()
-  - [Liquifi Protocol](<./Liquifi 专题/Liquifi Protocol.md>)
-  - [tbDex](<./Liquifi 专题/tbDEX.md>)
+- [Layer 3 专题]()
 
 - [一些概念](<./一些概念/README.md>)
   - [链改](<./一些概念/链改.md>)
   - [元宇宙](<./一些概念/元宇宙.md>)
+  - [Liquifi](<./一些概念/Liquifi.md>)
   - [SocialFi](<./一些概念/SocialFi.md>)
   - [Cross-Chain DeFi](<./一些概念/Cross-Chain DeFi.md>)
+  - [NiiFi](<./一些概念/NiiFi.md>)
 
 - [数据结构专题]()
   - [Linked list 相关典型问题](<./数据结构专题/Linked list 相关典型问题/README.md>)
