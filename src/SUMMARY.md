@@ -15,7 +15,7 @@
   
 - [区块链能干什么](<./区块链能干什么/README.md>)
   - [Unspend transaction output](<./区块链能干什么/Unspend transaction output.md>)
-  - [Account/Balance Model]()
+  - [Account/Balance Model](<./区块链能干什么/Account_Balance Model>)
   - [Decentralized application](<./区块链能干什么/Decentralized application.md>)
   - [Decentralized identifiers](<./区块链能干什么/Decentralized identifiers.md>)
   - [Non-fungible token](<./区块链能干什么/Non-fungible token.md>)
@@ -45,12 +45,6 @@
   - [Casper the Friendly Ghost]()
   - [Proof of Burn](<./共识算法专题/Proof of Burn.md>)
 
-- [加密算法专题]()
-  - [对称加密]()
-  - [非对称加密]()
-  - [Zero-knowledge proof](<./加密算法专题/Zero-knowledge proof/README.md>)
-    - [零知识证明技术揭秘](<./加密算法专题/Zero-knowledge proof/Demystifying Zero Knowledge Proofs.md>)
-
 - [智能合约专题]()
   - [Ethereum Vitrual Machine](<./智能合约专题/Ethereum Vitrual Machine.md>)
 
@@ -70,7 +64,7 @@
   - [Sidechain](<./Layer 2 专题/Sidechain.md>)
   - [Plasma](<./Layer 2 专题/Plasma.md>)
 
-- [Layer 3 专题]()
+- [Layer 3 专题](<./Layer 3 专题/README.md>)
 
 - [一些概念](<./一些概念/README.md>)
   - [链改](<./一些概念/链改.md>)
@@ -79,6 +73,7 @@
   - [SocialFi](<./一些概念/SocialFi.md>)
   - [Cross-Chain DeFi](<./一些概念/Cross-Chain DeFi.md>)
   - [NiiFi](<./一些概念/NiiFi.md>)
+  - [GameFi](<./一些概念/GameFi.md>)
 
 - [数据结构专题]()
   - [Linked list 相关典型问题](<./数据结构专题/Linked list 相关典型问题/README.md>)
@@ -89,5 +84,9 @@
     - [链表如果相交，找到交点](<./数据结构专题/Linked list 相关典型问题/链表如果相交，找到交点.md>)
     - [合并两个有序链表](<./数据结构专题/Linked list 相关典型问题/合并两个有序链表.md>)
   - [Directed acyclic graph 是什么](<./数据结构专题/Directed acyclic graph 是什么.md>)
+
+- [加密算法专题]()
+  - [Zero-knowledge proof](<./加密算法专题/Zero-knowledge proof/README.md>)
+    - [零知识证明技术揭秘](<./加密算法专题/Zero-knowledge proof/Demystifying Zero Knowledge Proofs.md>)
 
 - [后记](<./后记.md>)
