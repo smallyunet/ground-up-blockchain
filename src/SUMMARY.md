@@ -44,6 +44,7 @@
   - [Byzantine fault tolerance]()
   - [Casper the Friendly Ghost]()
   - [Proof of Burn](<./共识算法专题/Proof of Burn.md>)
+  - [Swarm consensus](<./共识算法专题/Swarm consensus.md>)
 
 - [智能合约专题]()
   - [Ethereum Vitrual Machine](<./智能合约专题/Ethereum Vitrual Machine.md>)

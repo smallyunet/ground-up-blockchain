@@ -22,5 +22,11 @@ PoS 是一种对 PoW 去其糟粕，取其精华的协议。参与者必须拥�
 
 DPoS 是 Pos 衍生出的一种协议，强调了选举的过程。
 
-Reference: [Blockchain Consensus: An Overview of Alternative Protocols](https://www.mdpi.com/2073-8994/13/8/1363)
+#### Proof of Authority
+
+POA 中存在一类被信任的节点，由这些被信任的节点处理交易和块。由于这些 validator 的数量是有限的，整个网络的性能可以非常高，并且拥有良好的扩展性和接近于 0 的手续费用。POA 不需要像 POS 那样质押资产，但是 POA 质押的是节点自身的声誉。声誉可以通过累积参与到网络中的时长增加，这克服了 POS 越是富有的节点越会获得更多激励的问题。不过，POA 是强中心化的，整个网络被控制在少数节点手中。
+
+## References
+
+- [Blockchain Consensus: An Overview of Alternative Protocols](https://www.mdpi.com/2073-8994/13/8/1363)
 
