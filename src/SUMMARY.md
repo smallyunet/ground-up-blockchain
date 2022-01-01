@@ -42,12 +42,14 @@
   - [Proof of Replication]()
   - [Proof of data possession]()
   - [Byzantine fault tolerance]()
-  - [Casper the Friendly Ghost]()
+  - [Casper the Friendly Gadget](<./共识算法专题/Casper the Friendly Gadget.md>)
   - [Proof of Burn](<./共识算法专题/Proof of Burn.md>)
   - [Swarm consensus](<./共识算法专题/Swarm consensus.md>)
 
 - [智能合约专题]()
   - [Ethereum Vitrual Machine](<./智能合约专题/Ethereum Vitrual Machine.md>)
+  - [Solidity](<./智能合约专题/Solidity.md>)
+  - [Yul](<./智能合约专题/Yul.md>)
 
 - [Layer 2 专题](<./Layer 2 专题/READMD.md>)
   - [ZK rollups](<./Layer 2 专题/ZK rollups/README.md>)
