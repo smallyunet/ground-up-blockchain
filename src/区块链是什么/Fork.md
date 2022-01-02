@@ -4,5 +4,7 @@
 
 ## Soft fork
 
-Reference: [Fork(blockchain)](https://en.wikipedia.org/wiki/Fork_(blockchain))
+## References
+
+- [Fork(blockchain)](https://en.wikipedia.org/wiki/Fork_(blockchain))
 

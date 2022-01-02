@@ -340,12 +340,17 @@ node2.Prev = node1_hash
 </code></pre>
 <p>这种反向的 linked-list 就是区块链的基础数据结构。 </p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="peer-to-peer-network"><a class="header" href="#peer-to-peer-network">Peer-to-peer network</a></h1>
-<h2 id="网路发现"><a class="header" href="#网路发现">网路发现</a></h2>
+<p>网络发现是点对点网络的基础，毕竟网络需要多个节点组成，而这多个节点需要一些机制来相互认识。</p>
+<p>一般常用的机制是预置一些种子地址，比如比特币的种子地址列表在 <a href="https://github.com/bitcoin/bitcoin/blob/master/contrib/seeds/nodes_main.txt">https://github.com/bitcoin/bitcoin/blob/master/contrib/seeds/nodes_main.txt</a>。</p>
+<p>节点会请求种子地址指向的节点，然后获取到种子地址拥有的节点列表信息。</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="consensus"><a class="header" href="#consensus">Consensus</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="fork"><a class="header" href="#fork">Fork</a></h1>
 <h2 id="hark-fork"><a class="header" href="#hark-fork">Hark fork</a></h2>
 <h2 id="soft-fork"><a class="header" href="#soft-fork">Soft fork</a></h2>
-<p>Reference: <a href="https://en.wikipedia.org/wiki/Fork_(blockchain)">Fork(blockchain)</a></p>
+<h2 id="references"><a class="header" href="#references">References</a></h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Fork_(blockchain)">Fork(blockchain)</a></li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="区块链能干什么"><a class="header" href="#区块链能干什么">区块链能干什么</a></h1>
 <p>区块链能干什么？这一章节详细列举目前区块链的应用场景。</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="utxo"><a class="header" href="#utxo">UTXO</a></h1>
@@ -442,7 +447,7 @@ node2.Prev = node1_hash
 <h4 id="proof-of-authority"><a class="header" href="#proof-of-authority">Proof of Authority</a></h4>
 <p>POA 中存在一类被信任的节点，由这些被信任的节点处理交易和块。由于这些 validator 的数量是有限的，整个网络的性能可以非常高，并且拥有良好的扩展性和接近于 0 的手续费用。POA 不需要像 POS 那样质押资产，但是 POA 质押的是节点自身的声誉。声誉可以通过累积参与到网络中的时长增加，这克服了 POS 越是富有的节点越会获得更多激励的问题。不过，POA 是强中心化的，整个网络被控制在少数节点手中。</p>
 <h4 id=""><a class="header" href="#"></a></h4>
-<h2 id="references"><a class="header" href="#references">References</a></h2>
+<h2 id="references-1"><a class="header" href="#references-1">References</a></h2>
 <ul>
 <li><a href="https://www.mdpi.com/2073-8994/13/8/1363">Blockchain Consensus: An Overview of Alternative Protocols</a></li>
 </ul>
@@ -464,7 +469,7 @@ node2.Prev = node1_hash
 <div style="break-before: page; page-break-before: always;"></div><h1 id="proof-of-elapsed-time"><a class="header" href="#proof-of-elapsed-time">Proof of Elapsed Time</a></h1>
 <p>Reference: <a href="https://eprint.iacr.org/2021/086">On Elapsed Time Consensus Protocols</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="casper-the-friendly-gadget"><a class="header" href="#casper-the-friendly-gadget">Casper the Friendly Gadget</a></h1>
-<h2 id="references-1"><a class="header" href="#references-1">References</a></h2>
+<h2 id="references-2"><a class="header" href="#references-2">References</a></h2>
 <ul>
 <li><a href="https://github.com/ethereum/research/blob/master/papers/casper-basics/casper_basics.pdf">Casper the Friendly Gadget</a></li>
 </ul>
@@ -478,17 +483,17 @@ node2.Prev = node1_hash
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ethereum-vitrual-machine-evm"><a class="header" href="#ethereum-vitrual-machine-evm">Ethereum Vitrual Machine (EVM)</a></h1>
 <p>EVM 很难被描述为云集群之类的概念，但是它存在并运行于上千个以太坊客户端中。</p>
 <p>以太坊的协议本身需要维护一个不可中断的、不可修改的特殊状态机，状态机内包含了以太坊账户和智能合约的环境。链上所有的区块，以太坊都对它有一个独一无二的状态，EVM 就是定义这种状态规则并且计算出新状态的东西。</p>
-<h2 id="references-2"><a class="header" href="#references-2">References</a></h2>
+<h2 id="references-3"><a class="header" href="#references-3">References</a></h2>
 <ul>
 <li><a href="https://ethereum.org/en/developers/docs/evm/">ETHEREUM VIRTUAL MACHINE (EVM)</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="solidity"><a class="header" href="#solidity">Solidity</a></h1>
-<h2 id="references-3"><a class="header" href="#references-3">References</a></h2>
+<h2 id="references-4"><a class="header" href="#references-4">References</a></h2>
 <ul>
 <li><a href="https://docs.soliditylang.org/en/v0.8.11/">Solidity</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="yul"><a class="header" href="#yul">Yul</a></h1>
-<h2 id="references-4"><a class="header" href="#references-4">References</a></h2>
+<h2 id="references-5"><a class="header" href="#references-5">References</a></h2>
 <ul>
 <li><a href="https://docs.soliditylang.org/en/v0.8.11/yul.html">Yul</a></li>
 </ul>
@@ -874,7 +879,7 @@ node2.Prev = node1_hash
 <h2 id="非对称加密"><a class="header" href="#非对称加密">非对称加密</a></h2>
 <p>非对称加密是指加密方使用解密方的公钥加密，解密方使用自己的私钥解密。</p>
 <p>非对称加密也是在 1976 年出现，Diffie-Hellman 和 RSA 是常用的非对称加密算法。</p>
-<h2 id="references-5"><a class="header" href="#references-5">References</a></h2>
+<h2 id="references-6"><a class="header" href="#references-6">References</a></h2>
 <ul>
 <li><a href="https://joyofcryptography.com">The Joy of Cryptography</a></li>
 <li><a href="https://github.com/cryptosubtlety/intuitive-advanced-cryptography/blob/master/advancedcrypto.pdf">Intuitive Advanced Cryptography</a></li>
