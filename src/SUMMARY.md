@@ -15,7 +15,7 @@
   
 - [区块链能干什么](<区块链能干什么/README.md>)
   - [Unspend transaction output](<区块链能干什么/Unspend transaction output.md>)
-  - [Account/Balance Model](<区块链能干什么/Account_Balance Model>)
+  - [Account/Balance Model](<区块链能干什么/Account_Balance Model.md>)
   - [Decentralized application](<区块链能干什么/Decentralized application.md>)
   - [Decentralized identifiers](<区块链能干什么/Decentralized identifiers.md>)
   - [Non-fungible token](<区块链能干什么/Non-fungible token.md>)
@@ -43,6 +43,7 @@
   - [Proof of data possession]()
   - [Byzantine fault tolerance]()
   - [Casper the Friendly Gadget](<共识算法专题/Casper the Friendly Gadget.md>)
+  - [Casper the Friendly Ghost](<共识算法专题/Casper the Friendly Ghost.md>)
   - [Proof of Burn](<共识算法专题/Proof of Burn.md>)
   - [Swarm consensus](<共识算法专题/Swarm consensus.md>)
 
