@@ -4,4 +4,6 @@
 
 交互式的零知识证明需要在被验证者和验证者之间进行一些交互。
 
-Reference: [Zero-knowledge proof](https://en.wikipedia.org/wiki/Zero-knowledge_proof)
+## References
+
+- [Zero-knowledge proof](https://en.wikipedia.org/wiki/Zero-knowledge_proof)
