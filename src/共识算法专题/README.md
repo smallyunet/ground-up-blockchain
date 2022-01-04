@@ -20,7 +20,7 @@ PoS 是一种对 PoW 去其糟粕，取其精华的协议。参与者必须拥�
 
 #### Delegated Proof of Stake
 
-DPoS 是 Pos 衍生出的一种协议，强调了选举的过程。
+DPoS 是 Pos 衍生出的一种协议，将权益拥有节点与验证节点分离，强调了选举的过程。
 
 #### Proof of Authority
 

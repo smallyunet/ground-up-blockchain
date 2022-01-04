@@ -169,6 +169,8 @@
 <p>至于可能存在的一些意义，只是说服自己的理由。我知道这本书扑街的可能性很大很大。</p>
 <h3 id="这本书算-书-吗"><a class="header" href="#这本书算-书-吗">这本书算 “书” 吗？</a></h3>
 <p>形式上算，内容上不算。没有组织、没有逻辑、结构不严谨，算不上 “书”。</p>
+<h3 id="持续完善这本书的动力是什么"><a class="header" href="#持续完善这本书的动力是什么">持续完善这本书的动力是什么？</a></h3>
+<p>有很多很多东西我一知半解，我会顺便在这里写一点学习过程中的发现和心得，这是唯一的动力。</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="区块链是什么"><a class="header" href="#区块链是什么">区块链是什么</a></h1>
 <p>区块链是什么？你可以放心地确信，目前整个世界上还没有准确的定义。区块链这个词来源于哪儿？是谁创造的？没有人知道。起源于比特币吗？比特币并没有提出 Blockchain 这个词。</p>
 <p>这一章节从基础的数据结构开始，把区块链最核心的技术形态描述出来。</p>
@@ -453,7 +455,7 @@ node2.Prev = node1_hash
 <h4 id="proof-of-stake"><a class="header" href="#proof-of-stake">Proof of Stake</a></h4>
 <p>PoS 是一种对 PoW 去其糟粕，取其精华的协议。参与者必须拥有一些系统中的加密货币才可以挖矿或者进行交易的验证。如果一个节点拥有 10% 的货币，那他挖出下一个块的概率就是 10%。PoS 共识协议中，块只由提案节点产生。提案节点同时也是验证节点，验证节点可以根据比例分配得到出块产生的奖励。网络中所有想要参与出块的节点，都必须质押一定金额到网络中。另外，协议中的提案节点将会随机选出一个主节点，主节点负责根据投票结果，决定接受或者拒绝新产生的块，一般投票数量超过 2/3 为通过。</p>
 <h4 id="delegated-proof-of-stake"><a class="header" href="#delegated-proof-of-stake">Delegated Proof of Stake</a></h4>
-<p>DPoS 是 Pos 衍生出的一种协议，强调了选举的过程。</p>
+<p>DPoS 是 Pos 衍生出的一种协议，将权益拥有节点与验证节点分离，强调了选举的过程。</p>
 <h4 id="proof-of-authority"><a class="header" href="#proof-of-authority">Proof of Authority</a></h4>
 <p>POA 中存在一类被信任的节点，由这些被信任的节点处理交易和块。由于这些 validator 的数量是有限的，整个网络的性能可以非常高，并且拥有良好的扩展性和接近于 0 的手续费用。POA 不需要像 POS 那样质押资产，但是 POA 质押的是节点自身的声誉。声誉可以通过累积参与到网络中的时长增加，这克服了 POS 越是富有的节点越会获得更多激励的问题。不过，POA 是强中心化的，整个网络被控制在少数节点手中。</p>
 <h4 id="proof-of-importance"><a class="header" href="#proof-of-importance">Proof of Importance</a></h4>
@@ -467,7 +469,21 @@ node2.Prev = node1_hash
 <div style="break-before: page; page-break-before: always;"></div><h1 id="工作量证明"><a class="header" href="#工作量证明">工作量证明</a></h1>
 <p>Reference: <a href="https://en.wikipedia.org/wiki/Proof_of_work">Proof of work</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="proof-of-stake-1"><a class="header" href="#proof-of-stake-1">Proof of stake</a></h1>
-<p>Reference: <a href="https://en.wikipedia.org/wiki/Proof_of_stake">Proof of stake</a></p>
+<p>以太坊使用了衍生自 PoW 的共识机制，叫做 PoS。以太坊的社区中经常有一些对共识机制改进的计划。不过在网络中没有使用 PoW 而使用 PoS 确实是一个很大的技术挑战。</p>
+<h2 id="pos-是什么"><a class="header" href="#pos-是什么">PoS 是什么？</a></h2>
+<p>PoS 需要用户质押 ETH 成为网络中的验证节点，验证节点类似于 PoW 中的挖矿节点，负责对交易进行排序并产生新的块，然后将数据同步给整个网络。</p>
+<p>PoS 比起 PoW 有一些优点：</p>
+<ul>
+<li>更节省电力，不会无意义挖矿</li>
+<li>减少对硬件性能的依赖，不需要完成挑战出块</li>
+<li>对中心化更强的免疫力，PoS 允许大多数节点参与到网络</li>
+<li>对 shard chains 更好的支持，这是一种重要的 scaling 方案</li>
+</ul>
+<h2 id="references-4"><a class="header" href="#references-4">References</a></h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Proof_of_stake">Proof of stake</a></li>
+<li><a href="https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/">PROOF-OF-STAKE (POS)</a></li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="proof-of-authority-1"><a class="header" href="#proof-of-authority-1">Proof of authority</a></h1>
 <p>Reference: <a href="https://en.wikipedia.org/wiki/Proof_of_authority">Proof of authority</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="proof-of-space"><a class="header" href="#proof-of-space">Proof of space</a></h1>
@@ -482,12 +498,12 @@ node2.Prev = node1_hash
 <div style="break-before: page; page-break-before: always;"></div><h1 id="proof-of-elapsed-time"><a class="header" href="#proof-of-elapsed-time">Proof of Elapsed Time</a></h1>
 <p>Reference: <a href="https://eprint.iacr.org/2021/086">On Elapsed Time Consensus Protocols</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="casper-the-friendly-gadget"><a class="header" href="#casper-the-friendly-gadget">Casper the Friendly Gadget</a></h1>
-<h2 id="references-4"><a class="header" href="#references-4">References</a></h2>
+<h2 id="references-5"><a class="header" href="#references-5">References</a></h2>
 <ul>
 <li><a href="https://github.com/ethereum/research/blob/master/papers/casper-basics/casper_basics.pdf">Casper the Friendly Gadget</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="casper-the-friendly-ghost"><a class="header" href="#casper-the-friendly-ghost">Casper the Friendly Ghost</a></h1>
-<h2 id="references-5"><a class="header" href="#references-5">References</a></h2>
+<h2 id="references-6"><a class="header" href="#references-6">References</a></h2>
 <ul>
 <li><a href="https://github.com/ethereum/research/blob/master/papers/CasperTFG/CasperTFG.pdf">Casper the Friendly Ghost, A &quot;Correct-by-Construction&quot; Blockchain Consensus Protocol</a></li>
 </ul>
@@ -501,7 +517,7 @@ node2.Prev = node1_hash
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ethereum-vitrual-machine-evm"><a class="header" href="#ethereum-vitrual-machine-evm">Ethereum Vitrual Machine (EVM)</a></h1>
 <p>EVM 很难被描述为云集群之类的概念，但是它存在并运行于上千个以太坊客户端中。</p>
 <p>以太坊的协议本身需要维护一个不可中断的、不可修改的特殊状态机，状态机内包含了以太坊账户和智能合约的环境。链上所有的区块，以太坊都对它有一个独一无二的状态，EVM 就是定义这种状态规则并且计算出新状态的东西。</p>
-<h2 id="references-6"><a class="header" href="#references-6">References</a></h2>
+<h2 id="references-7"><a class="header" href="#references-7">References</a></h2>
 <ul>
 <li><a href="https://ethereum.org/en/developers/docs/evm/">ETHEREUM VIRTUAL MACHINE (EVM)</a></li>
 </ul>
@@ -545,7 +561,7 @@ func b() {
 <h2 id="yul"><a class="header" href="#yul">Yul</a></h2>
 <p>Yul 是一种中间语言，和 Solidity 没有同等的地位，它似乎不是一种值得去了解的语言。</p>
 <p>我们使用这些语言的目的应该还是要开发智能合约而已，而不是学习编程语言。</p>
-<h2 id="references-7"><a class="header" href="#references-7">References</a></h2>
+<h2 id="references-8"><a class="header" href="#references-8">References</a></h2>
 <ul>
 <li><a href="https://docs.soliditylang.org/en/v0.8.11/">Solidity</a></li>
 <li><a href="https://docs.soliditylang.org/en/v0.8.11/yul.html">Yul</a></li>
@@ -558,7 +574,7 @@ func b() {
 <tr><td>ZK Rollup</td><td>4,500</td></tr>
 <tr><td>Optimistic Rollup</td><td>800</td></tr>
 </tbody></table>
-<h2 id="references-8"><a class="header" href="#references-8">References</a></h2>
+<h2 id="references-9"><a class="header" href="#references-9">References</a></h2>
 <ul>
 <li><a href="https://ethereum.org/en/developers/docs/scaling/">SCALING</a></li>
 <li><a href="https://arxiv.org/pdf/2107.10881.pdf">Layer 2 Blockchain Scaling: a Survey</a></li>
@@ -933,7 +949,7 @@ func b() {
 <h2 id="非对称加密"><a class="header" href="#非对称加密">非对称加密</a></h2>
 <p>非对称加密是指加密方使用解密方的公钥加密，解密方使用自己的私钥解密。</p>
 <p>非对称加密也是在 1976 年出现，Diffie-Hellman 和 RSA 是常用的非对称加密算法。</p>
-<h2 id="references-9"><a class="header" href="#references-9">References</a></h2>
+<h2 id="references-10"><a class="header" href="#references-10">References</a></h2>
 <ul>
 <li><a href="https://joyofcryptography.com">The Joy of Cryptography</a></li>
 <li><a href="https://github.com/cryptosubtlety/intuitive-advanced-cryptography/blob/master/advancedcrypto.pdf">Intuitive Advanced Cryptography</a></li>
@@ -942,12 +958,12 @@ func b() {
 <div style="break-before: page; page-break-before: always;"></div><h1 id="零知识证明是什么"><a class="header" href="#零知识证明是什么">零知识证明是什么</a></h1>
 <p>在密码学中，零知识证明或者零知识协议是一种可以让一方证明另一方提供的表达式是否是 true，证明过程不需要任何除了表达式之外的真实信息。零知识证明的过程就是证明一个人拥有的某些信息是可以被简单证明真伪的，难点就在于如何在不获得消息本身相关内容的情况下，证明真伪。如果表达式包含了秘密的信息，验证者将不会通过这个表达式的验证。表达式要能够证明待证明一方确实知道一些信息，但是又不能透露信息本身。</p>
 <p>交互式的零知识证明需要在被验证者和验证者之间进行一些交互。</p>
-<h2 id="references-10"><a class="header" href="#references-10">References</a></h2>
+<h2 id="references-11"><a class="header" href="#references-11">References</a></h2>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Zero-knowledge_proof">Zero-knowledge proof</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="零知识证明技术揭秘"><a class="header" href="#零知识证明技术揭秘">零知识证明技术揭秘</a></h1>
-<h2 id="references-11"><a class="header" href="#references-11">References</a></h2>
+<h2 id="references-12"><a class="header" href="#references-12">References</a></h2>
 <ul>
 <li><a href="https://docs.google.com/presentation/d/1gfB6WZMvM9mmDKofFibIgsyYShdf0RV_Y8TLz3k1Ls0/edit#slide=id.p">Demystifying Zero Knowledge Proofs</a></li>
 </ul>
