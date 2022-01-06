@@ -12,3 +12,6 @@ img[alt="80"] {
     width: 100%;
   }
 }
+img[alt="inline"] {
+  display: inline-block;
+}
