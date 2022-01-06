@@ -51,6 +51,8 @@
   - [Ethereum Vitrual Machine](<智能合约专题/Ethereum Vitrual Machine.md>)
   - [Solidity](<智能合约专题/Solidity.md>)
 
+- [多链专题](<多链专题/README.md>)
+
 - [Layer 2 专题](<Layer 2 专题/READMD.md>)
   - [ZK rollups](<Layer 2 专题/ZK rollups/README.md>)
     - [dYdX](<Layer 2 专题/ZK rollups/dYdX.md>)
