@@ -1,6 +1,6 @@
 # 概览
 
-## 性能
+## 性能概览
 
 |Solutions|TPS|
 |-|-|
@@ -8,6 +8,12 @@
 |Plasma|7,200|
 |ZK Rollup|4,500|
 |Optimistic Rollup|800|
+
+## Rollup
+
+这是 rollups 方案的分类：
+
+![80](./assets/1.jpeg)
 
 ## References
 

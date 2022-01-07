@@ -1,9 +1,9 @@
 # Summary
 
 - [封面](<src/封面.md>)
-
 - [前言](<src/前言.md>)
 - [为什么你需要这本书](<src/为什么你需要这本书.md>)
+- [目录](SUMMARY.md)
 
 - [区块链是什么](<src/区块链是什么/README.md>)
   - [Linked list](<src/区块链是什么/Linked list.md>)
@@ -33,7 +33,10 @@
   - [基于 Hashgraph 的区块链](<src/区块链的未来/基于 Hashgraph 的区块链.md>)
 
 - [共识算法专题](<src/共识算法专题/README.md>)
+  - [Paxos](<src/共识算法专题/Paxos.md>)
   - [Proof of work](<src/共识算法专题/Proof of work.md>)
+  - [Proof of Burn](<src/共识算法专题/Proof of Burn.md>)
+  - [Proof of Block Space](<src/共识算法专题/Proof of Block Space.md>)
   - [Proof of stake](<src/共识算法专题/Proof of stake.md>)
   - [Proof of authority](<src/共识算法专题/Proof of authority.md>)
   - [Proof of space](<src/共识算法专题/Proof of space.md>)
@@ -44,7 +47,6 @@
   - [Practical Byzantine Fault Tolerance](<src/共识算法专题/Practical Byzantine Fault Tolerance.md>)
   - [Casper the Friendly Gadget](<src/共识算法专题/Casper the Friendly Gadget.md>)
   - [Casper the Friendly Ghost](<src/共识算法专题/Casper the Friendly Ghost.md>)
-  - [Proof of Burn](<src/共识算法专题/Proof of Burn.md>)
   - [Swarm consensus](<src/共识算法专题/Swarm consensus.md>)
 
 - [智能合约专题](<src/智能合约专题/README.md>)
