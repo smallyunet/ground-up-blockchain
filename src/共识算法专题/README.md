@@ -42,13 +42,30 @@ Ripple 或者叫 XRP 节点共识协议，属于 BFT 共识的一种。validator
 
 DBFT 类似国家的治理系统，有公民、选民、代表等角色，共同管理国家。这种协议依赖投票的程序，类似于 PoS，每个节点都可以投票，随机选出一些代表。选民负责回应和跟踪所有公民的行为。被随机选出的代表负责块的提案，选民参与块数据的验证。块的产生同样需要 2/3 选民同意。不过，如果有 2/3 的选民投票选出新的代表，块的提案过程会重新来过。
 
+#### Federated Byzantine Agreement
+
+TODO
+
 #### Proof of Elapsed Time
 
 2016 年，Intel 发布了 PoW 的替代方案 PoET，Hyperledge 的 Sawtooth 项目使用了这种共识机制。PoET 使用一种随机的机制，参与节点等待一个随机的时间值，最新的块将由随机时间最短的节点产生。将块广播到网络的同时，块数据包含本次等待的这个最短时间，用于其他节点确认真伪。这样的共识机制比 PoW 更加去中心化，但是它也有一些问题，不太适用用公有链，因为这样的共识会让整个网络变得混乱，不是足够稳定。另外，PoET 需要使用 Intel 的专用硬件，给这种共识机制的推广带来了困难。使用这种共识机制的前提是，我们需要信任运行节点的硬件设备。
 
-### Proof of Capacity
+#### Proof of Burn
+
+PoBr 不像 PoW 或者 Pos 一样需要强大的算力挖矿，PoBr 采用了另一种思路，节点可以通过销毁 token 争夺最新块的记账权，也就是使用短期内的损失换取出块后的更大奖励。相当于节点质押金额进去挖矿了。这样的共识算法节省了硬件资源的消耗，Slimcoin 是典型的 PoBr 的例子。
+
+#### Proof of Capacity
 
 PoC 是一种基于磁盘容量的共识机制。PoC 使用一些方式证明节点的可用容量为某一些数值，整个区块链网络会将这一部分容量用以为其他节点提供服务。可用容量的大小即节点的贡献值，节点根据提供空间的大小获得奖励。PoC 一般使用 hard-to-pebble 的图结构证明节点的可用空间大小。
+
+### 可替代的协议
+
+这一部分我们回讨论 15 种近 3 年的可供选择的协议。这些协议可以按照这样的方式进行分类：
+
+- Consensus Protocol based on Effort or Work (CPE)
+- Consensus Protocol based on Wealth or Resources (CPW)
+- Consensus Protocol based on Past Behavior or Reputation (CPPB)
+- Consensus Protocol based on Representation (CPR)
 
 ## References
 
