@@ -21,6 +21,7 @@
   - [Non-fungible token](<区块链能干什么/Non-fungible token.md>)
   - [InterPlanetary File System](<区块链能干什么/InterPlanetary File System.md>)
   - [Blockchain oracle](<区块链能干什么/Blockchain oracle.md>)
+  - [Matrix](区块链能干什么/Matrix.md)
   
 - [区块链的过去](<区块链的过去/README.md>)
   - [Bitcoin](<区块链的过去/Bitcoin.md>)
@@ -73,6 +74,8 @@
 
 - [Layer 3 专题](<Layer 3 专题/README.md>)
 
+- [数字货币专题](<数字货币专题/README.md>)
+
 - [一些概念](<一些概念/README.md>)
   - [链改](<一些概念/链改.md>)
   - [元宇宙](<一些概念/元宇宙.md>)
@@ -97,5 +100,7 @@
 - [加密算法专题](<加密算法专题/README.md>)
   - [Zero-knowledge proof](<加密算法专题/Zero-knowledge proof/README.md>)
     - [零知识证明技术揭秘](<加密算法专题/Zero-knowledge proof/Demystifying Zero Knowledge Proofs.md>)
+    - [Bulletproofs](<加密算法专题/Zero-knowledge proof/Bulletproofs.md>)
+  - [Provable Data Possession](<加密算法专题/Provable Data Possession.md>)
 
 - [后记](<后记.md>)
