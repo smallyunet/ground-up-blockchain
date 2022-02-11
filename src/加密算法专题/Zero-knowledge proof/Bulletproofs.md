@@ -10,3 +10,5 @@
 
 - [A pure-Rust implementation of Bulletproofs using Ristretto](https://github.com/dalek-cryptography/bulletproofs)
 
+- [Building on Bulletproofs](https://cathieyun.medium.com/building-on-bulletproofs-2faa58af0ba8)
+
