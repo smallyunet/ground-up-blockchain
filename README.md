@@ -30,7 +30,7 @@
   
 - [区块链的未来](<src/区块链的未来/README.md>)
   - [基于 Multi-linked list 的区块链](<src/区块链的未来/基于 Multi-linked list 的区块链.md>)
-  - [基于 Directed acyclic graph 的区块链](<src/区块链的未来/基于 Directed acyclic graph 的区块链.md>)
+  - [基于 DAG 的区块链](<src/区块链的未来/基于 DAG 的区块链.md>)
   - [基于 Hashgraph 的区块链](<src/区块链的未来/基于 Hashgraph 的区块链.md>)
 
 - [共识算法专题](<src/共识算法专题/README.md>)
@@ -89,9 +89,9 @@
   - [Linked list](<src/数据结构专题/Linked list/README.md>)
     - [翻转链表](<src/数据结构专题/Linked list/翻转链表.md>)
     - [判断链表是否有环](<src/数据结构专题/Linked list/判断链表是否有环.md>)
-    - [链表如果有环，找到环的起点](<src/数据结构专题/Linked list/链表如果有环，找到环的起点.md>)
+    - [找到环的起点](<src/数据结构专题/Linked list/找到环的起点.md>)
     - [判断两个链表是否相交](<src/数据结构专题/Linked list/判断两个链表是否相交.md>)
-    - [链表如果相交，找到交点](<src/数据结构专题/Linked list/链表如果相交，找到交点.md>)
+    - [找到交点](<src/数据结构专题/Linked list/找到交点.md>)
     - [合并两个有序链表](<src/数据结构专题/Linked list/合并两个有序链表.md>)
   - [Directed acyclic graph](<src/数据结构专题/Directed acyclic graph/README.md>)
     - [Kahn's algorithm](<src/数据结构专题/Directed acyclic graph/Kahn’s algorithm.md>)
