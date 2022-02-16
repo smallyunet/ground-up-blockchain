@@ -85,6 +85,8 @@
   - [NiiFi](<src/一些概念/NiiFi.md>)
   - [GameFi](<src/一些概念/GameFi.md>)
 
+- [测试专题](<src/测试专题/README.md>)
+
 - [数据结构专题](<src/数据结构专题/README.md>)
   - [Linked list](<src/数据结构专题/Linked list/README.md>)
     - [翻转链表](<src/数据结构专题/Linked list/翻转链表.md>)
@@ -103,6 +105,6 @@
     - [Bulletproofs](<src/加密算法专题/Zero-knowledge proof/Bulletproofs.md>)
   - [Provable Data Possession](<src/加密算法专题/Provable Data Possession.md>)
 
-- [测试专题](<src/测试专题/README.md>)
+- [计算机基础](计算机基础/README.md)
 
 - [后记](<src/后记.md>)

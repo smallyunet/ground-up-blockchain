@@ -7,3 +7,5 @@
 ## References
 
 - [Zero-knowledge proof](https://en.wikipedia.org/wiki/Zero-knowledge_proof)
+
+- [A Survey on Zero Knowledge Range Proofs and Applications](https://arxiv.org/pdf/1907.06381.pdf)
