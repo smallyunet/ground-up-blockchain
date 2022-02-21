@@ -136,7 +136,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <p><img src="./assets/1.png" alt="50" /></p>
+                        <h1 id="封面"><a class="header" href="#封面">封面</a></h1>
+<p><img src="./assets/1.png" alt="50" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="前言"><a class="header" href="#前言">前言</a></h1>
 <p>以前有过一个设想，假如一个普通程序员，愿意花费 5 年的时间专心学习和研究某一个技术框架，比如 <a href="https://spring.io/projects/spring-boot">Spring Boot</a>，5 年的时间足够了解这个框架的多数细节了，那么他在 5 年之后，可以凭借对 Spring Boot 足够深入的了解，写一本《Spring Boot 从入门到精通》之类的书没有问题吧。写出一本书可以带来什么？至少可以增加一些被认可的依据。“写书“的难度大吗？看看现在中文的技术类书籍，哪个不是电子垃圾？然而事实上，大多数 5 年以上工作经验的程序员都做不到“写书“这件事。即使写的难看，毕竟也是有，聊胜于无啊！为什么没有人写？</p>
 <p>有多少书写着写着就变成了技术手册？大而全没有重点，有用的没用的全写进去。也许是本着对观众负责的态度，“我写的内容不一定有见地，至少全啊！“这样的逻辑类似于，消费者在买东西的时候，“这个功能我可以不用，但不能没有！“</p>
@@ -530,6 +531,7 @@ node2.Prev = node1_hash
 <p>一般常用的机制是预置一些种子地址，比如比特币的种子地址列表在 <a href="https://github.com/bitcoin/bitcoin/blob/master/contrib/seeds/nodes_main.txt">https://github.com/bitcoin/bitcoin/blob/master/contrib/seeds/nodes_main.txt</a>。</p>
 <p>节点会请求种子地址指向的节点，然后获取到种子地址拥有的节点列表信息。</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="consensus"><a class="header" href="#consensus">Consensus</a></h1>
+<p>共识算法是在分布式系统中，各个节点达成数据一致性的方式。</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="fork"><a class="header" href="#fork">Fork</a></h1>
 <h2 id="hark-fork"><a class="header" href="#hark-fork">Hark fork</a></h2>
 <h2 id="soft-fork"><a class="header" href="#soft-fork">Soft fork</a></h2>
@@ -776,6 +778,8 @@ node2.Prev = node1_hash
 <p>以太坊的协议本身需要维护一个不可中断的、不可修改的特殊状态机，状态机内包含了以太坊账户和智能合约的环境。链上所有的区块，以太坊都对它有一个独一无二的状态，EVM 就是定义这种状态规则并且计算出新状态的东西。</p>
 <p>Reference: <a href="https://ethereum.org/en/developers/docs/evm/">ETHEREUM VIRTUAL MACHINE (EVM)</a></p>
 <h2 id="gas"><a class="header" href="#gas">Gas</a></h2>
+<p>以太坊中有三个 Gas 相关的变量： Gas limit、Gas price、Value。</p>
+<p>GasLimit 是一笔交易消耗的计算资源上限，GasPrice 是 Gas unit 的单价。GasLimit 用以保证计算资源的消耗是可控的，GasPrice 控制整笔交易的手续费维持在市场平均水平。</p>
 <p>References:</p>
 <ul>
 <li>
@@ -952,8 +956,7 @@ func b() {
 <p><img src="%E4%B8%80%E4%BA%9B%E6%A6%82%E5%BF%B5/./assets/1.png" alt="50" /></p>
 <p>之前有过一次名头为 “中国元宇宙峰会” 的直播，峰会两个字真敢用，是不是就意味着顶尖了？看了一会儿，发现其实是趣链的一家子公司在打广告，说 NFT 是元宇宙入口之类，甚至还有从宇宙起源说起的公司。某个 CEO 在直播的时候反复说了几次，“大家知道我是做联盟链的，还做了好几年，……”，为此自豪的样子，还说发出向其他机构的邀请，成为他们那条链的理事节点，现在除了 4 个共识节点，也支持另外 3 个节点了。话说分层共识不是几年前就有了么。</p>
 <p>目前来看，元宇宙还处于非常初级比区块链还初级的概念阶段，可以任其发展，不需要担心错过什么。</p>
-<h2 id="references-21"><a class="header" href="#references-21">References</a></h2>
-<p><a href="https://en.wikipedia.org/wiki/Metaverse">Metaverse</a></p>
+<p>Reference: <a href="https://en.wikipedia.org/wiki/Metaverse">Metaverse</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="liquifi"><a class="header" href="#liquifi">Liquifi</a></h1>
 <p>References: </p>
 <ul>
@@ -961,7 +964,7 @@ func b() {
 <li><a href="https://github.com/TBDev-54566975/white-paper/blob/main/whitepaper.pdf">tbDEX: A Liquidity Protocol v0.1</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="socialfi"><a class="header" href="#socialfi">SocialFi</a></h1>
-<h2 id="references-22"><a class="header" href="#references-22">References</a></h2>
+<h2 id="references-21"><a class="header" href="#references-21">References</a></h2>
 <ul>
 <li><a href="https://www.nasdaq.com/articles/social-media-on-the-blockchain-socialfi-could-be-key-to-mass-adoption">Social Media on the Blockchain (SocialFi) Could Be Key to Mass Adoption</a></li>
 <li><a href="https://www.investing.com/news/cryptocurrency-news/why-socialfi-is-the-next-big-thing-in-crypto-2707577">Why SocialFi is the Next Big Thing in Crypto</a></li>
@@ -969,12 +972,12 @@ func b() {
 <div style="break-before: page; page-break-before: always;"></div><h1 id="cross-chain-defi"><a class="header" href="#cross-chain-defi">Cross-Chain DeFi</a></h1>
 <p>Reference: <a href="https://medium.com/dehive/the-future-of-cross-chain-defi-b149b607dbe5">The Future of Cross-Chain DeFi</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="niifi"><a class="header" href="#niifi">NiiFi</a></h1>
-<h2 id="references-23"><a class="header" href="#references-23">References</a></h2>
+<h2 id="references-22"><a class="header" href="#references-22">References</a></h2>
 <p><a href="https://www.niifi.com">NiiFi</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="gamefi"><a class="header" href="#gamefi">GameFi</a></h1>
 <p>Reference: <a href="https://akado.medium.com/fundamental-analysis-the-case-for-gamefi-2dd77a556148">Fundamental Analysis: The case for GameFi</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="测试专题"><a class="header" href="#测试专题">测试专题</a></h1>
-<h2 id="references-24"><a class="header" href="#references-24">References</a></h2>
+<h2 id="references-23"><a class="header" href="#references-23">References</a></h2>
 <ul>
 <li><a href="https://asatarin.github.io/testing-distributed-systems/">Testing Distributed Systems</a></li>
 </ul>
@@ -1246,7 +1249,7 @@ func b() {
 <h2 id="非对称加密"><a class="header" href="#非对称加密">非对称加密</a></h2>
 <p>非对称加密是指加密方使用解密方的公钥加密，解密方使用自己的私钥解密。</p>
 <p>非对称加密也是在 1976 年出现，Diffie-Hellman 和 RSA 是常用的非对称加密算法。</p>
-<h2 id="references-25"><a class="header" href="#references-25">References</a></h2>
+<h2 id="references-24"><a class="header" href="#references-24">References</a></h2>
 <ul>
 <li><a href="https://joyofcryptography.com">The Joy of Cryptography</a></li>
 <li><a href="https://github.com/cryptosubtlety/intuitive-advanced-cryptography/blob/master/advancedcrypto.pdf">Intuitive Advanced Cryptography</a></li>
@@ -1255,7 +1258,7 @@ func b() {
 <div style="break-before: page; page-break-before: always;"></div><h1 id="零知识证明是什么"><a class="header" href="#零知识证明是什么">零知识证明是什么</a></h1>
 <p>在密码学中，零知识证明或者零知识协议是一种可以让一方证明另一方提供的表达式是否是 true，证明过程不需要任何除了表达式之外的真实信息。零知识证明的过程就是证明一个人拥有的某些信息是可以被简单证明真伪的，难点就在于如何在不获得消息本身相关内容的情况下，证明真伪。如果表达式包含了秘密的信息，验证者将不会通过这个表达式的验证。表达式要能够证明待证明一方确实知道一些信息，但是又不能透露信息本身。</p>
 <p>交互式的零知识证明需要在被验证者和验证者之间进行一些交互。</p>
-<h2 id="references-26"><a class="header" href="#references-26">References</a></h2>
+<h2 id="references-25"><a class="header" href="#references-25">References</a></h2>
 <ul>
 <li>
 <p><a href="https://en.wikipedia.org/wiki/Zero-knowledge_proof">Zero-knowledge proof</a></p>
@@ -1265,12 +1268,12 @@ func b() {
 </li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="零知识证明技术揭秘"><a class="header" href="#零知识证明技术揭秘">零知识证明技术揭秘</a></h1>
-<h2 id="references-27"><a class="header" href="#references-27">References</a></h2>
+<h2 id="references-26"><a class="header" href="#references-26">References</a></h2>
 <ul>
 <li><a href="https://docs.google.com/presentation/d/1gfB6WZMvM9mmDKofFibIgsyYShdf0RV_Y8TLz3k1Ls0/edit#slide=id.p">Demystifying Zero Knowledge Proofs</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="bulletproofs"><a class="header" href="#bulletproofs">Bulletproofs</a></h1>
-<h2 id="references-28"><a class="header" href="#references-28">References</a></h2>
+<h2 id="references-27"><a class="header" href="#references-27">References</a></h2>
 <ul>
 <li>
 <p><a href="https://crypto.stanford.edu/bulletproofs/#:%7E:text=Bulletproofs%20are%20short%20non%2Dinteractive,anything%20else%20about%20the%20number.">Bulletproofs: Short Proofs for Confidential Transactions and More</a></p>
@@ -1286,7 +1289,7 @@ func b() {
 </li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="provable-data-possession"><a class="header" href="#provable-data-possession">Provable Data Possession</a></h1>
-<h2 id="references-29"><a class="header" href="#references-29">References</a></h2>
+<h2 id="references-28"><a class="header" href="#references-28">References</a></h2>
 <ul>
 <li>
 <p><a href="https://dl.acm.org/doi/10.1145/2699909#:%7E:text=In%20the%20Provable%20Data%20Possession,without%20downloading%20the%20actual%20data">Dynamic Provable Data Possession</a>.)</p>
@@ -1300,12 +1303,12 @@ for Off-chain Storage</a></p>
 </li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="计算机基础"><a class="header" href="#计算机基础">计算机基础</a></h1>
-<h2 id="references-30"><a class="header" href="#references-30">References</a></h2>
+<h2 id="references-29"><a class="header" href="#references-29">References</a></h2>
 <ul>
 <li><a href="https://people.freebsd.org/%7Elstewart/articles/cpumemory.pdf">What Every Programmer Should Know About Memory</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="算法"><a class="header" href="#算法">算法</a></h1>
-<h2 id="references-31"><a class="header" href="#references-31">References</a></h2>
+<h2 id="references-30"><a class="header" href="#references-30">References</a></h2>
 <ul>
 <li><a href="https://en.algorithmica.org/hpc/">Algorithms for Modern Hardware</a></li>
 </ul>

@@ -140,6 +140,8 @@
 <p>以太坊的协议本身需要维护一个不可中断的、不可修改的特殊状态机，状态机内包含了以太坊账户和智能合约的环境。链上所有的区块，以太坊都对它有一个独一无二的状态，EVM 就是定义这种状态规则并且计算出新状态的东西。</p>
 <p>Reference: <a href="https://ethereum.org/en/developers/docs/evm/">ETHEREUM VIRTUAL MACHINE (EVM)</a></p>
 <h2 id="gas"><a class="header" href="#gas">Gas</a></h2>
+<p>以太坊中有三个 Gas 相关的变量： Gas limit、Gas price、Value。</p>
+<p>GasLimit 是一笔交易消耗的计算资源上限，GasPrice 是 Gas unit 的单价。GasLimit 用以保证计算资源的消耗是可控的，GasPrice 控制整笔交易的手续费维持在市场平均水平。</p>
 <p>References:</p>
 <ul>
 <li>

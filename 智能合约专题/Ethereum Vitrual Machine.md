@@ -8,6 +8,10 @@ Reference: [ETHEREUM VIRTUAL MACHINE (EVM)](https://ethereum.org/en/developers/d
 
 ## Gas
 
+以太坊中有三个 Gas 相关的变量： Gas limit、Gas price、Value。
+
+GasLimit 是一笔交易消耗的计算资源上限，GasPrice 是 Gas unit 的单价。GasLimit 用以保证计算资源的消耗是可控的，GasPrice 控制整笔交易的手续费维持在市场平均水平。
+
 References:
 
 - [Understanding Gas in Ethereum](https://www.investopedia.com/terms/g/gas-ethereum.asp#:~:text=%22Gas%20limit%22%20refers%20to%20the,ETH%20or%20a%20smart%20contract.&text=If%20the%20gas%20price%20limit,choose%20to%20ignore%20such%20transactions.)
