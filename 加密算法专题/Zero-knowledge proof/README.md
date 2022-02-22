@@ -4,8 +4,16 @@
 
 交互式的零知识证明需要在被验证者和验证者之间进行一些交互。
 
-## References
-
+References:
 - [Zero-knowledge proof](https://en.wikipedia.org/wiki/Zero-knowledge_proof)
-
 - [A Survey on Zero Knowledge Range Proofs and Applications](https://arxiv.org/pdf/1907.06381.pdf)
+
+## Zilch
+
+Zilch 是一个基于 STARKs 的框架，实现了一种叫做 ZeroJava 的语言，是 Java 的精简版本。
+
+Reference: [Transparent Zero-Knowledge Proofs With Zilch
+](https://medium.com/@trustworthy-computing/transparent-zero-knowledge-proofs-with-zilch-2031a63fcef3)
+
+
+
