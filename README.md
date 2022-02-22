@@ -103,7 +103,8 @@
   - [Zero-knowledge proof](<加密算法专题/Zero-knowledge proof/README.md>)
     - [零知识证明技术揭秘](<加密算法专题/Zero-knowledge proof/Demystifying Zero Knowledge Proofs.md>)
     - [Bulletproofs](<加密算法专题/Zero-knowledge proof/Bulletproofs.md>)
-    - [STARKs](<加密算法专题/Zero-knowledge proof/STARKs.md>)
+    - [zkSTARKs](<加密算法专题/Zero-knowledge proof/zkSTARKs.md>)
+    - [zkSNARK](<加密算法专题/Zero-knowledge proof/zkSNARK.md>)
   - [Provable Data Possession](<加密算法专题/Provable Data Possession.md>)
 
 - [计算机基础](计算机基础/README.md)

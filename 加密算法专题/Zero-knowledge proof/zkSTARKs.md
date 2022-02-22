@@ -1,4 +1,4 @@
-# STARKs
+# zkSTARKs
 
 
 Vitalik Buterin’s blog series on zk-STARKs:
