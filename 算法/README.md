@@ -1,5 +1,3 @@
 # 算法
 
-## References
-
-- [Algorithms for Modern Hardware](https://en.algorithmica.org/hpc/)
+Reference: [Algorithms for Modern Hardware](https://en.algorithmica.org/hpc/)

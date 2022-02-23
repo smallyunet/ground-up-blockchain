@@ -54,19 +54,21 @@
   - [Ethereum Vitrual Machine](<智能合约专题/Ethereum Vitrual Machine.md>)
   - [Solidity](<智能合约专题/Solidity.md>)
 
-- [多链专题](<多链专题/README.md>)
+- [跨链专题](<跨链专题/README.md>)
 
 - [Layer 2 专题](<Layer 2 专题/READMD.md>)
   - [ZK rollups](<Layer 2 专题/ZK rollups/README.md>)
     - [dYdX](<Layer 2 专题/ZK rollups/dYdX.md>)
     - [zkSync](<Layer 2 专题/ZK rollups/zkSync.md>)
-    - [Zk-Rollups 是怎么工作的](<Layer 2 专题/ZK rollups/Zk-Rollups 是怎么工作的.md>)
   - [Optimistic rollups](<Layer 2 专题/Optimistic rollups/README.md>)
     - [Optimistic](<Layer 2 专题/Optimistic rollups/Optimistic.md>)
     - [Arbitrum](<Layer 2 专题/Optimistic rollups/Arbitrum.md>)
   - [State channels](<Layer 2 专题/State channels/README.md>)
     - [Lightning Network](<Layer 2 专题/State channels/Lightning Network.md>)
     - [Raiden Network](<Layer 2 专题/State channels/Raiden Network.md>)
+    - [Celer Network](<Layer 2 专题/State channels/Celer Network.md>)
+    - [Perun](<Layer 2 专题/State channels/Perun.md>)
+    - [Counterfactual](<Layer 2 专题/State channels/Counterfactual.md>)
     - [Virtual channels](<Layer 2 专题/State channels/Virtual channels.md>)
     - [Nitro Protocol](<Layer 2 专题/State channels/Nitro Protocol.md>)
   - [Sidechain](<Layer 2 专题/Sidechain.md>)
@@ -74,7 +76,8 @@
 
 - [Layer 3 专题](<Layer 3 专题/README.md>)
 
-- [数字货币专题](<数字货币专题/README.md>)
+- [Web 3.0 专题](<Web 3.0/README.md>)
+  - [Web 3.0](<Web 3.0/Solana.md>)
 
 - [一些概念](<一些概念/README.md>)
   - [链改](<一些概念/链改.md>)
@@ -84,6 +87,8 @@
   - [Cross-Chain DeFi](<一些概念/Cross-Chain DeFi.md>)
   - [NiiFi](<一些概念/NiiFi.md>)
   - [GameFi](<一些概念/GameFi.md>)
+
+- [数字货币专题](<数字货币专题/README.md>)
 
 - [测试专题](<测试专题/README.md>)
 

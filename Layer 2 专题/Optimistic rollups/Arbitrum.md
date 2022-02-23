@@ -1,9 +1,12 @@
 # Arbitrum
 
+## 简介
 
+Arbitrum 有和 Ethereum 一样的 API 接口，支持 Ethereum 所有的语言，不需要更改任何内容或者下载任何新的软件，就可以无缝从 Ethereum 切换到 Arbitrum。
 
+Reference: [Arbitrum Rollup Basics](https://developer.offchainlabs.com/docs/rollup_basics)
 
-## References
+## 协议设计
 
-- [Arbitrum Rollup Basics](https://developer.offchainlabs.com/docs/rollup_basics)
+Reference: [Arbitrum Rollup Protocol](https://developer.offchainlabs.com/docs/rollup_protocol)
 

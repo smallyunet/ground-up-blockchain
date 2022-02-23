@@ -1,6 +1,6 @@
 # Non-fungible token (NFT)
 
-## References
+NFT 提供了一种证明数字资产所有权的方案。
 
-- [Non-fungible token](https://en.wikipedia.org/wiki/Non-fungible_token)
+Reference: [Non-fungible token](https://en.wikipedia.org/wiki/Non-fungible_token)
 
