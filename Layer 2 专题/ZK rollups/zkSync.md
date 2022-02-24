@@ -2,6 +2,8 @@
 
 
 
+Reference: 
 
+- [zkSync: Scalability Without Compromising Security](https://medium.com/1kxnetwork/zksync-scalability-without-compromising-security-a86a67d5cc2)
 
-Reference: [zkPorter: a breakthrough in L2 scaling](https://medium.com/matter-labs/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
+- [zkPorter: a breakthrough in L2 scaling](https://medium.com/matter-labs/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)

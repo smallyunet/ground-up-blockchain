@@ -1,6 +1,9 @@
 # 测试专题
 
 
-## References
+## 分布式系统的测试
 
-- [Testing Distributed Systems](https://asatarin.github.io/testing-distributed-systems/)
+References: [Testing Distributed Systems](https://asatarin.github.io/testing-distributed-systems/)
+
+
+
