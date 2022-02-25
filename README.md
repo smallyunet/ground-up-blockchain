@@ -28,6 +28,7 @@
   - [Bitcoin](<区块链的过去/Bitcoin.md>)
   - [Ethereum](<区块链的过去/Ethereum.md>)
   - [Polkadot](<区块链的过去/Polkadot.md>)
+  - [Solana](<区块链的过去/Solana.md>)
   
 - [区块链的未来](<区块链的未来/README.md>)
   - [基于 Multi-linked list 的区块链](<区块链的未来/基于 Multi-linked list 的区块链.md>)
@@ -44,6 +45,7 @@
   - [Proof of space](<共识算法专题/Proof of space.md>)
   - [Proof of History](<共识算法专题/Proof of History.md>)
   - [Proof of Elapsed Time](<共识算法专题/Proof of Elapsed Time.md>)
+  - [Proof of Efficiency](<共识算法专题/Proof of Efficiency.md>)
   - [Proof of Replication](<共识算法专题/Proof of Replication.md>)
   - [Proof of data possession](<共识算法专题/Proof of data possession.md>)
   - [PBFT](<共识算法专题/PBFT.md>)
@@ -62,6 +64,7 @@
     - [dYdX](<Layer 2 专题/ZK rollups/dYdX.md>)
     - [zkSync](<Layer 2 专题/ZK rollups/zkSync.md>)
     - [StarkNet](<Layer 2 专题/ZK rollups/StarkNet.md>)
+    - [Polygon](<Layer 2 专题/ZK rollups/Polygon.md>)
   - [Optimistic rollups](<Layer 2 专题/Optimistic rollups/README.md>)
     - [Optimistic](<Layer 2 专题/Optimistic rollups/Optimistic.md>)
     - [Arbitrum](<Layer 2 专题/Optimistic rollups/Arbitrum.md>)
@@ -77,9 +80,6 @@
   - [Plasma](<Layer 2 专题/Plasma.md>)
   - [zkEVM](<Layer 2 专题/zkEVM.md>)
 
-- [Web 3.0 专题](<Web 3.0/README.md>)
-  - [Solana](<Web 3.0/Solana.md>)
-
 - [一些新概念](<一些新概念/README.md>)
   - [链改](<一些新概念/链改.md>)
   - [元宇宙](<一些新概念/元宇宙.md>)
@@ -89,6 +89,7 @@
   - [NiiFi](<一些新概念/NiiFi.md>)
   - [GameFi](<一些新概念/GameFi.md>)
   - [Layer 3](<一些新概念/Layer 3.md>)
+  - [Web 3.0](<一些新概念/Web 3.0.md>)
 
 - [数字货币专题](<数字货币专题/README.md>)
 
