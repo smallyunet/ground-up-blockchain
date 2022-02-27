@@ -29,6 +29,7 @@
   - [Ethereum](<区块链的过去/Ethereum.md>)
   - [Polkadot](<区块链的过去/Polkadot.md>)
   - [Solana](<区块链的过去/Solana.md>)
+  - [Cardano](<区块链的过去/Cardano.md>)
   
 - [区块链的未来](<区块链的未来/README.md>)
   - [基于 Multi-linked list 的区块链](<区块链的未来/基于 Multi-linked list 的区块链.md>)
