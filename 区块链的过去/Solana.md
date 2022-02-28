@@ -2,7 +2,7 @@
 
 ## 简介
 
-Solana 是一个开源项目，实现了一个新的、高性能的区块链。
+Solana 是一个开源项目，实现了一个新的、高性能的区块链。Solana 是用 Rust 写的。
 
 References: 
 - [Introduction](https://docs.solana.com/introduction)

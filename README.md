@@ -30,6 +30,7 @@
   - [Polkadot](<区块链的过去/Polkadot.md>)
   - [Solana](<区块链的过去/Solana.md>)
   - [Cardano](<区块链的过去/Cardano.md>)
+  - [Tether](<区块链的过去/Tether.md>)
   
 - [区块链的未来](<区块链的未来/README.md>)
   - [基于 Multi-linked list 的区块链](<区块链的未来/基于 Multi-linked list 的区块链.md>)
@@ -55,10 +56,9 @@
   - [Swarm consensus](<共识算法专题/Swarm consensus.md>)
 
 - [智能合约专题](<智能合约专题/README.md>)
+  - [Bitcoin Script](<智能合约专题/Bitcoin Script.md>)
   - [Ethereum Vitrual Machine](<智能合约专题/Ethereum Vitrual Machine.md>)
   - [Solidity](<智能合约专题/Solidity.md>)
-
-- [跨链专题](<跨链专题/README.md>)
 
 - [Layer 2 专题](<Layer 2 专题/READMD.md>)
   - [ZK rollups](<Layer 2 专题/ZK rollups/README.md>)
@@ -91,10 +91,7 @@
   - [GameFi](<一些新概念/GameFi.md>)
   - [Layer 3](<一些新概念/Layer 3.md>)
   - [Web 3.0](<一些新概念/Web 3.0.md>)
-
-- [数字货币专题](<数字货币专题/README.md>)
-
-- [测试专题](<测试专题/README.md>)
+  - [跨链](<一些新概念/跨链.md>)
 
 - [数据结构专题](<数据结构专题/README.md>)
   - [Linked list](<数据结构专题/Linked list/README.md>)
@@ -119,7 +116,5 @@
   - [Provable Data Possession](<加密算法专题/Provable Data Possession.md>)
 
 - [计算机基础](计算机基础/README.md)
-
-- [算法](算法/README.md)
 
 - [后记](<后记.md>)

@@ -11,3 +11,4 @@
 这个框架可以很好地兼容已经存在的区块链。我们相信这将成为区块链在全球范围商业化实用化的重要基础组件。
 
 Reference: [POLKADOT: VISION FOR A HETEROGENEOUS MULTI-CHAIN FRAMEWORK](https://polkadot.network/PolkaDotPaper.pdf)
+
