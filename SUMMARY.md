@@ -30,7 +30,9 @@
   - [Polkadot](<区块链的过去/Polkadot.md>)
   - [Solana](<区块链的过去/Solana.md>)
   - [Cardano](<区块链的过去/Cardano.md>)
-  - [Tether](<区块链的过去/Tether.md>)
+  - [Zcash](<区块链的过去/Zcash.md>)
+  - [Ripple](<区块链的过去/Ripple.md>)
+  - [稳定币](<区块链的过去/稳定币.md>)
   
 - [区块链的未来](<区块链的未来/README.md>)
   - [基于 Multi-linked list 的区块链](<区块链的未来/基于 Multi-linked list 的区块链.md>)
@@ -86,7 +88,6 @@
   - [元宇宙](<一些新概念/元宇宙.md>)
   - [Liquifi](<一些新概念/Liquifi.md>)
   - [SocialFi](<一些新概念/SocialFi.md>)
-  - [Cross-Chain DeFi](<一些新概念/Cross-Chain DeFi.md>)
   - [NiiFi](<一些新概念/NiiFi.md>)
   - [GameFi](<一些新概念/GameFi.md>)
   - [Layer 3](<一些新概念/Layer 3.md>)

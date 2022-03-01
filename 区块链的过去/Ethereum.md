@@ -8,8 +8,9 @@
 
 Reference：[A Next-Generation Smart Contract and Decentralized Application Platform](https://github.com/ethereum/wiki/blob/old-before-deleting-all-files-go-to-wiki-wiki-instead/old-whitepaper-for-historical-reference.md#a-next-generation-smart-contract-and-decentralized-application-platform)
 
-## Index
+## 索引
 
 - [research](https://ethresear.ch/)
 
+这是一个分享关于 ethereum 想法的论坛。
 
