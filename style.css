@@ -7,9 +7,9 @@ img[alt="50"] {
 img[alt="80"] {
   width: 80%;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px)  {
   img {
-    width: 100%;
+    width: 100% !important;
   }
 }
 img[alt="inline"] {

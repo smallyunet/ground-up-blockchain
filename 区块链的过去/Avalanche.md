@@ -7,7 +7,6 @@ References:
 - [Avalanche](https://www.avax.network/)
 - [Whitepapers](https://www.avalabs.org/whitepapers)
 
-
 ## 架构
 
 Avalanche 似乎并不以某种特点见长，更像是系统架构上的改进，使用更加合适的方式构建一个区块链平台。
