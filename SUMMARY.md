@@ -107,7 +107,6 @@
 
 - [加密算法专题](<加密算法专题/README.md>)
   - [Zero-knowledge proof](<加密算法专题/Zero-knowledge proof/README.md>)
-    - [零知识证明技术揭秘](<加密算法专题/Zero-knowledge proof/Demystifying Zero Knowledge Proofs.md>)
     - [Bulletproofs](<加密算法专题/Zero-knowledge proof/Bulletproofs.md>)
     - [zkSTARKs](<加密算法专题/Zero-knowledge proof/zkSTARKs.md>)
     - [zkSNARK](<加密算法专题/Zero-knowledge proof/zkSNARK.md>)

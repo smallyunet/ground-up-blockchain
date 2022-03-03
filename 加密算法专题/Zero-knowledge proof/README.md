@@ -21,3 +21,6 @@ Reference: [Transparent Zero-Knowledge Proofs With Zilch
 
 - [Awesome zero knowledge proofs (zkp)](https://github.com/matter-labs/awesome-zero-knowledge-proofs)
 
+# 零知识证明技术揭秘
+
+- [Demystifying Zero Knowledge Proofs](https://docs.google.com/presentation/d/1gfB6WZMvM9mmDKofFibIgsyYShdf0RV_Y8TLz3k1Ls0/edit#slide=id.p)
