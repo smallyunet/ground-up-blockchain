@@ -101,8 +101,7 @@
     - [判断两个链表是否相交](<数据结构专题/Linked list/判断两个链表是否相交.md>)
     - [找到交点](<数据结构专题/Linked list/找到交点.md>)
     - [合并两个有序链表](<数据结构专题/Linked list/合并两个有序链表.md>)
-  - [Directed acyclic graph](<数据结构专题/Directed acyclic graph/README.md>)
-    - [Kahn's algorithm](<数据结构专题/Directed acyclic graph/Kahn’s algorithm.md>)
+  - [DAG](<数据结构专题/DAG.md>)
   - [Distributed hash table](<数据结构专题/Distributed hash table.md>)
 
 - [加密算法专题](<加密算法专题/README.md>)
