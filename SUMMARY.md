@@ -111,6 +111,6 @@
     - [zkSNARK](<加密算法专题/Zero-knowledge proof/zkSNARK.md>)
   - [Provable Data Possession](<加密算法专题/Provable Data Possession.md>)
 
-- [计算机基础](计算机基础/README.md)
+- [计算机基础](计算机基础.md)
 
 - [后记](<后记.md>)
