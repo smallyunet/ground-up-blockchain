@@ -10,3 +10,7 @@
 
 区块链项目白皮书搜索和查阅网站。
 
+## 参考
+
+- [Cardano, Solana, Polkadot, Fantom and Telos vs the Clock!](https://medium.com/codex/cardano-solana-polkadot-fantom-and-telos-vs-the-clock-d439aa73e4a2)
+

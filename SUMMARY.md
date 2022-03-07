@@ -51,8 +51,7 @@
   - [Proof of Efficiency](<共识算法专题/Proof of Efficiency.md>)
   - [Proof of data possession](<共识算法专题/Proof of data possession.md>)
   - [PBFT](<共识算法专题/PBFT.md>)
-  - [Casper the Friendly Gadget](<共识算法专题/Casper the Friendly Gadget.md>)
-  - [Casper the Friendly Ghost](<共识算法专题/Casper the Friendly Ghost.md>)
+  - [Caspers](<共识算法专题/Caspers.md>)
   - [Swarm consensus](<共识算法专题/Swarm consensus.md>)
   - [基于文件的证明](<共识算法专题/基于文件的证明.md>)
 

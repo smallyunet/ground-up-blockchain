@@ -67,41 +67,29 @@ PoC 是一种基于磁盘容量的共识机制。PoC 使用一些方式证明节
 - Consensus Protocol based on Past Behavior or Reputation (CPPB)
 - Consensus Protocol based on Representation (CPR)
 
-### Consensus Protocol based on Effort or Work
+- Consensus Protocol based on Effort or Work
+    - Proof of Benefit
+    - Proof of Phone
+    - Proof of Learning
+    - Proof of Sincerity
+    - Proof of Accuracy
+    - Proof of Adjourn
+    - Proof of search
+    - Proof of Evolution
+    - Proof of Experience
 
-#### Proof of Benefit
+- Consensus Protocol based on Wealth or Resources
+    - Proof of Participation and Fees
 
-#### Proof of Phone
+- Consensus Protocol based on Past Behavior or Reputation
+    - Proof of Familiarity
+    - Proof of Reputation
+    - Proof of Reputation X
 
-#### Proof of Learning
+- Consensus Protocol based on Representation
+    - Proof of Vote
 
-#### Proof of Sincerity
-
-#### Proof of Accuracy
-
-#### Proof of Adjourn
-
-#### Proof of search
-
-#### Proof of Evolution
-
-#### Proof of Experience
-
-### Consensus Protocol based on Wealth or Resources
-
-#### Proof of Participation and Fees
-
-### Consensus Protocol based on Past Behavior or Reputation
-
-#### Proof of Familiarity
-
-#### Proof of Reputation
-
-#### Proof of Reputation X
-
-### Consensus Protocol based on Representation
-
-#### Proof of Vote
+我个人来看，这些所谓可选择作为替代协议的共识机制，并没有特别大的创新，更多是应用形式上的创新。
 
 ## References
 
