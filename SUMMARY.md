@@ -12,10 +12,9 @@
   - [Peer-to-peer network](<区块链是什么/Peer-to-peer network.md>)
   - [Consensus](<区块链是什么/Consensus.md>)
   - [Fork](<区块链是什么/Fork.md>)
+  - [账户模型](<区块链是什么/账户模型.md>)
   
 - [区块链能干什么](<区块链能干什么/README.md>)
-  - [Unspend transaction output](<区块链能干什么/Unspend transaction output.md>)
-  - [Account/Balance Model](<区块链能干什么/Account_Balance Model.md>)
   - [Decentralized application](<区块链能干什么/Decentralized application.md>)
   - [Decentralized identifiers](<区块链能干什么/Decentralized identifiers.md>)
   - [DAO](<区块链能干什么/DAO.md>)

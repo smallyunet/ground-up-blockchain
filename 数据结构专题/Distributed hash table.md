@@ -16,5 +16,9 @@ References:
 References:
 - [Chord (peer-to-peer)](https://en.wikipedia.org/wiki/Chord_(peer-to-peer))
 
+## Kademlia
+
+References:
+- [Kademlia](https://en.wikipedia.org/wiki/Kademlia)
 
 
