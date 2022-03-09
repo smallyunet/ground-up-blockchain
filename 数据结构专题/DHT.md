@@ -1,6 +1,6 @@
-# Distributed hash table
+# DHT
 
-## 简介
+## Introduction
 
 Reference: [Distributed hash table](https://en.wikipedia.org/wiki/Distributed_hash_table)
 

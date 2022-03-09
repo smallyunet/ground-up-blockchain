@@ -1,4 +1,4 @@
-# InterPlanetary File System
+# IPFS
 
 ## 简介
 

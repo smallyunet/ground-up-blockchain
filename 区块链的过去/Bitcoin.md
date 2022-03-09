@@ -10,4 +10,10 @@ Reference：[Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org
 
 Reference: [What Happens to Bitcoin After All 21 Million Are Mined?](https://www.investopedia.com/tech/what-happens-bitcoin-after-21-million-mined/#:~:text=12-,What%20Happens%20to%20Mining%20Fees%20When%20Bitcoin's%20Supply%20Limit%20Is,block%20rewards%20and%20transaction%20fees.)
 
+## Satoshi Nakamoto
+
+比特币的作者是 Satoshi Nakamoto。
+
+References:
+- [Satoshi Nakamoto](https://en.wikipedia.org/wiki/Satoshi_Nakamoto)
 

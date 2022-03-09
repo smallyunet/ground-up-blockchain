@@ -1,4 +1,4 @@
-# Non-fungible token (NFT)
+# NFT
 
 NFT 提供了一种证明数字资产所有权的方案。
 

@@ -13,4 +13,6 @@
 ## 参考
 
 - [Cardano, Solana, Polkadot, Fantom and Telos vs the Clock!](https://medium.com/codex/cardano-solana-polkadot-fantom-and-telos-vs-the-clock-d439aa73e4a2)
+- [Cryptocurrencies and blockchain](https://www.europarl.europa.eu/cmsdata/150761/TAX3%20Study%20on%20cryptocurrencies%20and%20blockchain.pdf)
+
 
