@@ -4,9 +4,7 @@ GameFi 应该就是把游戏和 Finance 结合起来，在游戏的互动中加�
 
 
 References: 
-
 - [Fundamental Analysis: The case for GameFi](https://akado.medium.com/fundamental-analysis-the-case-for-gamefi-2dd77a556148)
-
 - [Why GameFi Is Crypto’s Hot New Thing (and What Is It?)](https://www.bloomberg.com/news/articles/2022-01-15/gamefi-is-a-new-crypto-craze-what-s-it-all-about-quicktake)
 
 
