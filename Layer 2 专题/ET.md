@@ -1,0 +1,11 @@
+# ET
+
+Vitra 是一个结合了 Smart contract 和 optimistic rollups 的系统。没看懂具体是干什么的，算是一种 idea 吧。
+
+References:
+- [Vitra](https://github.com/pfrazee/vitra)
+- [Execution Transparency — Hosted smart contracts using secure, append-only logs](https://paulfrazee.medium.com/execution-transparency-hosted-smart-contracts-using-secure-append-only-logs-51c35b3d057f)
+- [vitra/docs/whitepaper.pdf](https://github.com/pfrazee/vitra/blob/master/docs/whitepaper.pdf)
+
+
+

@@ -37,6 +37,7 @@
   - [SocialFi](<区块链能干什么/SocialFi.md>)
   - [GameFi](<区块链能干什么/GameFi.md>)
   - [Liquifi](<区块链能干什么/Liquifi.md>)
+  - [跨链](<区块链能干什么/跨链.md>)
 
 - [区块链的未来](<区块链的未来/README.md>)
   - [基于 Multi-linked list 的区块链](<区块链的未来/基于 Multi-linked list 的区块链.md>)
@@ -81,9 +82,9 @@
   - [Plasma](<Layer 2 专题/Plasma.md>)
   - [zkEVM](<Layer 2 专题/zkEVM.md>)
   - [ImmutableX](<Layer 2 专题/ImmutableX.md>)
+  - [ET](<Layer 2 专题/ET.md>)
 
 - [一些新概念](<一些新概念/README.md>)
-  - [跨链](<一些新概念/跨链.md>)
   - [链改](<一些新概念/链改.md>)
   - [元宇宙](<一些新概念/元宇宙.md>)
   - [Layer 3](<一些新概念/Layer 3.md>)
