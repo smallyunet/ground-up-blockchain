@@ -26,7 +26,6 @@ Rollups 方案的分类：
 ![80](./assets/1.jpeg)
 
 References:
-
 - [SCALING](https://ethereum.org/en/developers/docs/scaling/)
 - [Layer 2 Blockchain Scaling: a Survey](https://arxiv.org/pdf/2107.10881.pdf)
 - [What is Layer 2 Scaling?](https://tlu.tarilabs.com/scaling/layer2scaling-survey)

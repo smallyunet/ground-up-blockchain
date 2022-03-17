@@ -6,7 +6,9 @@
 
 非对称加密是指加密方使用解密方的公钥加密，解密方使用自己的私钥解密。非对称加密也是在 1976 年出现，Diffie-Hellman 和 RSA 是常用的非对称加密算法。
 
+References:
 - [Cryptographic](https://en.wikipedia.org/wiki/Cryptography)
+- [The Basics of Public Key Cryptography](https://medium.com/coinmonks/the-basics-of-public-key-cryptography-3f7a8732a072)
 
 ## 索引
 

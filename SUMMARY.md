@@ -45,7 +45,7 @@
   - [基于 Hashgraph 的区块链](<区块链的未来/基于 Hashgraph 的区块链.md>)
 
 - [共识算法专题](<共识算法专题/README.md>)
-  - [Paxos](<共识算法专题/Paxos.md>)
+  - [Raft](<共识算法专题/Raft.md>)
   - [Proof of work](<共识算法专题/Proof of work.md>)
   - [Proof of stake](<共识算法专题/Proof of stake.md>)
   - [Proof of Burn](<共识算法专题/Proof of Burn.md>)
@@ -82,7 +82,7 @@
   - [Plasma](<Layer 2 专题/Plasma.md>)
   - [zkEVM](<Layer 2 专题/zkEVM.md>)
   - [ImmutableX](<Layer 2 专题/ImmutableX.md>)
-  - [ET](<Layer 2 专题/ET.md>)
+  - [其他项目](<Layer 2 专题/其他项目.md>)
 
 - [一些新概念](<一些新概念/README.md>)
   - [链改](<一些新概念/链改.md>)
