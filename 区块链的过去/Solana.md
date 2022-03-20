@@ -7,6 +7,7 @@ Solana 是一个开源项目，实现了一个新的、高性能的区块链。S
 References: 
 - [Introduction](https://docs.solana.com/introduction)
 - [What is Solana (SOL)?](https://genesisblockhk.com/what-is-solana/#What-is-Solana-SOL)
+- [Solana Explained (with memes)](https://medium.com/geekculture/solana-explained-with-memes-824ef4059619)
 
 ## 白皮书
 
