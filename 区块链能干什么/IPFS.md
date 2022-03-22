@@ -19,4 +19,7 @@ IPFS 是著名的去中心化文件系统。
 - [Arweave](https://www.arweave.org/)
 - [Arweave : Web3’s take on file storage](https://medium.com/coinmonks/arweave-web3s-take-on-file-storage-537438522bf7)
 
+### Index
+
+- [Understanding IPFS in Depth(1/6): A Beginner to Advanced Guide](https://hackernoon.com/understanding-ipfs-in-depth-1-5-a-beginner-to-advanced-guide-e937675a8c8a?ref=hackernoon.com)
 
