@@ -33,6 +33,7 @@
   - [DAO](<区块链能干什么/DAO.md>)
   - [NFT](<区块链能干什么/NFT.md>)
   - [IPFS](<区块链能干什么/IPFS.md>)
+  - [ENS](<区块链能干什么/ENS.md>)
   - [Web 3.0](<区块链能干什么/Web 3.0.md>)
   - [SocialFi](<区块链能干什么/SocialFi.md>)
   - [GameFi](<区块链能干什么/GameFi.md>)
