@@ -14,3 +14,7 @@ Reference：[A Next-Generation Smart Contract and Decentralized Application Plat
 
 这是一个分享关于 ethereum 想法的论坛。
 
+- [The Eth2 Book](https://eth2.incessant.ink/book/00__introduction/00__foreword.html#a-bit-of-history-on-the-book)
+
+关于 Eth 历史的书。
+
