@@ -16,3 +16,7 @@ References:
 References:
 - [5 Reasons Why Web 3.0 will Fail?](https://itnext.io/top-5-reasons-why-web-3-will-fail-57237e4c3db)
 
+## 辨析
+
+Web3 和 Web 3.0 没有直接关系。
+
