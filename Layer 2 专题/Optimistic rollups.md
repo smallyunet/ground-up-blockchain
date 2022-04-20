@@ -1,4 +1,27 @@
-# Optimistic Ethereum (OE)
+# Optimistic rollups
+
+Reference: 
+- [Optimistic Rollups: How They Work and Why They Matter](https://medium.com/stakefish/optimistic-rollups-how-they-work-and-why-they-matter-3f677a504fcf)
+- [How does Optimism's Rollup really work?](https://research.paradigm.xyz/optimism)
+- [(Almost) Everything you need to know about Optimistic Rollup](https://research.paradigm.xyz/rollups)
+
+## Arbitrum
+
+### 动机
+
+Reference: [Beyond State Channels](https://medium.com/offchainlabs/beyond-state-channels-ed810a743c25)
+
+### 简介
+
+Arbitrum 有和 Ethereum 一样的 API 接口，支持 Ethereum 所有的语言，不需要更改任何内容或者下载任何新的软件，就可以无缝从 Ethereum 切换到 Arbitrum。
+
+Reference: [Arbitrum Rollup Basics](https://developer.offchainlabs.com/docs/rollup_basics)
+
+### 协议设计
+
+Reference: [Arbitrum Rollup Protocol](https://developer.offchainlabs.com/docs/rollup_protocol)
+
+## Optimistic Ethereum (OE)
 
 Optimistic 是以太坊上的一种针对以太坊应用的交易扩容协议，它可以让交易真正变得便宜，让每个人都轻易使用、都能够负担起在以太坊进行交易的费用。
 
@@ -11,5 +34,4 @@ Optimistic 使用了一种 OVM，其中包含了 EVM 的功能。
 References:
 - [Contract Overview for OVM 1.0](https://community.optimism.io/docs/protocol/protocol.html)
 - [Attacking an Ethereum L2 with Unbridled Optimism](https://www.saurik.com/optimism.html)
-
 
