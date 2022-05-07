@@ -15,5 +15,6 @@ References:
 References:
 - [The Joy of Cryptography](https://joyofcryptography.com)
 - [Intuitive Advanced Cryptography](https://github.com/cryptosubtlety/intuitive-advanced-cryptography/blob/master/advancedcrypto.pdf)
+- [Practical Cryptography for Developers - Free Book by Svetlin Nakov](https://wizardforcel.gitbooks.io/practical-cryptography-for-developers-book/content/)
 
 
