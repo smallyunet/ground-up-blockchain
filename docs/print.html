@@ -1054,12 +1054,17 @@ node2.Prev = node1_hash
 <h2 id="简介-10"><a class="header" href="#简介-10">简介</a></h2>
 <p>Bitcoin script 是一种非图灵完备的脚本，可能甚至谈不上语言。Bitcoin script 使用操作码 opcode 来定义动作，使脚本支持有限的自由操作。</p>
 <p>Reference: <a href="https://en.bitcoin.it/wiki/Script">Script</a></p>
-<h2 id="idea"><a class="header" href="#idea">Idea</a></h2>
+<p>Idea: <a href="https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2022-March/020036.html">[bitcoin-dev] bitcoin scripting and lisp</a></p>
+<h2 id="bsv-blockchain"><a class="header" href="#bsv-blockchain">BSV Blockchain</a></h2>
+<h3 id="简介-11"><a class="header" href="#简介-11">简介</a></h3>
+<p>BSV 是支持智能合约的 Bitcoin。</p>
+<p>References:</p>
 <ul>
-<li><a href="https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2022-March/020036.html">[bitcoin-dev] bitcoin scripting and lisp</a></li>
+<li><a href="https://bsvblockchain.org/">BSV Blockchain</a></li>
+<li><a href="https://medium.com/@xiaohuiliu/introducing-solidity-to-scrypt-transpiler-a0a6907bb3ef">Introducing Solidity to sCrypt Transpiler</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ethereum-vitrual-machine-evm"><a class="header" href="#ethereum-vitrual-machine-evm">Ethereum Vitrual Machine (EVM)</a></h1>
-<h2 id="简介-11"><a class="header" href="#简介-11">简介</a></h2>
+<h2 id="简介-12"><a class="header" href="#简介-12">简介</a></h2>
 <p>EVM 很难被描述为云集群之类的概念，但是它存在并运行于上千个以太坊客户端中。</p>
 <p>以太坊的协议本身需要维护一个不可中断的、不可修改的特殊状态机，状态机内包含了以太坊账户和智能合约的环境。链上所有的区块，以太坊都对它有一个独一无二的状态，EVM 就是定义这种状态规则并且计算出新状态的东西。</p>
 <p>Reference: <a href="https://ethereum.org/en/developers/docs/evm/">ETHEREUM VIRTUAL MACHINE (EVM)</a></p>
@@ -1077,6 +1082,7 @@ node2.Prev = node1_hash
 <li><a href="https://deeprnd.medium.com/solidity-gas-optimisation-83c75170f534">Solidity Gas Optimisation</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="solidity"><a class="header" href="#solidity">Solidity</a></h1>
+<h2 id="简介-13"><a class="header" href="#简介-13">简介</a></h2>
 <p>Solidity 是一种编写以太坊智能合约的专用脚本语言，语法上是面向对象的语言，内置了一些区块链相关的对象，如交易、时间戳、块高度等。</p>
 <p>Solidity 由于属于 DSL 的特性，在语言本身上是无法和目前的主流编程语言抗衡的，但我们不需要对它有什么要求。</p>
 <p>Solidity 中稍微有趣的特性是 modifier，比如：</p>
@@ -1113,13 +1119,14 @@ func b() {
 <p>如果有 modifier 就可以在视觉上很好的解决这种难堪的写法。</p>
 <p>不过 modifier 的问题是，它会让函数的定义变得丑陋，因为 modifier 是不限制数量的，这对代码美感的破坏性甚至超过重复写一些相同的代码。</p>
 <p>另外，Python 的 deorators 似乎也是在解决和 modifier 类似的问题，Java 的 annotaion 也是。modifier 并不算是多么独到的特性。</p>
+<p>Reference: <a href="https://docs.soliditylang.org/en/v0.8.11/">Solidity</a></p>
 <h2 id="yul"><a class="header" href="#yul">Yul</a></h2>
 <p>Yul 是一种中间语言，和 Solidity 没有同等的地位，它似乎不是一种值得去了解的语言。</p>
 <p>我们使用这些语言的目的应该还是要开发智能合约而已，而不是学习编程语言。</p>
-<h2 id="references-1"><a class="header" href="#references-1">References</a></h2>
+<p>Reference: <a href="https://docs.soliditylang.org/en/v0.8.11/yul.html">Yul</a></p>
+<h2 id="相关"><a class="header" href="#相关">相关</a></h2>
 <ul>
-<li><a href="https://docs.soliditylang.org/en/v0.8.11/">Solidity</a></li>
-<li><a href="https://docs.soliditylang.org/en/v0.8.11/yul.html">Yul</a></li>
+<li><a href="https://medium.com/@shub.sharma350/gas-optimizations-in-smart-contracts-a894768b274c">Gas optimizations in Smart Contracts</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="概览"><a class="header" href="#概览">概览</a></h1>
 <h2 id="为什么需要-scaling"><a class="header" href="#为什么需要-scaling">为什么需要 Scaling</a></h2>
@@ -1129,7 +1136,7 @@ func b() {
 <li><a href="https://medium.com/onther-tech/an-introduction-to-cross-layer-transfer-af7e7183c0b9">An Introduction to Cross Layer Transfer</a></li>
 <li><a href="https://medium.com/iovlabs-innovation-stories/blockchain-scalability-4dce74382930">Blockchain Scalability</a></li>
 </ul>
-<h2 id="简介-12"><a class="header" href="#简介-12">简介</a></h2>
+<h2 id="简介-14"><a class="header" href="#简介-14">简介</a></h2>
 <p>性能概览:</p>
 <table><thead><tr><th>Solutions</th><th>TPS</th></tr></thead><tbody>
 <tr><td>State Channels</td><td>10,000</td></tr>
@@ -1150,13 +1157,13 @@ func b() {
 <ul>
 <li><a href="https://blog.cryptostars.is/whats-sharding-and-why-is-it-important-in-the-blockchain-world-2dfbcf509627">What’s Sharding and Why is it Important in the Blockchain World?</a></li>
 </ul>
-<h2 id="未分类-1"><a class="header" href="#未分类-1">未分类</a></h2>
-<h3 id="plasma-可以扩展的自主管理的智能合约"><a class="header" href="#plasma-可以扩展的自主管理的智能合约">Plasma: 可以扩展的自主管理的智能合约</a></h3>
+<h2 id="plasma-可以扩展的自主管理的智能合约"><a class="header" href="#plasma-可以扩展的自主管理的智能合约">Plasma: 可以扩展的自主管理的智能合约</a></h2>
 <p>似乎是把区块链的计算放在 MapReduce function 里进行，区块链的历史状态将作为 MapReduces 的计算因子，这样就可以提高区块链的运算速度。</p>
 <p>Reference: <a href="https://plasma.io/plasma.pdf">Plasma: Scalable Autonomous Smart Contracts</a></p>
-<h3 id="侧链"><a class="header" href="#侧链">侧链</a></h3>
+<h2 id="侧链"><a class="header" href="#侧链">侧链</a></h2>
 <p>侧链是基于 two-way peg 的方式，通过将链上资源的销毁和凭空产生，达到跨链的效果。</p>
 <p>Reference: <a href="https://en.bitcoin.it/wiki/Sidechain">Sidechain</a></p>
+<h2 id="未分类-1"><a class="header" href="#未分类-1">未分类</a></h2>
 <h3 id="immutablex"><a class="header" href="#immutablex">ImmutableX</a></h3>
 <p>第一个专门用于 NFTs 的 Layer 2 方案。用的还是 ZK Rollups。</p>
 <p>References:</p>
@@ -1222,7 +1229,7 @@ func b() {
 <h2 id="arbitrum"><a class="header" href="#arbitrum">Arbitrum</a></h2>
 <h3 id="动机-1"><a class="header" href="#动机-1">动机</a></h3>
 <p>Reference: <a href="https://medium.com/offchainlabs/beyond-state-channels-ed810a743c25">Beyond State Channels</a></p>
-<h3 id="简介-13"><a class="header" href="#简介-13">简介</a></h3>
+<h3 id="简介-15"><a class="header" href="#简介-15">简介</a></h3>
 <p>Arbitrum 有和 Ethereum 一样的 API 接口，支持 Ethereum 所有的语言，不需要更改任何内容或者下载任何新的软件，就可以无缝从 Ethereum 切换到 Arbitrum。</p>
 <p>Reference: <a href="https://developer.offchainlabs.com/docs/rollup_basics">Arbitrum Rollup Basics</a></p>
 <h3 id="协议设计"><a class="header" href="#协议设计">协议设计</a></h3>
@@ -1244,7 +1251,11 @@ func b() {
 <p>Reference: <a href="https://lightning.network/lightning-network-paper.pdf">The Bitcoin Lightning Network: Scalable Off-Chain Instant Payment</a></p>
 <h2 id="raiden-network-是什么"><a class="header" href="#raiden-network-是什么">Raiden Network 是什么？</a></h2>
 <p>雷电网络是针对以太坊 ERC20 的一种链下交易扩容方案，允许即时的、低手续费的、可扩展的、保护隐私的交易。</p>
-<p>Reference: <a href="https://raiden.network/101.html">What is the Raiden Network?</a></p>
+<p>References: </p>
+<ul>
+<li><a href="https://raiden.network/101.html">What is the Raiden Network?</a></li>
+<li><a href="https://docs.soliditylang.org/en/v0.5.3/solidity-by-example.html#writing-a-simple-payment-channel">Writing a Simple Payment Channel</a></li>
+</ul>
 <h2 id="virtual-channels"><a class="header" href="#virtual-channels">Virtual channels</a></h2>
 <p>在这篇文章里，我们描述一种状态通道的架构叫做“虚拟通道”，它是唯一支持像付费文件的流式支付之类的架构。虚拟通道可以简化去中心化系统中图式结构的交易查询、Filecoin 内容检索、状态通道网络中的奖励机制等。</p>
 <h3 id="动机-2"><a class="header" href="#动机-2">动机</a></h3>
@@ -1318,7 +1329,7 @@ func b() {
 <p>Reference: <a href="https://medium.com/xpring/layer-3-is-for-interoperability-ca387fa5f7e2">Layer 3 Is for Interoperability</a></p>
 <p>Layer 3 目前还没有知名的项目，还处于初始的阶段。</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="数据结构专题"><a class="header" href="#数据结构专题">数据结构专题</a></h1>
-<h2 id="简介-14"><a class="header" href="#简介-14">简介</a></h2>
+<h2 id="简介-16"><a class="header" href="#简介-16">简介</a></h2>
 <p>关于已经在关注的数据结构问题。</p>
 <p>References:</p>
 <ul>
@@ -1618,7 +1629,7 @@ func b() {
 <li><a href="https://en.wikipedia.org/wiki/Kademlia">Kademlia</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="加密算法"><a class="header" href="#加密算法">加密算法</a></h1>
-<h2 id="简介-15"><a class="header" href="#简介-15">简介</a></h2>
+<h2 id="简介-17"><a class="header" href="#简介-17">简介</a></h2>
 <p>对称加密是指双方拥有相同的 key，加密方使用 key 加密，解密方使用 key 解密。对称加密在 1976 年出现，有 block ciphers 和 stream ciphers 两种。Data Encryption Standard (DES) 和 Advanced Encryption Stranard (AES) 是对 block cipher 的实现，RC4 是 stream ciphers 的实现。</p>
 <p>非对称加密是指加密方使用解密方的公钥加密，解密方使用自己的私钥解密。非对称加密也是在 1976 年出现，Diffie-Hellman 和 RSA 是常用的非对称加密算法。</p>
 <p>References:</p>
@@ -1634,7 +1645,7 @@ func b() {
 <li><a href="https://wizardforcel.gitbooks.io/practical-cryptography-for-developers-book/content/">Practical Cryptography for Developers - Free Book by Svetlin Nakov</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="零知识证明是什么"><a class="header" href="#零知识证明是什么">零知识证明是什么</a></h2>
-<h3 id="简介-16"><a class="header" href="#简介-16">简介</a></h3>
+<h3 id="简介-18"><a class="header" href="#简介-18">简介</a></h3>
 <p>在密码学中，零知识证明或者零知识协议是一种可以让一方证明另一方提供的表达式是否是 true，证明过程不需要任何除了表达式之外的真实信息。零知识证明的过程就是证明一个人拥有的某些信息是可以被简单证明真伪的，难点就在于如何在不获得消息本身相关内容的情况下，证明真伪。如果表达式包含了秘密的信息，验证者将不会通过这个表达式的验证。表达式要能够证明待证明一方确实知道一些信息，但是又不能透露信息本身。</p>
 <p>交互式的零知识证明需要在被验证者和验证者之间进行一些交互。</p>
 <p>References:</p>
@@ -1652,7 +1663,7 @@ func b() {
 <li><a href="https://github.com/matter-labs/awesome-zero-knowledge-proofs">Awesome zero knowledge proofs (zkp)</a></li>
 </ul>
 <h2 id="bulletproofs"><a class="header" href="#bulletproofs">Bulletproofs</a></h2>
-<h3 id="简介-17"><a class="header" href="#简介-17">简介</a></h3>
+<h3 id="简介-19"><a class="header" href="#简介-19">简介</a></h3>
 <p>References:</p>
 <ul>
 <li><a href="https://crypto.stanford.edu/bulletproofs/#:%7E:text=Bulletproofs%20are%20short%20non%2Dinteractive,anything%20else%20about%20the%20number.">Bulletproofs: Short Proofs for Confidential Transactions and More</a></li>

@@ -144,6 +144,7 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="solidity"><a class="header" href="#solidity">Solidity</a></h1>
+<h2 id="简介"><a class="header" href="#简介">简介</a></h2>
 <p>Solidity 是一种编写以太坊智能合约的专用脚本语言，语法上是面向对象的语言，内置了一些区块链相关的对象，如交易、时间戳、块高度等。</p>
 <p>Solidity 由于属于 DSL 的特性，在语言本身上是无法和目前的主流编程语言抗衡的，但我们不需要对它有什么要求。</p>
 <p>Solidity 中稍微有趣的特性是 modifier，比如：</p>
@@ -180,13 +181,14 @@ func b() {
 <p>如果有 modifier 就可以在视觉上很好的解决这种难堪的写法。</p>
 <p>不过 modifier 的问题是，它会让函数的定义变得丑陋，因为 modifier 是不限制数量的，这对代码美感的破坏性甚至超过重复写一些相同的代码。</p>
 <p>另外，Python 的 deorators 似乎也是在解决和 modifier 类似的问题，Java 的 annotaion 也是。modifier 并不算是多么独到的特性。</p>
+<p>Reference: <a href="https://docs.soliditylang.org/en/v0.8.11/">Solidity</a></p>
 <h2 id="yul"><a class="header" href="#yul">Yul</a></h2>
 <p>Yul 是一种中间语言，和 Solidity 没有同等的地位，它似乎不是一种值得去了解的语言。</p>
 <p>我们使用这些语言的目的应该还是要开发智能合约而已，而不是学习编程语言。</p>
-<h2 id="references"><a class="header" href="#references">References</a></h2>
+<p>Reference: <a href="https://docs.soliditylang.org/en/v0.8.11/yul.html">Yul</a></p>
+<h2 id="相关"><a class="header" href="#相关">相关</a></h2>
 <ul>
-<li><a href="https://docs.soliditylang.org/en/v0.8.11/">Solidity</a></li>
-<li><a href="https://docs.soliditylang.org/en/v0.8.11/yul.html">Yul</a></li>
+<li><a href="https://medium.com/@shub.sharma350/gas-optimizations-in-smart-contracts-a894768b274c">Gas optimizations in Smart Contracts</a></li>
 </ul>
 
                     </main>

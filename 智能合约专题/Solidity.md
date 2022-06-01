@@ -1,5 +1,7 @@
 # Solidity
 
+## 简介
+
 Solidity 是一种编写以太坊智能合约的专用脚本语言，语法上是面向对象的语言，内置了一些区块链相关的对象，如交易、时间戳、块高度等。
 
 Solidity 由于属于 DSL 的特性，在语言本身上是无法和目前的主流编程语言抗衡的，但我们不需要对它有什么要求。
@@ -48,14 +50,18 @@ func b() {
 
 另外，Python 的 deorators 似乎也是在解决和 modifier 类似的问题，Java 的 annotaion 也是。modifier 并不算是多么独到的特性。
 
+Reference: [Solidity](https://docs.soliditylang.org/en/v0.8.11/)
+
 ## Yul
 
 Yul 是一种中间语言，和 Solidity 没有同等的地位，它似乎不是一种值得去了解的语言。
 
 我们使用这些语言的目的应该还是要开发智能合约而已，而不是学习编程语言。
 
-## References
+Reference: [Yul](https://docs.soliditylang.org/en/v0.8.11/yul.html)
 
-- [Solidity](https://docs.soliditylang.org/en/v0.8.11/)
-- [Yul](https://docs.soliditylang.org/en/v0.8.11/yul.html)
+## 相关
+
+- [Gas optimizations in Smart Contracts](https://medium.com/@shub.sharma350/gas-optimizations-in-smart-contracts-a894768b274c)
+
 

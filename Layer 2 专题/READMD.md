@@ -33,19 +33,19 @@ References:
 Referneces:
 - [What’s Sharding and Why is it Important in the Blockchain World?](https://blog.cryptostars.is/whats-sharding-and-why-is-it-important-in-the-blockchain-world-2dfbcf509627)
 
-## 未分类
-
-### Plasma: 可以扩展的自主管理的智能合约
+## Plasma: 可以扩展的自主管理的智能合约
 
 似乎是把区块链的计算放在 MapReduce function 里进行，区块链的历史状态将作为 MapReduces 的计算因子，这样就可以提高区块链的运算速度。
 
 Reference: [Plasma: Scalable Autonomous Smart Contracts](https://plasma.io/plasma.pdf)
 
-### 侧链
+## 侧链
 
 侧链是基于 two-way peg 的方式，通过将链上资源的销毁和凭空产生，达到跨链的效果。
 
 Reference: [Sidechain](https://en.bitcoin.it/wiki/Sidechain)
+
+## 未分类
 
 ### ImmutableX
 
