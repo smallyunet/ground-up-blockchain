@@ -18,3 +18,8 @@ Reference：[A Next-Generation Smart Contract and Decentralized Application Plat
 
 关于 Eth 历史的书。
 
+## 关于合并
+
+- [Choosing Proof-of-Stake Over Mining Is Ethereum’s Biggest Mistake and Here Is Why](https://2miners.com/blog/choosing-proof-of-stake-over-mining-is-ethereums-biggest-mistake-and-here-is-why/)
+- [The Merge](https://ethereum.org/en/upgrades/merge/)
+

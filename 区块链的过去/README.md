@@ -17,6 +17,12 @@
 
 ## 更多项目
 
+### Filecoin
+
+References:
+- [What sets it apart: Filecoin’s proof system](https://filecoin.io/blog/posts/what-sets-us-apart-filecoin-s-proof-system/)
+
+
 ### Cardano
 
 Cardano 是用 Haskell 实现的。
