@@ -80,3 +80,8 @@ References:
 - [whitepaper](https://whitepaper.obscu.ro/obscuro-whitepaper/abstract.html)
 - [Can Zero-Knowledge Proofs achieve Layer 2 privacy?](https://medium.com/coinmonks/can-zero-knowledge-proofs-achieve-layer-2-privacy-71850ca60ae7)
 
+## 资料推荐
+
+- [An Incomplete Guide to Rollups](https://vitalik.ca/general/2021/01/05/rollup.html)
+- [What Are the Bitcoin Layers? – Layer 3 vs. Layer 2 vs. Layer 1 Crypto](https://phemex.com/academy/bitcoin-layer-1-vs-2-vs-3)
+
